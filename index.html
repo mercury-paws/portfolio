@@ -66,16 +66,16 @@
     </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
           <button type="button" class="button-style">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- white section with  good skills-->
+      <!-- white section with  good skills -->
 
-      <!-- <section class="our-skills">
+      <section class="our-skills">
         <div class="container">
           <h2 class="visually-hidden">Section 2</h2>
           <ul class="list-of-our-skills">
@@ -130,11 +130,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- cloud section of team with images -->
 
-      <!-- <section class="section-two-our-team">
+      <section class="section-two-our-team">
         <div class="container">
           <h2 class="second-header">Our Team</h2>
           <ul class="list-of-our-team">
@@ -309,18 +309,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section 3 our portfolio -->
 
-      <!-- <section class="section-three-our-portfolio">
+      <section class="section-three-our-portfolio">
         <div class="container">
           <h2 class="second-header">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  src="./images/portfolio/row1pic1.jpg"
+                  src="./images/portfolio/mobile-app.jpg"
                   alt="mobile-app"
                   width="360"
                 />
@@ -338,7 +338,7 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  src="./images/portfolio/row1pic2.jpg"
+                  src="./images/portfolio/payment-with-mobile.jpg"
                   alt="payment-with-mobile"
                   width="360"
                 />
@@ -357,7 +357,7 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  src="./images/portfolio/row1pic3.jpg"
+                  src="./images/portfolio/laptop-and-mobile-app.jpg"
                   alt="laptop-and-mobile-app"
                   width="360"
                 />
@@ -375,7 +375,7 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  src="./images/portfolio/row2pic1.jpg"
+                  src="./images/portfolio/driving-in-a-car-navigationg-with-mobile.jpg"
                   alt="driving-in-a-car-navigationg-with-mobile"
                   width="360"
                 />
@@ -393,7 +393,7 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  src="./images/portfolio/row2pic2.jpg"
+                  src="./images/portfolio/mobile-back-pic.jpg"
                   alt="mobile-back-pic"
                   width="360"
                 />
@@ -411,7 +411,7 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  src="./images/portfolio/row2pic3.jpg"
+                  src="./images/portfolio/girl-in-orange-listening-the-music.jpg"
                   alt="girl-in-orange-listening-the-music"
                   width="360"
                 />
@@ -428,10 +428,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container container-footer">
         <div class="logo-text-footer">
           <a class="logo-footer" href="./index.html"
@@ -497,8 +497,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
-      <div class="modal">
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
         <button class="close-icon" type="button">
           <svg width="8" height="8" class="close-icon-svg">
             <use href="./images/icons.svg#icon-close"></use>
@@ -579,18 +579,18 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <p class="text-privacy-style">I accept the terms and conditions of the
               <a href="" class="privacy-policy-text" target="_blank">
                 Privacy Policy
-              </a>
+              </a></p>
             </label>
           </div>
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-mobile-menu-bttn" type="button">
           <svg class="close-bttn" width="8" height="8">
@@ -598,23 +598,57 @@
           </svg>
         </button>
         <ul class="backdrop-mobile-menu">
-          <li>Studio</li>
-          <li>Portfolio</li>
-          <li>Contacts</li>
-          <address class="address-styles-mobile-backdrop">
-            <ul class="contact-us-list">
-              <li class="contact-us-list-item">
-                <a class="contact-us" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact-us-list-item">
-                <a class="contact-us" href="tel:+110001111111">
-                  +11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
+          <li><a class="menu-navigation active-page" href="./index.html">Studio</a></li>
+          <li><a class="menu-navigation" href="">Portfolio</a></li>
+          <li><a class="menu-navigation" href="">Contacts</a></li>
+        </ul>
+        <address class="address-styles-mobile-backdrop">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a class="contact-us tel" href="tel:+110001111111">
+                +11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contact-us-list-item">
+              <a class="contact-us mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="social-links-modal-wrapper">
+          <ul class="social-links-modal-list">
+            <li class="social-links-modal-item">
+              <a href="/" target="_blank" class="link">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a href="/" target="_blank" class="link">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a href="" target="_blank" class="link">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a href="" target="_blank" class="link">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
