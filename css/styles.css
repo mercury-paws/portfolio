@@ -116,7 +116,6 @@ header {
 }
 
 .menu-navigation-list {
-  padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-navigation:hover,
@@ -130,7 +129,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 24px 0;
 }
 .address-styles {
   color: #434455;
@@ -138,7 +136,7 @@ header {
 
 .contact-us {
   color: #434455;
-  padding: 24px 0;
+  /* padding: 24px 0; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-us:hover {
@@ -326,7 +324,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-bottom: 16px;
   display: inline-block;
 }
 .media-text-footer {
@@ -425,7 +422,7 @@ input::placeholder {
 /*================================== /FOOTER STYLES================================== */
 
 /*==================================HEADER STYLES================================== */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .burger-wrapper {
     display: flex;
     justify-content: center;
@@ -446,11 +443,18 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: none;
+    text-align: center;
+  }
+  .header-section {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
   }
   .container {
-    margin-top: 17.5px;
-    margin-bottom: 17.5px;
     padding: 0 15px;
+    width: 320px;
   }
   .logo-header {
     color: #4d5ae5;
@@ -571,7 +575,7 @@ input::placeholder {
     background-color: #4d5ae5;
   }
   .main-header {
-    max-width: 288px;
+    /* min-width: 288px; */
     color: #ffffff;
     text-align: center;
     font-family: Roboto;
@@ -581,6 +585,8 @@ input::placeholder {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero {
     background-color: #2e2f42;
@@ -595,14 +601,18 @@ input::placeholder {
       url(../images/hero/hero-pic-mob.jpg);
     background-size: cover;
     background-repeat: no repeat;
-    max-width: 100%;
+    min-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero > .container {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .button-style {
     background-color: #4d5ae5;
@@ -644,6 +654,8 @@ input::placeholder {
   /*==================================/HEADER STYLES================================== */
   .our-skills > .container {
     margin-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .list-of-our-skills {
     flex-direction: column;
@@ -679,10 +691,12 @@ input::placeholder {
 
   /* =================== /our-skills-styles================ */
 
-  .section-two-our-team {
+  .section-two-our-team > .container {
     padding-top: 96px;
     padding-bottom: 96px;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .list-of-our-team {
     flex-direction: column;
@@ -753,10 +767,12 @@ input::placeholder {
 
   /* =================== /our-team-styles================ */
   /*================================== SECTION THREE OUR PORTFOLIO STYLES================================== */
-  .section-three-our-portfolio {
+  .section-three-our-portfolio > .container {
     background-color: #ffffff;
     padding-top: 96px;
     padding-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .third-header-portfolio {
@@ -808,6 +824,8 @@ input::placeholder {
     flex-direction: column;
     align-items: baseline;
     gap: 72px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-text {
@@ -946,11 +964,12 @@ input::placeholder {
   /*================================== /FOOTER STYLES================================== */
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
   .container {
-    margin-top: 17.5px;
-    margin-bottom: 17.5px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 16px;
+    max-width: 768px;
   }
   /*================================== HEADER STYLES================================== */
   .burger-wrapper {
@@ -958,20 +977,445 @@ input::placeholder {
   }
   .container-header {
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+    line-height: none;
+  }
+  .header-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo-header {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
   }
   .navigation-block {
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
+    gap: 120px;
   }
   .contact-us-list {
     flex-direction: column;
     gap: 12px;
+    padding: 16px 0px 16px 0;
+  }
+  .menu-navigation {
+    position: relative;
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+  .active-page {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-navigation-list {
+    padding: 24px 0;
+  }
+  .active-page::after {
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    bottom: -1px;
+    left: 0;
+    top: 20px;
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 2px;
+  }
+  .menu {
+    display: flex;
+    gap: 40px;
   }
   /*================================== /HEADER STYLES================================== */
+
+  /* =================================hero SECTION===================================== */
+  .hero {
+    background-color: #2e2f42;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-pic.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 96px;
+  }
+
+  .main-header {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    text-align: center;
+    margin: 0 auto 36px auto;
+    display: block;
+  }
+
+  .button-style {
+    background-color: #4d5ae5;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* =================================/hero SECTION===================================== */
+  /* =================================skills SECTION===================================== */
+  .icon-skills {
+    display: none;
+  }
+  .list-of-our-skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .list-of-our-skills-item {
+    width: calc((100% - 24px) / 2);
+    border: 1px solid #000;
+  }
+  .our-skills {
+    padding: 0 0 96px 0;
+    margin: 0 auto;
+  }
+
+  /* =================================/skills SECTION===================================== */
+  /* =================================our team SECTION===================================== */
+  .section-two-our-team {
+    padding: 96px 92px 96px 92px;
+    margin: 0 auto;
+  }
+  .list-of-our-team {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 64px;
+  }
+  .list-of-our-team-item {
+    width: calc((100% - 24px) / 2);
+  }
+  /* =================================/our team SECTION===================================== */
+  /* =================================our portfolio SECTION===================================== */
+  .section-three-our-portfolio {
+    padding: 96px 0 96px 0;
+    margin: 0 auto;
+  }
+
+  .portfolio-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* =================================/our portfolio SECTION===================================== */
+  /* =================================footer SECTION===================================== */
+  .container-footer {
+    padding: 96px 148px 96px 92px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .logo-text-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+    width: 264px;
+  }
+  .social-links-list-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .media-text-footer {
+    margin-bottom: 16px;
+  }
+  .social-links-item-footer {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-form-input {
+    margin-right: 24px;
+    height: 40px;
+    width: 264px;
+  }
+  .subscribe-button {
+    height: 40px;
+    width: 165px;
+  }
+  .backdrop > .modal {
+    display: none;
+  }
+
+  .modal-user {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    padding: 72px 25px 24px 25px;
+    min-height: 584px;
+  }
+  .terms-conditions {
+    display: flex;
+    gap: 8px;
+    text-align: center;
+    line-height: none;
+  }
+  /* =================================/footer SECTION===================================== */
 }
 
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .burger-wrapper {
+    display: none;
+  }
+  .contact-us-list {
+    color: #434455;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 40px;
+  }
+  .address-styles {
+    color: #434455;
+  }
+
+  .contact-us {
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact-us:hover {
+    color: #404bbf;
+  }
+
+  .container-header {
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 332px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  header {
+    border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  }
+  .header-section {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .logo-header {
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-right: 76px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-navigation {
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+  .active-page {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .active-page::after {
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    bottom: -1px;
+    left: 0;
+    /* top: 20px; */
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 2px;
+  }
+  .navigation-block {
+    align-items: center;
+  }
+  .menu {
+    gap: 40px;
+  }
+
+  .menu-navigation-list {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .studio-class {
+    color: #2e2f42;
+  }
+  .menu-navigation:hover,
+  .menu-navigation:focus,
+  .menu-navigation:active {
+    color: #404bbf;
+  }
+  /*==================================HERO STYLES================================== */
+  .hero {
+    background-color: #2e2f42;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-pic.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-header {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    text-align: center;
+    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
+    display: block;
+  }
+
+  .button-style {
+    background-color: #4d5ae5;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  button:hover {
+    background-color: #404bbf;
+  }
+
+  button:focus {
+    background-color: #404bbf;
+  }
+  /*================================== /HERO STYLES================================== */
+  /*==================================SECTION OUR SKILLS STYLES================================== */
+  .our-skills {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .list-of-our-skills {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .list-of-our-skills-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc((100%-3 * 24px) / 4);
+  }
+  .skills-icon-section {
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+  }
+  .icon-skills {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+  }
+  /*==================================/SECTION OUR SKILLS STYLES================================== */
+  /*================================== SECTION TWO OUR TEAM STYLES================================== */
+  .section-two-our-team {
+    padding: 120px 0 120px 0;
+  }
+  .list-of-our-team {
+    gap: 24px;
+  }
+
+  /*================================== /SECTION TWO OUR TEAM STYLES================================== */
+  /*================================== SECTION THREE OUR PORTFOLIO STYLES================================== */
+  .section-three-our-portfolio {
+    padding: 120px 0 120px 0;
+  }
+  .portfolio-list {
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+  }
+  /*================================== /SECTION THREE OUR PORTFOLIO STYLES================================== */
+  /*================================== FOOTER STYLES================================== */
+  .footer {
+    padding: 100px 0;
+  }
+  .logo-text-footer {
+    display: flex;
+    gap: 17.5px;
+    width: 264px;
+    flex-direction: column;
+    margin-right: 120px;
+  }
+  /*================================== FOOTER STYLES================================== */
+}
 /* =================================FORM SECTION===================================== */
 .backdrop-user {
   position: fixed;
