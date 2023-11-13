@@ -278,6 +278,7 @@ button:focus {
   border: 1px solid #8e8f99;
   background-color: #f4f4fd;
   margin-bottom: 8px;
+  line-height: none;
 }
 .icon-skills {
   display: flex;
