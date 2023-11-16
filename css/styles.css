@@ -231,6 +231,9 @@ header {
   flex-direction: column;
   gap: 24px;
 }
+.mail {
+  color: #434455;
+}
 .main-header {
   width: 288px;
   height: 160px;
@@ -936,7 +939,7 @@ input::placeholder {
     flex-direction: row;
     align-items: flex-start;
   }
-  .modal-user {
+  .backdrop-user > .modal-user {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
