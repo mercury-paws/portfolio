@@ -80,7 +80,7 @@ img {
 /*==================================HEADER STYLES================================== */
 .container {
   padding: 16px 16px;
-  max-width: 320px;
+  max-width: 420px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -235,8 +235,7 @@ header {
   color: #434455;
 }
 .main-header {
-  width: 288px;
-  height: 160px;
+  height: auto;
   color: #ffffff;
   text-align: center;
   font-family: Roboto;
@@ -245,9 +244,6 @@ header {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 59px;
 }
 .hero {
@@ -285,6 +281,9 @@ header {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .button-style {
   background-color: #4d5ae5;
@@ -342,9 +341,7 @@ header {
   flex-direction: column;
   gap: 72px;
 }
-.list-of-our-skills-item {
-  /* border: 1px solid #000; */
-}
+
 .skills-icon-section {
   display: none;
 }
@@ -371,6 +368,7 @@ header {
 }
 .list-of-our-skills-item {
   border: 1px solid #000;
+  padding: 16px;
 }
 /* ========================= /our skills styles============ */
 /* =========================our team styles============ */
@@ -456,14 +454,59 @@ img {
   fill: #f4f4fd;
 }
 /* ========================= /our team styles============ */
-/*================================== SECTION THREE OUR PORTFOLIO STYLES================================== */
+/*================================== SECTION THREE PORTFOLIO STYLES================================== */
+.section-three-our-portfolio {
+  position: relative;
+  background-color: #f4f4fd;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-three-our-portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+
+    rgba(0, 0, 0, 0.7)
+  ),
+  url(../images/portfolio/portfolio-background.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; 
+  z-index: 1;
+  pointer-events: none; 
+  background-repeat: no-repeat;
+}
+
+
+
+.section-three-our-portfolio > * {
+  position: relative;
+  z-index: 2;
+}
+
 .section-three-our-portfolio > .container {
-  background-color: #ffffff;
+ 
   padding-top: 96px;
   padding-bottom: 96px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  min-width: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+
+
+
+
 .third-header-portfolio {
   font-size: 20px;
   font-weight: 500;
@@ -504,7 +547,15 @@ img {
 /*================================== /SECTION THREE OUR PORTFOLIO STYLES================================== */
 /*================================== FOOTER STYLES================================== */
 .footer {
-  background-color: #2e2f42;
+  background: 
+  linear-gradient(
+      to bottom,
+      rgba(109, 109, 109, 0.7),
+      rgba(39, 39, 39, 0.7),
+
+      rgba(46, 47, 66, 0.7)
+    ),
+    #2e2f42;
   padding: 97.5px 0 96px 0;
 }
 .container-footer {
@@ -544,6 +595,7 @@ img {
   text-align: center;
   margin-left: 0;
   margin-right: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .links-footer-section {
   display: inline-block;
@@ -779,7 +831,7 @@ input::placeholder {
   .main-header {
     color: #ffffff;
     font-size: 56px;
-    height: 120px;
+    /* height: 120px; */
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
@@ -822,10 +874,12 @@ input::placeholder {
   .list-of-our-skills-item {
     width: calc((100% - 24px) / 2);
     border: 1px solid #000;
+    
   }
   .our-skills {
     padding: 0 15px;
     margin: 0 auto;
+
   }
   .third-header-skills {
     font-size: 36px;
@@ -1126,7 +1180,7 @@ input::placeholder {
     margin: 0 auto 48px auto;
     display: block;
     padding: 0;
-    height: 120px;
+    /* height: 120px; */
   }
 
   .button-style {
@@ -1423,7 +1477,7 @@ input::placeholder {
   width: 288px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #fcfcfc;
   /* padding: 72px 24px 24px 24px; */
   border: 1px solid #212121;
@@ -1437,7 +1491,11 @@ input::placeholder {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 448px;
+    
+  }
+  .backdrop-user.mobile > .modal-user{
+    padding: 72px 42px 42px 42px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1157px) {
@@ -1446,6 +1504,9 @@ input::placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 288px;
+  }
+  .backdrop-user.mobile > .modal-user{
+    padding: 72px 32px 42px 32px;
   }
 }
 .is-open {
