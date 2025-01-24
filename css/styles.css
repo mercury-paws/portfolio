@@ -54,11 +54,7 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-.container {
-  /* width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; */
-}
+
 img {
   display: block;
 }
@@ -258,13 +254,22 @@ header {
     ),
     url(../images/hero/hero-pic-mob.jpg);
   background-size: cover;
-  background-repeat: no repeat;
   min-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 96px;
   margin-left: auto;
   margin-right: auto;
+}
+.dark-hero{
+  display: none;
+}
+.photo-hero{
+  display: none;
+}
+
+.add-hero-info{
+  display: none;
 }
 @media screen and (min-resolution: 192dpi) {
   .hero {
@@ -472,9 +477,9 @@ img {
   background-image: linear-gradient(
     to bottom,
     rgb(255, 255, 255),
-
-    rgba(0, 0, 0, 0.7)
-  ),
+    rgba(46, 47, 66, 0.6),
+    rgb(25, 27, 39)
+  ) ,
   url(../images/portfolio/portfolio-background.webp);
   background-size: cover;
   background-position: center;
@@ -546,15 +551,10 @@ img {
 }
 /*================================== /SECTION THREE OUR PORTFOLIO STYLES================================== */
 /*================================== FOOTER STYLES================================== */
-.footer {
-  background: 
-  linear-gradient(
-      to bottom,
-      rgba(109, 109, 109, 0.7),
-      rgba(39, 39, 39, 0.7),
 
-      rgba(46, 47, 66, 0.7)
-    ),
+.footer {
+  background-color: 
+  
     #2e2f42;
   padding: 97.5px 0 96px 0;
 }
@@ -1150,9 +1150,9 @@ input::placeholder {
   /*==================================HERO STYLES================================== */
   .hero {
     background-color: #2e2f42;
-    text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+   
+    padding-top: 128px;
+    padding-bottom: 76px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -1160,27 +1160,89 @@ input::placeholder {
       ),
       url(../images/hero/hero-pic.jpg);
     background-size: cover;
-    background-repeat: no repeat;
     max-width: 1440px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    position: relative;
+  }
+
+  .dark-hero{
+    display: block;
+    top: 0;             
+    left: 450px;            
+    width: calc(100% - 450px);        
+    height: 100%;
+    background-color: #2e2f42;
+    position: absolute;
+  }
+  .hero > .container{
+    margin-top: 25px;
+    margin-bottom: 250px;
+    width: 662px;
+    margin-left: 668px;
+    margin-right: auto;
+  }
+
+  .photo-hero{
+    display: block;
+    top: 100px;             
+    left: 275px;            
+    width: 350px;        
+    height: 570px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 8px;
+    padding: 16px 16px 46px 16px;
   }
 
   .main-header {
     color: #ffffff;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.2;
     letter-spacing: 1.12px;
-    width: 496px;
-    text-align: center;
-    margin: 0 auto 48px auto;
+    width: 676px;
+    text-align: start;
+    margin: 0 16px 0 0;
     display: block;
-    padding: 0;
-    /* height: 120px; */
+    padding: 0 25px 0 0;
+    text-transform: uppercase;
+  }
+  .third-header{
+    color: #fdfdfd;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 1.12px;
+    width: 676px;
+    text-align: start;
+    margin: 0 16px 0 0;
+    display: block;
+    padding: 0 25px 0 0;
+  }
+
+  .add-hero-info{
+    color: #fdfdfd;
+    z-index: 5;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 1.12px;
+    width: 676px;
+    text-align: start;
+    margin: 0 16px 0 0;
+    display: block;
+    padding: 0 25px 0 0;
+  }
+  .hero-headers{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .button-style {
@@ -1188,16 +1250,17 @@ input::placeholder {
     display: block;
     cursor: pointer;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
-    min-width: 169px;
+    width: 169px;
     height: 56px;
     border: none;
-    border-radius: 4px;
-    margin: 0 auto;
+    border-radius: 8px;
+    margin: 0 0 0 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
   }
   button:hover {
     background-color: #404bbf;
@@ -1207,9 +1270,32 @@ input::placeholder {
     background-color: #404bbf;
   }
   /*================================== /HERO STYLES================================== */
+  
+/*==================================SECTION rewiews================================== */
+ 
+.reviews{
+  position: relative;
+  width: 1158px;
+}
+.review{
+  display: block;
+    top: -150px;             
+    left: 275px;            
+    width: 1000px;        
+    height: 290px;
+    background-color: #ffffff;
+    position: absolute;
+    border: 3px solid #e7e9fc;
+    border-radius: 48px;
+    padding: 16px 16px 46px 16px;
+}
+ 
+  /*==================================/SECTION rewiews================================== */
+ 
+  
   /*==================================SECTION OUR SKILLS STYLES================================== */
   .our-skills {
-    padding-top: 120px;
+    padding-top: 220px;
   }
   .list-of-our-skills {
     gap: 24px;
@@ -1354,9 +1440,7 @@ input::placeholder {
     gap: 16px;
     flex-wrap: nowrap;
   }
-  .links-footer-section {
-    /* margin-right: 80px; */
-  }
+  
   .social-links-item-footer {
     width: 40px;
     height: 40px;
