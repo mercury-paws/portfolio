@@ -508,10 +508,6 @@ img {
   background-position: center;
 }
 
-
-
-
-
 .third-header-portfolio {
   font-size: 20px;
   font-weight: 500;
@@ -1271,27 +1267,7 @@ input::placeholder {
   }
   /*================================== /HERO STYLES================================== */
   
-/*==================================SECTION rewiews================================== */
- 
-.reviews{
-  position: relative;
-  width: 1158px;
-}
-.review{
-  display: block;
-    top: -150px;             
-    left: 275px;            
-    width: 1000px;        
-    height: 290px;
-    background-color: #ffffff;
-    position: absolute;
-    border: 3px solid #e7e9fc;
-    border-radius: 48px;
-    padding: 16px 16px 46px 16px;
-}
- 
-  /*==================================/SECTION rewiews================================== */
- 
+
   
   /*==================================SECTION OUR SKILLS STYLES================================== */
   .our-skills {
@@ -1371,6 +1347,7 @@ input::placeholder {
     padding: 40px 32px 40px 32px;
     background-color: #4d5ae5;
     color: #f4f4fd;
+    opacity: 0.9;
     width: 296px;
     position: absolute;
     top: 0;

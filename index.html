@@ -18,7 +18,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" >
+    <link rel="stylesheet" href="./css/reviews.css" >
+    <script src="./js/main.js" defer type="module"></script>
+    <script src="./js/comments.js" defer type="module"></script>
   </head>
 
   <body>
@@ -73,7 +77,7 @@
           <h3 class="third-header">Where ideas meet innovation</h3>
           <p class="add-hero-info">Web and application development for personal brands and service providers to inspire wellness, mindfulness, and love</p>
         </div>
-          <button type="button" class="button-style">Contact</button>
+          <button type="button" class="button-style">Find out more</button>
           <div class="dark-hero"></div>
           <div class="photo-hero">
             <img src="/images/hero/photo.jpg">
@@ -82,10 +86,26 @@
       </section>
 
       <!-- white section with  good skills -->
-      <section class="reviews">
+      <section class="client-reviews">
         <div class="container">
-          <div class="review">
-            <p>amazing</p>
+          <div class="client-review">
+            <button id="prevBtn" class="slider-btn prev" aria-label="Previous Slide"
+            type="button">
+              <svg class="scroll left" width="48" height="48" aria-hidden="true">
+                <use href="./images/icons.svg#arrow-icon"  ></use>
+              </svg>
+            </button>
+            <div class="received-comment"><p class="client-text-review">"Working with you was an absolute pleasure! You truly understood my vision and translated it into a stunning, platform that exceeded my expectations."</p>
+            
+            <p class="client-name">Alice</p>
+          </div>
+            
+            <button id="nextBtn" class="slider-btn next" aria-label="Next Slide"
+            type="button">
+              <svg class="scroll right" aria-hidden="true" width="48" height="48">
+                <use href="./images/icons.svg#arrow-icon" ></use>
+              </svg>
+            </button>
           </div>
         </div>
         </section>
@@ -311,7 +331,7 @@
                 </div>
               </div>
               <div class="application-category-info">
-                <h3 class="third-header-portfolio">Astro Lovers for club in UnL (under construction)</h3>
+                <h3 class="third-header-portfolio">Astro Lovers for club in UnL (TBA)</h3>
                 <p class="text-of-the-paragraphs-portfolio">design and web development</p>
               </div>
             </li>
@@ -346,7 +366,7 @@
                 </div>
               </div>
               <div class="application-category-info">
-                <h3 class="third-header-portfolio">Family physician (under construction)</h3>
+                <h3 class="third-header-portfolio">Family physician (TBA)</h3>
                 <p class="text-of-the-paragraphs-portfolio">design, web, app development</p>
               </div>
             </li>
@@ -574,6 +594,6 @@
         </div>
       </div>
     </div>
-    <script src="./js/main.js" defer type="module"></script>
+    
   </body>
 </html>

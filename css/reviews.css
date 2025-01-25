@@ -1,0 +1,92 @@
+/*==================================SECTION rewiews================================== */
+ 
+.client-reviews > .container{
+    position: relative;
+    width: 1158px;
+  }
+  .client-review{
+    display: block;
+      top: -150px;             
+      left: 0;            
+      width: 100%;        
+      height: 300px;
+      background-color: #ffffff;
+      position: absolute;
+      border: 3px solid #e7e9fc;
+      border-radius: 48px;
+      padding: 48px 134px 24px 134px;
+  }
+
+  .client-text-review{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    color:#6d6e7e;
+    font-style: oblique;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1.12px;
+    text-align: center;
+   height: 130px;
+  }
+
+  .client-name{
+    margin-top: 24px;
+    text-align: end;
+    margin-right: 48px;
+    color: #6d6e7e;
+    font-size: 38px;
+  }
+   
+    /*==================================/SECTION rewiews================================== */
+   
+      .slider-btn {
+        position: absolute;
+        overflow: visible;
+        width: 64px;
+        height: 64px;
+        background-color: transparent;
+        border: solid 1px #2e2f42;
+        border-radius: 50%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+      }
+
+      .slider-btn:hover,
+      .slider-btn:focus,
+      .slider-btn:active{
+        background-color: #e7e9fc;
+      }
+      .prev{
+        left: 30px;
+        /* top: calc(50% - 48px); */
+        top: calc(50% - 32px);
+        transform: rotate(90deg);
+
+      }
+      .next{
+        right: 30px;
+        /* top: calc(50% - 48px); */
+        top: calc(50% - 32px);
+        transform: rotate(-90deg);
+      }
+
+      .scroll {
+       width: 36px;
+       height: 36px;
+        fill: #2e2f42;
+        background-color: transparent;
+        
+      }
+   
+   
+
+      /* .text-review {
+        display: none;
+      } */
+      
+      .review-item.active {
+        display: block;
+      }
