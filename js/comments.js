@@ -6,6 +6,7 @@ axios.defaults.baseURL = "http://localhost:3000";
 axios.defaults.withCredentials = true;
 
 
+let index = 0;
 
 async function fetchComments() {
   try {
@@ -18,8 +19,7 @@ async function fetchComments() {
 
 async function renderComments() {
   let comments = await fetchComments();
-  console.log('Comments:', comments)
-  console.log("com", comments[`${index}`])
+
   const { name, comment } = comments[index];
 
     const markup = `
@@ -31,13 +31,12 @@ async function renderComments() {
 
     prev.disabled = index === 0;
 
-    // Disable the "Next" button if at the last comment
     next.disabled = index === comments.length - 1;
   }
   
   window.onload = renderComments;
   
-  let index = 0;
+ 
   next.addEventListener('click', () => {
     index++;
    renderComments();
@@ -48,10 +47,6 @@ async function renderComments() {
    renderComments();
    
   })
-
-  // if(index === comments.length)
-
-  
 
   window.onload = renderComments;
 
