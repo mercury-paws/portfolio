@@ -1,0 +1,55 @@
+.contact::after {
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    left: 0;
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 2px;
+  }
+  .active-page {
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .inline-input {
+    all: unset; /* Remove default styles */
+    border-bottom: 1px solid #000; /* Add the underscore effect */
+    width: 100px; /* Adjust width based on your needs */
+    text-align: center; /* Optional: Center text input */
+    font-size: 16px; /* Match the text size */
+    margin: 0 4px; /* Add spacing around the input */
+  }
+  
+  .inline-input:focus {
+    outline: none; /* Remove the focus outline */
+    border-bottom: 1px solid #404bbf; /* Change underline color on focus */
+  }
+
+  .contact-form {
+    padding: 72px 16px 16px 16px;
+    width: 288px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+    min-height: 584px;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.14), 0px 0px 0px rgba(0, 0, 0, 0.12),
+      5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (min-width: 1158px) {
+    .contact-form {
+      width: 448px;
+      padding: 72px 42px 42px 42px;
+    }
+ 
+  }
+  @media screen and (min-width: 767px) and (max-width: 1157px) {
+    .contact-form {
+      width: 288px;
+      padding: 72px 32px 42px 32px;
+    }
+}
+ 
+ 
