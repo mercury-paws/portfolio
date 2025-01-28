@@ -19,7 +19,7 @@ async function fetchComments() {
 
 async function renderComments() {
   let comments = await fetchComments();
-
+console.log(comments)
   const { name, comment } = comments[index];
 
     const markup = `

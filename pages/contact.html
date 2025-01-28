@@ -46,7 +46,7 @@
                 <a class="menu-navigation" href="../pages/blog.html">Blog</a>
               </li>
               <li class="menu-navigation-list">
-                <a class="menu-navigation active-page contact" href="../pages/contact.html">Contact</a>
+                <a class="menu-navigation active-page contact-active" href="../pages/contact.html">Contact</a>
               </li>
           </ul>
         </nav>
@@ -77,27 +77,33 @@
 
       <!-- cloud section of team with images -->
 
-      <section class="">
-        <div class="container">
-        <h1>Say Hello</h1>
-            <div class="">
-                <div class="contact">
+      <section class="contact-form-section">
+        <div class="container say-hello-container">
+        <h1 class="contact-form-header">Say <span>Hello</span></h1>
+                <div class="contact-form-container">
                     <form class="contact-form" name="leave-your-contacts" autocomplete="off">
                     <p>
-                        Hellow there! My <label class="label" for="user-name-contact">name </label> is 
-                        
+                        Hello there! My 
+                        <label class="label" for="user-name-contact">name </label> 
+                        is 
                         <input
                           class="inline-input form-input-contact"
                           id="user-name-contact"
                           type="text"
                           name="user-name"
-                          placeholder="Your name here"
+                          placeholder="your name here."
                           required
                         />
-                        and I am looking for the web developer to help me with 
-                        <input type="text" class="inline-input" placeholder="short project description">.
+                        and I am looking for the </br>web developer to help me with 
+                        <textarea 
+                          type="text" 
+                          class="inline-input form-input-contact" 
+                          placeholder="short project description..."
+                          name="projectDescription"
+                          id="project-description"
+                          rows="4"
+                          required></textarea>
                         You can reach me at
-                    
                         <input
                           class="form-input-contact inline-input"
                           id="user-email"
@@ -107,8 +113,6 @@
                           required
                         />
                       </p>
-                    
-                  
                     <div class="review-form-checkbox-wrapper">
                       <input
                         class="terms-conditions-checkbox visually-hidden"
@@ -130,24 +134,24 @@
                         </a></p>
                       </label>
                     </div>
-                    <button class="contact-form-button" type="submit">Send</button>
+                    <button 
+                     class="contact-form-button" 
+                     type="submit">Send
+                    </button>
                   </form>
+                <div class="pretty-square">
+                  <p class="contact-form-email">email</p>
                 </div>
-              </div>
-         </div>
-         <div>
-            <p>email</p>
-         </div>
         </div>
-      </section>
-      
+        </div>
+      </section> 
     </main>
 
     <footer class="footer">
       <div class="container container-footer">
         <div class="logo-text-footer">
           <a class="logo-footer" href="../index.html"
-            >Web<span class="studio-footer">Studio</span></a
+            >M<span class="studio-footer">P</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with

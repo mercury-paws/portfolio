@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <header class="header-section">
+    <header class="header-section" id="header">
       <div class="container-header container">
         <nav class="navigation-block">
           <a href="./index.html" class="logo-header"
@@ -80,10 +80,10 @@
         <div class="container">
           <div class="hero-headers">
           <h1 class="main-header">Your life is your message to the world. Make it inspiring!</h1>
-          <h3 class="third-header">Where ideas become reality</h3>
+          <h3 class="third-header">---</h3>
           <p class="add-hero-info">Web and application development for personal brands and service providers to inspire wellness and mindfulness</p>
         </div>
-          <button type="button" class="button-style">Have questions?</button>
+          <button type="button" class="button-style">More</button>
           <div class="dark-hero"></div>
           <div class="photo-hero">
             <img src="/images/hero/photo.jpg">
@@ -177,7 +177,12 @@
       <!-- section 3 our portfolio -->
 
       <section class="section-three-our-portfolio" id="portfolio">
-        <div class="container">
+        <div class="container"> 
+          <a class="up-to-header" href="#header" aria-label="Scroll to header">
+            <svg class="scroll up" aria-hidden="true" width="64" height="64">
+              <use href="./images/icons.svg#arrow-icon" ></use>
+            </svg>
+          </a>
           <h2 class="second-header">Projects</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
@@ -432,7 +437,7 @@
           </ul>
         </div>
         <div class="subscribe-section">
-          <p class="subscribe-label">Subscribe</p>
+          <!-- <p class="subscribe-label">Leave a review</p>
           <form class="subscribe-wrapper">
             <label class="subscribe">
               <input
@@ -442,12 +447,12 @@
                 placeholder="E-mail"
                 required
               />
-            </label>
+            </label> -->
             <button class="subscribe-button" type="submit">
-              Subscribe
-              <svg width="24" height="24" class="telegram-icon">
+              Leave a review
+              <!-- <svg width="24" height="24" class="telegram-icon">
                 <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
+              </svg> -->
             </button>
           </form>
         </div>
