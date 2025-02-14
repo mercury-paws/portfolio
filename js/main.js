@@ -23,7 +23,7 @@ portfolio.addEventListener("click", () => {
 const backdropUser = document.querySelector(".backdrop-user");
 const isOpen = document.querySelector(".is-open");
 const closeIcon = document.querySelector(".close-icon");
-const orderService = document.querySelector(".button-style");
+const orderService = document.querySelector(".subscribe-button");
 const sendOrder = document.querySelector(".form-button");
 
 orderService.addEventListener("click", () => {

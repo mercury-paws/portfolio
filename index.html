@@ -83,7 +83,7 @@
           <h3 class="third-header">---</h3>
           <p class="add-hero-info">Web and application development for personal brands and service providers to inspire wellness and mindfulness</p>
         </div>
-          <button type="button" class="button-style">More</button>
+          <a class="button-style" href="./pages/aboutMe.html">More</a>
           <div class="dark-hero"></div>
           <div class="photo-hero">
             <img src="/images/hero/photo.jpg">
@@ -188,18 +188,13 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  srcset="
-                  ./images/portfolio/mobile-app.jpg 360w,
-                  ./images/portfolio/mobile-app-mob.jpg 288w,
-                  ./images/portfolio/mobile-app-tab.jpg 356w,
-                  ./images/portfolio/mobile-app@2x.jpg 720w,
-                  ./images/portfolio/mobile-app-mob@2x.jpg 576w,
-                  ./images/portfolio/mobile-app-tab@2x.jpg 712w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
-                  src="./images/portfolio/mobile-app.jpg"
+                  
+                  
+                  class="img-portfolio"
+                  src="./images/portfolio/water-app.png"
                   alt="mobile-app"
                   width="360"
+
                 />
                 <div class="text-overlay">
                   <p>Sharing healthy habbits</p>
@@ -223,17 +218,9 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                srcset="
-                  ./images/portfolio/payment-with-mobile.jpg 360w,
-                  ./images/portfolio/payment-with-mobile-mob.jpg 288w,
-                  ./images/portfolio/payment-with-mobile-tab.jpg 356w,
-                  ./images/portfolio/payment-with-mobile@2x.jpg 720w,
-                  ./images/portfolio/payment-with-mobile-mob@2x.jpg 576w,
-                  ./images/portfolio/payment-with-mobile-tab@2x.jpg 712w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
-                  src="./images/portfolio/payment-with-mobile.jpg"
+                  src="./images/portfolio/cat-app.png"
                   alt="payment-with-mobile"
+                  class="img-portfolio"
                   width="360"
                 />
                 <div class="text-overlay">
@@ -259,17 +246,18 @@
               <div class="image-overlay">
                 <img
                 srcset="
-                  ./images/portfolio/laptop-and-mobile-app.jpg 360w,
-                  ./images/portfolio/laptop-and-mobile-app-mob.jpg 288w,
-                  ./images/portfolio/laptop-and-mobile-app-tab.jpg 356w,
-                  ./images/portfolio/laptop-and-mobile-app@2x.jpg 720w,
-                  ./images/portfolio/laptop-and-mobile-app-mob@2x.jpg 576w,
-                  ./images/portfolio/laptop-and-mobile-app-tab@2x.jpg 712w
+                  ./images/portfolio/sleeve-des-one.jpg 360w,
+                  ./images/portfolio/sleeve-mob.jpg 288w,
+                  ./images/portfolio/sleeve-tab.jpg 356w,
+                  ./images/portfolio/sleeve-des-one@2x.jpg 720w,
+                  ./images/portfolio/sleeve-mob@2x.jpg 576w,
+                  ./images/portfolio/sleeve-tab@2x.jpg 712w
                   "
                   sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
-                  src="./images/portfolio/laptop-and-mobile-app.jpg"
+                  src="./images/portfolio/sleeve-des-one.jpg"
                   alt="laptop-and-mobile-app"
                   width="360"
+                  class="img-portfolio"
                 />
                 <div class="text-overlay">
                   <p>Sharing culture</p>
@@ -291,17 +279,18 @@
               <div class="image-overlay">
                 <img
                 srcset="
-                  ./images/portfolio/driving-in-a-car-navigationg-with-mobile.jpg 360w,
-                  ./images/portfolio/driving-in-a-car-navigationg-with-mobile-mob.jpg 288w,
-                  ./images/portfolio/driving-in-a-car-navigationg-with-mobile-tab.jpg 356w,
-                  ./images/portfolio/driving-in-a-car-navigationg-with-mobile@2x.jpg 720w,
-                  ./images/portfolio/driving-in-a-car-navigationg-with-mobile-mob@2x.jpg 576w,
-                  ./images/portfolio/driving-in-a-car-navigationg-with-mobile-tab@2x.jpg 712w
+                  ./images/portfolio/choc-comp.jpg 360w,
+                  ./images/portfolio/choc-mob.jpg 288w,
+                  ./images/portfolio/choc-tab.jpg 356w,
+                  ./images/portfolio/choc-comp@2x.jpg 720w,
+                  ./images/portfolio/choc-mob@2x.jpg 576w,
+                  ./images/portfolio/choc-tab@2x.jpg 712w
                   "
                   sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
-                  src="./images/portfolio/driving-in-a-car-navigationg-with-mobile.jpg"
+                  src="./images/portfolio/choc-comp.jpg"
                   alt="driving-in-a-car-navigationg-with-mobile"
                   width="360"
+                  class="img-portfolio"
                 />
                 <div class="text-overlay">
                   <p>Sharing taste</p>
@@ -335,6 +324,7 @@
                   src="./images/portfolio/mobile-back-pic.jpg"
                   alt="mobile-back-pic"
                   width="360"
+                  class="img-portfolio"
                 />
                 <div class="text-overlay">
                   <p>Sharing space</p>
@@ -368,6 +358,7 @@
                   src="./images/portfolio/girl-in-orange-listening-the-music.jpg"
                   alt="girl-in-orange-listening-the-music"
                   width="360"
+                  class="img-portfolio"
                 />
                 <div class="text-overlay">
                   <p>Sharing health</p>
@@ -454,7 +445,7 @@
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg> -->
             </button>
-          </form>
+          <!-- </form> -->
         </div>
       </div>
     </footer>
@@ -466,11 +457,9 @@
           </svg>
         </button>
         <p class="explanation-of-form-text">
-          Have the idea that can help but don't know how to start a web?
+          Write down your thoughts about our work!
         </p>
-        <p class="explanation-of-form-text">
-          Write me and we'll figure something out!
-        </p>
+        
 
         <form class="form " name="leave-your-contacts" autocomplete="off">
           <div class="input-svg-wrapper">
@@ -488,7 +477,7 @@
               </svg>
             </div>
           </div>
-          <div class="input-svg-wrapper">
+          <!-- <div class="input-svg-wrapper">
             <label class="form-label" for="user-phone">Phone</label>
             <div class="input-svg-relative">
               <input
@@ -502,7 +491,7 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-          </div>
+          </div> -->
           <div class="input-svg-wrapper">
             <label class="form-label" for="user-email">Email</label>
             <div class="input-svg-relative">

@@ -58,6 +58,7 @@ ul {
 
 img {
   display: block;
+
 }
 .visually-hidden {
   position: absolute;
@@ -71,6 +72,11 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img.img-portfolio{
+  object-fit:cover;
+  height: 300px;
 }
 
 /*================================== /COMMON STYLES================================== */
@@ -294,19 +300,21 @@ header {
   flex-direction: column;
   gap: 50px;
 }
-.button-style {
+a.button-style {
   background-color: #4d5ae5;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  max-width: 169px;
+  width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .backdrop-user.mobile > .modal-user {
@@ -865,20 +873,14 @@ input::placeholder {
     display: inline-block;
   }
 
-  .button-style {
+  a.button-style {
     background-color: #4d5ae5;
-    display: block;
     cursor: pointer;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    min-width: 169px;
+    width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin: 0 auto;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -1280,16 +1282,10 @@ input::placeholder {
     gap: 18px;
   }
 
-  .button-style {
+  a.button-style {
     background-color: #4d5ae5;
-    display: block;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    min-width: 269px;
+ 
+   width: 269px;
     height: 56px;
     border: none;
     border-radius: 8px;
