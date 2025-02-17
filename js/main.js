@@ -30,10 +30,17 @@ orderService.addEventListener("click", () => {
   backdropUser.classList.toggle("is-open");
 });
 
-sendOrder.addEventListener("click", () => {
-  backdropUser.classList.toggle("is-open");
+backdropUser.addEventListener('click', (event) => {
+  if (event.target === backdropUser) {
+    backdropUser.classList.toggle("is-open");
+  }
 });
+
+// sendOrder.addEventListener("click", () => {
+//   backdropUser.classList.toggle("is-open");
+// });
 
 closeIcon.addEventListener("click", () => {
   backdropUser.classList.toggle("is-open");
 });
+
