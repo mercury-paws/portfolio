@@ -260,12 +260,12 @@ box-shadow:  -30px 0 60px #dbdbdb;
     border-radius: 50%;
     border: 1px solid #555;
     transition: 0.5s; 
+    background-color:#dbdbdb;
 }
 
 .buttons button:hover{
-    background-color: transparent;
-    
-        fill: #c88746;
+    background-color: #dbdbdb;
+        fill: #31d0aa;
         cursor: pointer;
       
 }

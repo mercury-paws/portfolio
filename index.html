@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/reviews.css" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="./js/main.js" defer type="module"></script>
-    <script src="./js/comments.js" defer type="module"></script>
+    <script src="./js/leaveReview.js" defer type="module"></script>
   </head>
 
   <body>
@@ -106,7 +106,6 @@
               </svg>
             </button>
             <div class="received-comment"><p class="client-text-review">"Working with you was an absolute pleasure! You truly understood my vision and translated it into a stunning, platform that exceeded my expectations."</p>
-            
             <p class="client-name">Alice</p>
           </div>
             
@@ -175,7 +174,7 @@
         </div>
       </section>
 
-      <!-- section 3 our portfolio -->
+      <!-- section 3 portfolio -->
 
       <section class="section-three-our-portfolio" id="portfolio">
         <div class="container"> 
@@ -189,18 +188,14 @@
             <li class="portfolio-list-item">
               <div class="image-overlay">
                 <img
-                  
-                  
                   class="img-portfolio"
                   src="./images/portfolio/water-app.png"
-                  alt="mobile-app"
+                  alt="water-app-pic"
                   width="360"
-
                 />
                 <div class="text-overlay">
                   <p>Sharing healthy habbits</p>
                   <ul>
-                    
                     <li>· User-Friendly Design</li>
                     <li>· React</li>
                     <li>· Redux</li>
@@ -208,7 +203,7 @@
                     <li>· Express</li>
                     <li>· MongoDB</li>
                   </ul>
-                 
+                  <a target="_blank" href="https://water-app-f.vercel.app/" class="go-to-web-link">Go to web</a>
                 </div>
               </div>
               <div class="application-category-info">
@@ -232,9 +227,9 @@
                     <li>· Grid</li>
                     <li>· Ideation</li>
                     <li>· Figma</li>
-                    <li>· Node</li>
-                    <li>· Express</li>
+                    <li>· Node/Express</li>
                   </ul>
+                  <a target="_blank" href="https://mercury-paws.github.io/cat-web/" class="go-to-web-link">Go to web</a>
                 </div>
               </div>
 
@@ -264,11 +259,13 @@
                   <p>Sharing culture</p>
                   <ul>
                     <li>· Flat-Page Design</li>
+                    <li>· HTML/CSS</li>
+                    <li>· Groupwork</li>
                     <li>· JS</li>
                     <li>· Ideation</li>
-                    <li>· Digma</li>
-                    
+                    <li>· Figma</li>
                   </ul>
+                  <a target="_blank" href="https://juliase4.github.io/vyshyvanka-vibes-team-20/" class="go-to-web-link">Go to web</a>
                 </div>
               </div>
               <div class="application-category-info">
@@ -303,6 +300,7 @@
                     <li>· Node</li>
                     <li>· Express</li>
                   </ul>
+                  <a target="_blank" href="https://mercury-paws.github.io/simply_chocolate/" class="go-to-web-link">Go to web</a>
                 </div>
               </div>
               <div class="application-category-info">
@@ -337,6 +335,7 @@
                     <li>· Node</li>
                     <li>· Express</li>
                   </ul>
+                  <a target="_blank" href="/" class="go-to-web-link">Coming soon</a>
                 </div>
               </div>
               <div class="application-category-info">
@@ -366,13 +365,12 @@
                   <ul>
                     <li>· User-fiendly Design</li>
                     <li>· JS</li>
-                    <li>· React</li>
-                    <li>· Redux</li>
-                    <li>· Node</li>
-                    <li>· Express</li>
+                    <li>· React/Redux</li>
+                    <li>· Node/Express</li>
                     <li>· mySQL</li>
                     <li>· Figma</li>
                   </ul>
+                  <a target="_blank" href="/" class="go-to-web-link">Coming soon</a>
                 </div>
               </div>
               <div class="application-category-info">
@@ -392,20 +390,20 @@
             >mercury<span class="studio-footer">paws</span></a
           >
           <p class="footer-text">
-            Create a meaningful life with tools that guide, inspire, and empower your choices.
+            Create a meaningful life with tools that guide, inspire, and empower.
           </p>
         </div>
         <div class="links-footer-section">
           <p class="media-text-footer">Social media</p>
           <ul class="social-links-list-footer">
             <li class="social-links-item-footer">
-              <a href="/" target="_blank" class="link">
+              <a href="https://github.com/mercury-paws" target="_blank" class="link">
                 <svg width="24" height="24" class="icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-links-item-footer">
+            <!-- <li class="social-links-item-footer">
               <a href="/" target="_blank" class="link">
                 <svg width="24" height="24" class="icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
@@ -418,9 +416,9 @@
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
+            </li> -->
             <li class="social-links-item-footer">
-              <a href="" target="_blank" class="link">
+              <a href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN" target="_blank" class="link">
                 <svg width="24" height="24" class="icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -460,8 +458,6 @@
         <p class="explanation-of-form-text">
           Write down your thoughts about our work!
         </p>
-        
-
         <form class="form" name="leave-your-contacts" autocomplete="off">
           <div class="input-svg-wrapper">
             <label class="form-label" for="user-name">Name</label>
@@ -576,7 +572,7 @@
         </address>
         <div class="social-links-modal-wrapper">
           <ul class="social-links-modal-list">
-            <li class="social-links-modal-item">
+            <!-- <li class="social-links-modal-item">
               <a href="/" target="_blank" class="link">
                 <svg width="24" height="24" class="icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
@@ -596,15 +592,14 @@
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-            </li>
+            </li> -->
             <li class="social-links-modal-item">
-              <a href="" target="_blank" class="link">
+              <a href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN" target="_blank" class="link">
                 <svg width="24" height="24" class="icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
-          </ul>
           </ul>
         </div>
       </div>

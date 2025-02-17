@@ -36,10 +36,6 @@ backdropUser.addEventListener('click', (event) => {
   }
 });
 
-// sendOrder.addEventListener("click", () => {
-//   backdropUser.classList.toggle("is-open");
-// });
-
 closeIcon.addEventListener("click", () => {
   backdropUser.classList.toggle("is-open");
 });

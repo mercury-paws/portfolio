@@ -47,7 +47,6 @@
       width: 24px;
       height: 24px;
       background-color: transparent;
-      /* border: solid 1px #2e2f42; */
       fill: #6d6e7e;
       border: none;
       display: flex;
@@ -59,36 +58,28 @@
 
     .slider-btn:hover .scroll,
     .slider-btn:focus .scroll{
-      fill: #c88746;
+      fill:#31d0aa;
       cursor: pointer;
     }
     .prev{
       left: 4px;
-      /* top: 50%; */
       top: calc(50% - 14px);
       transform: rotate(90deg);
 
     }
     .next{
       right: 4px;
-      /* top: calc(50% - 48px); */
       top: calc(50% - 14px);
       transform: rotate(-90deg);
     }
 
     .scroll {
-     width: 16px;
-     height: 16px;
+     width: 32px;
+     height: 32px;
       fill: #2e2f42;
-      background-color: transparent;
-      
+      background-color: transparent;  
     }
- 
- 
 
-    /* .text-review {
-      display: none;
-    } */
     
     .review-item.active {
       display: block;
@@ -148,18 +139,10 @@ font-weight: 300px;
     }
 
     .scroll {
-     width: 16px;
-     height: 16px;
-
-      
+     width: 32px;
+     height: 32px;
     }
- 
- 
 
-    /* .text-review {
-      display: none;
-    } */
-    
     .review-item.active {
       display: block;
     }
