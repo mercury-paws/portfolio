@@ -17,26 +17,3 @@ buttonClose.addEventListener("click", () => {
 portfolio.addEventListener("click", () => {
   backdrop.classList.toggle("is-open");
 });
-
-//////// order form
-
-const backdropUser = document.querySelector(".backdrop-user");
-const isOpen = document.querySelector(".is-open");
-const closeIcon = document.querySelector(".close-icon");
-const orderService = document.querySelector(".subscribe-button");
-const sendOrder = document.querySelector(".form-button");
-
-orderService.addEventListener("click", () => {
-  backdropUser.classList.toggle("is-open");
-});
-
-backdropUser.addEventListener('click', (event) => {
-  if (event.target === backdropUser) {
-    backdropUser.classList.toggle("is-open");
-  }
-});
-
-closeIcon.addEventListener("click", () => {
-  backdropUser.classList.toggle("is-open");
-});
-

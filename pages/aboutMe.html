@@ -20,9 +20,9 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/aboutMe.css" />
-    <script src="../js/sliderAboutMe.js" defer type="module"></script>
-    <script src="../js/leaveReview.js" defer type="module"></script>
-    <script src="../js/main.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/sliderAboutMe.js" type="module"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
   </head>
 
   <body>
@@ -61,7 +61,7 @@
         <address class="address-styles">
           <ul class="contact-us-list">
             <li class="contact-us-list-item">
-              <a class="contact-us" href="mailto:info@devstudio.com"
+              <a class="contact-us" href="mailto:anastasiia.kutsenkova@gmail.com"
                 >anastasiia.kutsenkova@gmail.com</a
               >
             </li>
@@ -80,13 +80,14 @@
       <!-- cloud section of team with images -->
 
       <section class="section-two-our-team about-me">
+        <h2 class="visually-hidden">about me</h2>
         <div class="container">
           <article class="about-me-article">
             <h1 class="visually-hidden">about me section</h1>
             <p class="aboutMe-header"><span class="spec-aboutMe">when</span> I was 11, I asked my mother, why do we live? This question has followed me ever since.</p>
           <p class="aboutMe-text">Have you ever asked yourself the same?</p>
           <p class="aboutMe-text">I strive to understand people, to explain.<span class="spec-aboutMe"> But</span> I struggle to forgive thoughtlessness. Too often, minds are consumed by self-preservation, acting out of ego rather than awareness.</p>
-          <p class="aboutMe-text">I seek those who want to live with purpose, to change, to learn, and to understand. I want to help express ideas, exchange knowledge, and share voices with the world. </p> <span class="spec-aboutMe">If</span> you resonate with this, with me and my personality shown below, or have a vision that can make a difference, reach out. Let's bring ideas to life.</p>
+          <p class="aboutMe-text">I seek those who want to live with purpose, to change, to learn, and to understand. I want to help express ideas, exchange knowledge, and share voices with the world.  <span class="spec-aboutMe">If</span> you resonate with this, with me and my personality shown below, or have a vision that can make a difference, reach out. Let's bring ideas to life.</p>
           <p>Welcome to my platform: Mercury Paws!</p>
         </article>
         <div class="img-container">
@@ -238,7 +239,7 @@
                 <use href="../images/icons.svg#icon-telegram"></use>
               </svg> -->
             </button>
-          </form>
+      
         </div>
       </div>
     </footer>
@@ -248,7 +249,7 @@
       <div class="modal-user">
         <button class="close-icon" type="button">
           <svg width="8" height="8" class="close-icon-svg">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="../images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="explanation-of-form-text">
@@ -328,10 +329,12 @@
                 </svg>
               </span>
               <p class="text-privacy-style">I accept the terms and conditions of the
-              <a href="" class="privacy-policy-text" target="_blank">
+              <a href="../pages/privacyPolicy.html" class="privacy-policy-text" target="_blank">
                 Privacy Policy
-              </a></p>
+              </a>
+            </p>
             </label>
+              
           </div>
           <button class="form-button" type="submit">Send</button>
         </form>

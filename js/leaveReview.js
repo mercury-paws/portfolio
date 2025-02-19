@@ -1,16 +1,37 @@
-// send comment
+'use strict'
 
+const isOpen = document.querySelector(".is-open");
+const closeIcon = document.querySelector(".close-icon");
+const orderService = document.querySelector(".subscribe-button");
 const sendOrder = document.querySelector(".form-button");
 const backdropUser = document.querySelector(".backdrop-user");
 const termsCheckbox = document.getElementById("user-privacy")
+const form = document.querySelector(".form")
+const STORAGE_KEY = 'contact-form-state';
+
+axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.withCredentials = true;
+
+
+orderService.addEventListener("click", () => {
+  backdropUser.classList.toggle("is-open");
+});
+
+backdropUser.addEventListener('click', (event) => {
+  if (event.target === backdropUser) {
+    backdropUser.classList.toggle("is-open");
+  }
+});
+
+closeIcon.addEventListener("click", () => {
+  backdropUser.classList.toggle("is-open");
+});
 
 function sanitizeInput(input) {
   const dangerousChars = /['"<>&]/g;
   return input.replace(dangerousChars, '');
 }
 
-const form = document.querySelector(".form")
-const STORAGE_KEY = 'feedback-form-state';
 
 function readFormData(form) {
   const email = form.email.value.trim();

@@ -20,7 +20,8 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/blog.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
   </head>
 
   <body>
@@ -178,4 +179,99 @@
         <img src="../images/footer/cat-paws.png" class="paws">
       </div>
     </footer>
+
+         <!-- review -->
+         <div class="backdrop-user mobile">
+          <div class="modal-user">
+            <button class="close-icon" type="button">
+              <svg width="8" height="8" class="close-icon-svg">
+                <use href="../images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <p class="explanation-of-form-text">
+              Write down your thoughts about our work!
+            </p>
+            <form class="form" name="leave-your-contacts" autocomplete="off">
+              <div class="input-svg-wrapper">
+                <label class="form-label" for="user-name">Name</label>
+                <div class="input-svg-relative">
+                  <input
+                    class="form-input"
+                    id="user-name"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <svg width="18" height="24" class="input-icon">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </div>
+              </div>
+              <!-- <div class="input-svg-wrapper">
+                <label class="form-label" for="user-phone">Phone</label>
+                <div class="input-svg-relative">
+                  <input
+                    class="form-input"
+                    id="user-phone"
+                    type="text"
+                    name="phone"
+                    required
+                  />
+                  <svg width="18" height="24" class="input-icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div> -->
+              <div class="input-svg-wrapper">
+                <label class="form-label" for="comment-user-email">Email</label>
+                <div class="input-svg-relative">
+                  <input
+                    class="form-input"
+                    id="comment-user-email"
+                    type="email"
+                    name="email"
+                    required
+                    pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                    title="Please enter a valid email address (e.g. user@example.com)"
+                  />
+                  <svg width="18" height="24" class="input-icon">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="review-form-field-wrapper">
+                <label class="form-label" for="user-comment"> Comment </label>
+                <textarea
+                  class="review-form-field-message"
+                  name="comment"
+                  rows="5"
+                  placeholder="Text input"
+                  id="user-comment"
+                ></textarea>
+              </div>
+              <div class="review-form-checkbox-wrapper">
+                <input
+                  class="terms-conditions-checkbox visually-hidden"
+                  type="checkbox"
+                  name="user-privacy"
+                  value="true"
+                  required
+                  id="user-privacy"
+                />
+                <label class="terms-conditions" for="user-privacy">
+                  <span class="input-checkbox-icon">
+                    <svg width="10" height="8" class="checkbox-icon">
+                      <use href="../images/icons.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  <p class="text-privacy-style">I accept the terms and conditions of the
+                  <a href="../pages/privacyPolicy.html" class="privacy-policy-text" target="_blank">
+                    Privacy Policy
+                  </a></p>
+                </label>
+              </div>
+              <button class="form-button" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
     </body>

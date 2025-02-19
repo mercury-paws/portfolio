@@ -22,8 +22,9 @@
     <link rel="stylesheet" href="./css/styles.css" >
     <link rel="stylesheet" href="./css/reviews.css" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
-    <script src="./js/main.js" defer type="module"></script>
-    <script src="./js/leaveReview.js" defer type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/comments.js" type="module"></script>
+    <script src="./js/leaveReview.js" type="module"></script>
   </head>
 
   <body>
@@ -62,7 +63,7 @@
         <address class="address-styles">
           <ul class="contact-us-list">
             <li class="contact-us-list-item">
-              <a class="contact-us" href="mailto:info@devstudio.com"
+              <a class="contact-us" href="mailto:anastasiia.kutsenkova@gmail.com"
                 >anastasiia.kutsenkova@gmail.com</a
               >
             </li>
@@ -87,7 +88,7 @@
           <a class="button-style" href="./pages/aboutMe.html">More</a>
           <div class="dark-hero"></div>
           <div class="photo-hero">
-            <img src="/images/hero/photo.jpg">
+            <img src="/images/hero/photo.jpg" alt="hero main picture">
           </div>
           <svg class="waves" width="500" height="500" aria-hidden="true">
             <use href="./images/icons.svg#waves-icon" width="500" height="500"></use>
@@ -98,6 +99,7 @@
       <!-- white section with  good skills -->
       <section class="client-reviews">
         <div class="container">
+          <h2 class="visually-hidden">skills</h2>
           <div class="client-review">
             <button id="prevBtn" class="slider-btn prev" aria-label="Previous Slide"
             type="button">
@@ -335,7 +337,8 @@
                     <li>· Node</li>
                     <li>· Express</li>
                   </ul>
-                  <a target="_blank" href="/" class="go-to-web-link">Coming soon</a>
+                  <!-- <a target="_blank" href="/" class="go-to-web-link">Coming soon</a> -->
+                  <p class="go-to-web-link">Coming soon</p>
                 </div>
               </div>
               <div class="application-category-info">
@@ -370,7 +373,8 @@
                     <li>· mySQL</li>
                     <li>· Figma</li>
                   </ul>
-                  <a target="_blank" href="/" class="go-to-web-link">Coming soon</a>
+                  <!-- <a target="_blank" href="/" class="go-to-web-link">Coming soon</a> -->
+                   <p class="go-to-web-link">Coming soon</p>
                 </div>
               </div>
               <div class="application-category-info">
@@ -514,6 +518,7 @@
               rows="5"
               placeholder="Text input"
               id="user-comment"
+              title="Please enter from 10 till 210 "
             ></textarea>
           </div>
           <div class="review-form-checkbox-wrapper">
@@ -532,7 +537,7 @@
                 </svg>
               </span>
               <p class="text-privacy-style">I accept the terms and conditions of the
-              <a href="" class="privacy-policy-text" target="_blank">
+              <a href="./pages/privacyPolicy.html" target="_blank" class="privacy-policy-text" target="_blank">
                 Privacy Policy
               </a></p>
             </label>
@@ -558,14 +563,14 @@
         </ul>
         <address class="address-styles-mobile-backdrop">
           <ul class="contact-us-list">
-            <li class="contact-us-list-item">
+            <!-- <li class="contact-us-list-item">
               <a class="contact-us tel" href="tel:+110001111111">
                 +11 (000) 111-11-11</a
               >
-            </li>
+            </li> -->
             <li class="contact-us-list-item">
-              <a class="contact-us mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="contact-us mail" href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova@gmail.com</a
               >
             </li>
           </ul>

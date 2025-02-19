@@ -277,7 +277,9 @@ header {
 .waves{
   display: none;
 }
-
+.third-header{
+  display: none;
+}
 .add-hero-info{
   display: none;
 }
@@ -328,10 +330,10 @@ a.button-style {
   line-height: none;
 }
 .review-form-checkbox-wrapper {
-  max-width: 256px;
+  max-width: 351px;
 }
 .text-privacy-style {
-  max-width: 231px;
+  max-width: 351px;
 }
 .modal-user {
   top: 8px;
@@ -573,7 +575,7 @@ img {
 }
 .up-to-header:hover,
 .up-to-header:focus{
-  background-color: #1b886f;
+  background-color: #31d0aa;
 }
 
 .up-to-header .up{
@@ -1311,8 +1313,8 @@ input::placeholder {
   }
   button:hover,
   button:focus{
-    /* background-color: #31d0aa; */
-    background-color:#be8047;
+    background-color: #31d0aa;
+    /* background-color:#be8047; */
   }
 
   .subscribe-button:hover{
@@ -1810,6 +1812,9 @@ input:checked {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .review-form-checkbox-wrapper {
   display: inline-flex;
@@ -1835,6 +1840,7 @@ input:checked {
 }
 .privacy-policy-text {
   color: #4d5ae5;
+  
 }
 .checkbox-icon {
   cursor: pointer;
