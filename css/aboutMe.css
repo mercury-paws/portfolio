@@ -9,11 +9,27 @@
 .about-me > .container{
 display: flex;
 flex-direction: column;
+gap: 2px;
+justify-content: center;
+align-items: center;
+}
+
+.container > .img-and-article{
+display: flex;
+flex-direction: column;
 gap: 48px;
 justify-content: center;
 align-items: center;
-
 }
+
+.about-me-cv-edu{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 8px auto;
+}
+
+
 .img-container{
     width: 350px;
 
@@ -21,7 +37,6 @@ align-items: center;
 .about-me-article{
     margin-top: 8px;
     margin-left: 26px;
-
     padding: 6px 16px 16px 16px;
     /* border-top: 1px solid #fafafa;
     border-left: 1px solid #fafafa; 
@@ -37,8 +52,20 @@ align-items: center;
     height: 100%;
     object-fit: cover;
   }
+
+  .aboutMe-header{
+    /* font-style: italic; */
+    text-indent: 20px;
+    margin-top: 8px;
+    font-family: "Bilbo", serif;
+  font-weight: 400;
+  font-size: 34px;
+  font-style: normal;
+  }
+
   .aboutMe-text{
-position: relative;
+    position: relative;
+    margin-top: 24px;
   }
 
 .spec-aboutMe{
@@ -52,7 +79,7 @@ position: relative;
 
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-    .about-me > .container{
+    .container > .img-and-article{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -91,7 +118,7 @@ position: relative;
 }
   
   @media screen and (min-width: 1158px) {
-    .about-me > .container{
+    .container > .img-and-article{
         display: flex;
         flex-direction: row;
         justify-content: space-between;

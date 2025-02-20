@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+   
+<link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -79,22 +81,30 @@
 
       <!-- cloud section of team with images -->
 
-      <section class="section-two-our-team about-me">
-        <h2 class="visually-hidden">about me</h2>
-        <div class="container">
-          <article class="about-me-article">
-            <h1 class="visually-hidden">about me section</h1>
-            <p class="aboutMe-header"><span class="spec-aboutMe">when</span> I was 11, I asked my mother, why do we live? This question has followed me ever since.</p>
-          <p class="aboutMe-text">Have you ever asked yourself the same?</p>
-          <p class="aboutMe-text">I strive to understand people, to explain.<span class="spec-aboutMe"> But</span> I struggle to forgive thoughtlessness. Too often, minds are consumed by self-preservation, acting out of ego rather than awareness.</p>
-          <p class="aboutMe-text">I seek those who want to live with purpose, to change, to learn, and to understand. I want to help express ideas, exchange knowledge, and share voices with the world.  <span class="spec-aboutMe">If</span> you resonate with this, with me and my personality shown below, or have a vision that can make a difference, reach out. Let's bring ideas to life.</p>
-          <p>Welcome to my platform: Mercury Paws!</p>
+    <section class="section-two-our-team about-me">
+      <h2 class="visually-hidden">about me</h2>
+      <div class="container">
+        <div class="img-and-article">
+        <article class="about-me-article">
+          <h1 class="visually-hidden">about me section</h1>
+          <h2 class="aboutMe-header">"If thou hearest the cry of the gull on the shore, Thy heart shall then rest in the forest no more."</h2>
+          <div class="aboutMe-text">
+          <p class="text">Once we start seeking truth, we can never return to ignorance.</p>
+          <p class="text">I seek peace and understanding and want to share it with like-minded souls.</p>
+          <p class="text">I question life and human nature <span class="spec-aboutMe"> but</span> struggle to forgive thoughtlessness driven by ego.</p>
+          <p class="text">I am building this platform for those who seek change, knowledge, and connection. I want to help express ideas and share voices with the world. <span class="spec-aboutMe">If</span> you resonate with this, with my personality, or have a vision worth sharing, reach out. Let's bring ideas to life.</p>
+         </div>
         </article>
         <div class="img-container">
           <img src="../images/aboutMe/photo.jpg" class="my-photo" alt="My Photo ibn the forest" >
         </div>
-          
+      </div>
+          <ul class="about-me-cv-edu">
+            <li>My education</li>
+            <li>My CV</li>
+          </ul>
         </div>
+        
       </section>
 
       <section class="section-my-interests">
@@ -147,6 +157,14 @@
                   <div class="content">
                     <div class="name">Hiking</div>
                     <div class="des">Walking through forests and over hills clears the mind, strengthens the body, and reminds me how small yet connected we are to nature.
+                    </div>
+                    <!-- <button>see more</button> -->
+                  </div>
+                </div>
+                <div class="item" style="background-image: url(../images/slider/programming.jpg)">
+                  <div class="content">
+                    <div class="name">Programming</div>
+                    <div class="des">I started seeing the world as interconnected through numbers, laws, and dependencies — this led me to programming. I see it as a tool to create and share ideas, knowledge, help.
                     </div>
                     <!-- <button>see more</button> -->
                   </div>
@@ -267,7 +285,7 @@
                 required
               />
               <svg width="18" height="24" class="input-icon">
-                <use href="./images/icons.svg#icon-person"></use>
+                <use href="../images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
@@ -299,7 +317,7 @@
                 title="Please enter a valid email address (e.g. user@example.com)"
               />
               <svg width="18" height="24" class="input-icon">
-                <use href="./images/icons.svg#icon-email"></use>
+                <use href="../images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -325,7 +343,7 @@
             <label class="terms-conditions" for="user-privacy">
               <span class="input-checkbox-icon">
                 <svg width="10" height="8" class="checkbox-icon">
-                  <use href="./images/icons.svg#icon-check"></use>
+                  <use href="../images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               <p class="text-privacy-style">I accept the terms and conditions of the
