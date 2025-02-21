@@ -222,6 +222,7 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  
 }
 .address-styles-mobile-backdrop {
   margin-bottom: 48px;
@@ -563,7 +564,7 @@ img {
 .up-to-header{
   position: absolute;
   top: calc(100% - 62px);
-  left: calc(100% - 31px);
+  left: calc(100% - 76px);
   background-color:#31d0aa;
   cursor: pointer;
   width: 62px;
@@ -613,7 +614,17 @@ img {
   gap: 72px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
+.paws{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 30%;
+  left:70%;
+  z-index: 999;
+  transform: rotate(15deg);
+ }
 
 .footer-text {
   color: #f4f4fd;
@@ -645,10 +656,19 @@ img {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .links-footer-section {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 208px;
   margin: 0 auto;
+}
+
+.logo-text-footer {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  justify-content: center;
+  align-items: center;
 }
 .media-text-footer {
   margin-bottom: 16px;
@@ -958,7 +978,7 @@ input::placeholder {
     margin: 0 auto;
   }
   .up-to-header{
-    left: calc(100% - 31px);
+    left: calc(100% - 76px);
   }
   .portfolio-list {
     flex-wrap: wrap;
@@ -986,18 +1006,25 @@ input::placeholder {
     row-gap: 72px;
     justify-content: flex-start;
     align-items: flex-start;
+    position: relative;
   }
+  .paws{
+    position: absolute;
+    width: 80px;
+    height: 150px;
+    top: 40%;
+    left:70%;
+    z-index: 999;
+    transform: rotate(15deg);
+   }
   .links-footer-section {
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
   .media-text-footer {
     text-align: start;
   }
   .logo-text-footer {
-    display: flex;
-    flex-direction: column;
-    width: 264px;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -1431,7 +1458,7 @@ input::placeholder {
     row-gap: 48px;
   }
   .up-to-header{
-    left: calc(100% - 31px);
+    left: calc(100% - 76px);
   }
 
   /*================================== /SECTION THREE OUR PORTFOLIO STYLES================================== */
@@ -1444,7 +1471,18 @@ input::placeholder {
     justify-content:space-evenly;
     flex-direction: row;
     align-items: center;
+    position: relative;
   }
+
+  .paws{
+    position: absolute;
+    width: 80px;
+    height: 150px;
+    top: 0;
+    left:70%;
+    z-index: 999;
+    transform: rotate(15deg);
+   }
 
   .footer-text {
     color: #f4f4fd;
@@ -1485,6 +1523,11 @@ input::placeholder {
   }
   .social-links-list-footer .icon {
     fill: #f4f4fd;
+  }
+
+  .logo-text-footer {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .subscribe-wrapper {
@@ -1836,6 +1879,12 @@ input:checked {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  
+}
+
+span.input-checkbox-icon{
+  flex-shrink: 0; flex-grow: 0; 
+  flex-basis: auto;
 }
 .privacy-policy-text {
   color: #4d5ae5;

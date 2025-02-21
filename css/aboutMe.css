@@ -38,13 +38,6 @@ align-items: center;
     margin-top: 8px;
     margin-left: 26px;
     padding: 6px 16px 16px 16px;
-    /* border-top: 1px solid #fafafa;
-    border-left: 1px solid #fafafa; 
-    box-shadow: -5px -5px 8px rgba(0, 0, 0, 0.2); */
-    /* display: flex;
-    flex-direction: column; */
-    /* gap: 56px; */
-
 }
 
   .my-photo {
@@ -54,7 +47,6 @@ align-items: center;
   }
 
   .aboutMe-header{
-    /* font-style: italic; */
     text-indent: 20px;
     margin-top: 8px;
     font-family: "Bilbo", serif;
@@ -75,7 +67,9 @@ align-items: center;
     font-weight: bold;
 }
 
-
+.education-link{
+    color:#2e2f42;
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {

@@ -80,16 +80,9 @@ margin: 0 auto;
     font-size: 16px;
   }
 
-  .container-footer {
-position: relative;
-  }
-
-  .paws{
-   position: absolute;
-   width: 50px;
-   height: 50px;
-   top: 20%;
-   left:90%;
-   z-index: 999;
-   transform: rotate(15deg);
+  .blog-item-btn:hover,
+  .blog-item-btn:focus,
+  .blog-item-btn:active{
+    background-color: transparent;
+    cursor: pointer;
   }

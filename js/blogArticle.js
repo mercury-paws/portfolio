@@ -21,7 +21,6 @@ async function fetchArticle(id) {
     }
 
     const article = await fetchArticle(blogId);
-    console.log(article)
     if (article) {
         document.getElementById("article-title").textContent = article.title;
         document.getElementById("article-header").textContent = article.header;

@@ -1,0 +1,104 @@
+.education-section{
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.04),
+      rgba(46, 47, 66, 0.04)
+    ),
+    url(../images/education/education1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.education-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: radial-gradient(circle, 
+    rgba(252, 248, 243, 0.5), 
+    rgba(252, 248, 243, 0.5), 
+    rgba(255, 223, 186, 0.01)); */
+}
+.education-item{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    min-width: 310px;
+    /* background-color:rgb(252, 248, 243, 0.5); */
+    
+}
+
+.certificate{
+    width: 150px;
+    border-right: 1px solid;
+    background-color: azure;
+    padding: 0 32px 0 0;
+    background-color:transparent;
+    object-fit: cover;
+}
+
+.certificate-text{
+    text-align: start;
+    padding: 0 0 0 22px;
+    min-width: 130px;
+    color:black;
+    background: radial-gradient(circle, 
+    rgba(252, 248, 243, 0.7), 
+   
+    rgba(255, 223, 186, 0.1));
+}
+
+.aboutMe::after {
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    left: 0;
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 2px;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .education-section{
+        padding: 32px 6px;
+    }
+    .education-item{
+        min-width: 750px;
+    }
+
+    .certificate{
+        width: 250px; 
+    }
+    
+    .certificate-text{
+        min-width: 430px;
+        font-size: 24px;
+        text-align: center;
+    } 
+}
+
+@media screen and (min-width: 1158px) {
+
+    
+    .education-section{
+        padding: 64px 6px;
+    }
+    .education-item{
+        min-width: 1100px;
+    }
+
+    .certificate{
+        width: 350px; 
+    }
+    
+    .certificate-text{
+        min-width: 720px;
+        font-size: 32px;
+        text-align: center;
+    } 
+    
+}
