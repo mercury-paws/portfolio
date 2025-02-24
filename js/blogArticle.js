@@ -23,7 +23,7 @@ async function fetchArticle(id) {
     const article = await fetchArticle(blogId);
     if (article) {
         document.getElementById("article-title").textContent = article.title;
-        document.getElementById("article-header").textContent = article.header;
+        document.getElementById("article-text").innerHTML = article.text;
         document.getElementById("article-date").textContent = article.date;
     }
 }

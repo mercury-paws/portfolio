@@ -1,20 +1,21 @@
 .contact-active::after {
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    left: 0;
-    position: absolute;
-    display: block;
-    content: "";
-    border-radius: 2px;
-  }
-  .active-page {
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  left: 0;
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 2px;
+}
 
-  .contact-form-section{
-    background-image: linear-gradient(
+.active-page {
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-section {
+  background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.04),
       rgba(46, 47, 66, 0.04)
@@ -23,211 +24,205 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  }
+}
 
-  .inline-input {
-    all: unset;
-    border-bottom: 1px solid #000; /* Add the underscore effect */
-    width: 250px; /* Adjust width based on your needs */
-    font-size: 24px; /* Match the text size */
-    font-weight: lighter;
-    font-style: italic;
-    margin: 0 4px; /* Add spacing around the input */
-    padding: 0;
-    text-align: left;
-  }
-  
-  .inline-input:focus {
-    outline: none; /*Remove the focus outline
-    /* border-bottom: 1px solid #404bbf; Change underline color on focus */
-  }
+.inline-input {
+  all: unset;
+  border-bottom: 1px solid #000;
+  width: 250px;
+  font-size: 24px;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 0 4px;
+  padding: 0;
+  text-align: left;
+}
 
-  .contact-form {
-    padding: 72px 16px 72px 16px;
-    width: 288px;
-    border-radius: 2px;
-    background-color: #fafafa;
-    box-shadow: 
-    -5px -5px 10px rgba(0, 0, 0, 0.14);
-  }
+.inline-input:focus {
+  outline: none;
+}
 
-  .contact-form-container{
+.contact-form {
+  padding: 72px 16px 72px 16px;
+  width: 288px;
+  border-radius: 2px;
+  background-color: #fafafa;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.14);
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.7;
+  justify-content: center;
+}
+
+.contact-form-header {
+  font-size: 52px;
+  width: 152px;
+  line-height: 0.9;
+  color: #4d5ae5;
+  margin: 0 0 16px 0;
+}
+
+.contact-form-header span {
+  margin-left: 16px;
+  color: #434455;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #797a83;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  opacity: 0.5;
+}
+
+.contact-form-button {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  margin-top: 16px;
+  display: block;
+  margin: 36px 0 0 174px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form-button:hover,
+.contact-form-button:focus,
+.contact-form-button:active {
+  background-color: transparent;
+}
+
+.pretty-square {
+  display: none;
+}
+
+.contact-review-form-checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 351px;
+  margin-top: 16px;
+}
+.contact-text-privacy-style {
+  max-width: 351px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1157px) {
+  .contact-form-container {
     display: flex;
     flex-direction: row;
     line-height: 1.7;
     justify-content: center;
   }
 
-  .contact-form-header{
-    font-size: 52px;
-    width: 152px;
-    line-height: 0.9;
-    color: #4d5ae5; 
-    margin: 0 0 16px 0;
+  .terms-conditions {
+    text-align: start;
   }
 
-  .contact-form-header span{
-    margin-left: 16px;
-    color: #434455;
+  .contact-form {
+    width: 388px;
+    padding: 72px 32px 42px 32px;
   }
 
-  input::placeholder,
-  textarea::placeholder {
-    color: #797a83;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.48px;
-    opacity: 0.5;
+  .inline-input {
+    width: 322px;
+    font-size: 24px;
   }
 
-  .contact-form-button{
-    background-color: transparent;
-    border: none;
-    font-size: 32px;
-    margin-top: 16px;
+  .contact-form-button {
+    margin-left: 248px;
+  }
+
+  .say-hello-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 26px 36px 42px 36px;
+    gap: 52px;
+  }
+
+  .pretty-square {
     display: block;
-    margin: 36px 0 0 174px;
-font-weight: bold;
-cursor: pointer;
+    width: 306px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.4),
+        rgba(46, 47, 66, 0.4)
+      ),
+      url(../images/contact/pero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
   }
+}
 
-  .contact-form-button:hover,
-  .contact-form-button:focus,
-  .contact-form-button:active{
-    background-color: transparent;
-  }
-
-  .pretty-square{
-display: none;
-  }
-
-  .contact-review-form-checkbox-wrapper {
+@media screen and (min-width: 1158px) {
+  .contact-form-container {
     display: flex;
     flex-direction: row;
+    width: 1086px;
     justify-content: center;
-    align-items: center;
-    max-width: 351px;
-    margin-top: 16px;
   }
-  .contact-text-privacy-style {
-    max-width: 351px;
+  .contact-form {
+    width: 628px;
+    padding: 72px;
   }
-  
-  @media screen and (min-width: 767px) and (max-width: 1157px) {
 
-    .contact-form-container{
-      display: flex;
-      flex-direction: row;
-      line-height: 1.7;
-      justify-content: center;
-    }
+  .pretty-square {
+    display: block;
+    width: 458px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.4),
+        rgba(46, 47, 66, 0.4)
+      ),
+      url(../images/contact/pero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
 
-    .terms-conditions{
-      text-align: start;
-    }
+  .contact-form-email {
+    height: 52px;
+    position: absolute;
+    background-color: #2a317c;
+    padding: 12px;
+    width: 170px;
+    top: calc(50% - 26px);
+    left: -10px;
+    display: none;
+  }
 
-    .contact-form {
-      width: 388px;
-      padding: 72px 32px 42px 32px;
-    }
+  .say-hello-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 36px 36px 72px 36px;
+    gap: 52px;
+  }
 
-    .inline-input {
-      width: 322px;
-      font-size: 24px; 
-    }
+  .contact-form {
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-    .contact-form-button{
-      margin-left: 248px;
+  .inline-input {
+    width: 450px;
+    font-size: 24px;
+  }
 
-    }
-
-    .say-hello-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-      padding: 26px 36px 42px 36px;
-      gap: 52px;
-    }
-
-    .pretty-square{
-      display: block;
-      width: 306px;
-      background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.4),
-      rgba(46, 47, 66, 0.4)
-    ),
-    url(../images/contact/pero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-      position: relative;
-    }
-
+  .contact-form-button {
+    margin: 36px 0 0 378px;
+  }
 }
- 
- @media screen and (min-width: 1158px) {
-    .contact-form-container{
-      display: flex;
-      flex-direction: row;
-      width: 1086px;
-      justify-content: center;
-    }
-    .contact-form {
-      width: 628px;
-      padding: 72px;
-    }
-    
-    .pretty-square{
-      display: block;
-      width: 458px;
-      background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.4),
-      rgba(46, 47, 66, 0.4)
-    ),
-    url(../images/contact/pero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-      position: relative;
-    }
-
-    .contact-form-email{
-      height: 52px;
-      position: absolute;
-      background-color:  #2a317c;
-      padding: 12px;
-      width: 170px;
-      top: calc(50% - 26px);
-      left: -10px;
-      display: none;
-    }
-
-    .say-hello-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-      padding: 36px 36px 72px 36px;
-      gap: 52px;
-    }
-
-    .contact-form{
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .inline-input {
-      width: 450px; /* Adjust width based on your needs */
-      font-size: 24px; /* Match the text size */
-    }
-
-    .contact-form-button{
-      margin: 36px 0 0 378px;
-
-    }
-  }

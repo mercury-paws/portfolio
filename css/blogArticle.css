@@ -1,0 +1,29 @@
+.blog-quote {
+  font-style: italic;
+  padding: 16px 0;
+}
+
+.blog-bold {
+  font-weight: bolder;
+}
+
+p {
+  text-indent: 30px;
+}
+
+.date-btn-block {
+  margin: 32px 0;
+}
+
+.blog-item-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.blog-item-btn:hover,
+.blog-item-btn:focus,
+.blog-item-btn:active {
+  background-color: transparent;
+  cursor: pointer;
+}
