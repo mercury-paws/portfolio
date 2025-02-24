@@ -1,7 +1,7 @@
 /*==================================COMMON STYLES================================== */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -17,12 +17,12 @@ a {
   text-decoration-line: none;
   font-style: #434455;
   font-style: normal;
-  
 }
 
 a:hover,
 a:focus {
-  color: #404bbf;cursor: pointer;
+  color: #404bbf;
+  cursor: pointer;
 }
 
 li {
@@ -58,7 +58,6 @@ ul {
 
 img {
   display: block;
-
 }
 .visually-hidden {
   position: absolute;
@@ -74,8 +73,8 @@ img {
   overflow: hidden;
 }
 
-img.img-portfolio{
-  object-fit:cover;
+img.img-portfolio {
+  object-fit: cover;
   height: 300px;
 }
 
@@ -222,7 +221,6 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  
 }
 .address-styles-mobile-backdrop {
   margin-bottom: 48px;
@@ -269,19 +267,19 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-.dark-hero{
+.dark-hero {
   display: none;
 }
-.photo-hero{
+.photo-hero {
   display: none;
 }
-.waves{
+.waves {
   display: none;
 }
-.third-header{
+.third-header {
   display: none;
 }
-.add-hero-info{
+.add-hero-info {
   display: none;
 }
 @media screen and (min-resolution: 192dpi) {
@@ -483,28 +481,26 @@ img {
 }
 
 .section-three-our-portfolio::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255),
-    rgba(46, 47, 66, 0.6),
-    rgb(25, 27, 39)
-  ) ,
-  url(../images/portfolio/portfolio-background.webp);
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(46, 47, 66, 0.6),
+      rgb(25, 27, 39)
+    ),
+    url(../images/portfolio/portfolio-background.webp);
   background-size: cover;
   background-position: center;
-  opacity: 0.9; 
+  opacity: 0.9;
   z-index: 1;
-  pointer-events: none; 
+  pointer-events: none;
   background-repeat: no-repeat;
 }
-
-
 
 .section-three-our-portfolio > * {
   position: relative;
@@ -512,7 +508,6 @@ img {
 }
 
 .section-three-our-portfolio > .container {
- 
   padding-top: 96px;
   padding-bottom: 96px;
   margin-left: auto;
@@ -561,39 +556,39 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.up-to-header{
+.up-to-header {
   position: absolute;
   top: calc(100% - 62px);
   left: calc(100% - 76px);
-  background-color:#31d0aa;
+  background-color: #31d0aa;
   cursor: pointer;
   width: 62px;
-  height:62px;
+  height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 .up-to-header:hover,
-.up-to-header:focus{
+.up-to-header:focus {
   background-color: #31d0aa;
 }
 
-.up-to-header .up{
+.up-to-header .up {
   transform: rotate(180deg);
 }
 
-.go-to-web-link{
+.go-to-web-link {
   display: block;
   padding: 4px;
-  margin: 18px 0 0 198px ;
+  margin: 18px 0 0 198px;
   color: #ffffff;
   background-color: transparent;
 }
 
 .go-to-web-link:hover,
 .go-to-web-link:focus,
-.go-to-web-link:active{
+.go-to-web-link:active {
   color: #fafafa;
   background-color: transparent;
 }
@@ -601,9 +596,7 @@ img {
 /*================================== FOOTER STYLES================================== */
 
 .footer {
-  background-color: 
-  
-    #2e2f42;
+  background-color: #2e2f42;
   padding: 97.5px 0 96px 0;
 }
 .container-footer {
@@ -616,15 +609,15 @@ img {
   margin-right: auto;
   position: relative;
 }
-.paws{
+.paws {
   position: absolute;
   width: 70px;
   height: 70px;
   top: 30%;
-  left:70%;
+  left: 70%;
   z-index: 999;
   transform: rotate(15deg);
- }
+}
 
 .footer-text {
   color: #f4f4fd;
@@ -815,7 +808,6 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
     gap: 48px;
-
   }
 
   .logo-header {
@@ -847,7 +839,7 @@ input::placeholder {
   }
 
   .home::after {
-    content: "";
+    content: '';
     width: 100%;
     height: 4px;
     background-color: #404bbf;
@@ -935,12 +927,10 @@ input::placeholder {
   .list-of-our-skills-item {
     width: calc((100% - 24px) / 2);
     border: 1px solid #000;
-    
   }
   .our-skills {
     padding: 0 15px;
     margin: 0 auto;
-
   }
   .third-header-skills {
     font-size: 36px;
@@ -977,7 +967,7 @@ input::placeholder {
     padding: 0;
     margin: 0 auto;
   }
-  .up-to-header{
+  .up-to-header {
     left: calc(100% - 76px);
   }
   .portfolio-list {
@@ -990,7 +980,7 @@ input::placeholder {
   .portfolio-list-item {
     width: calc((100% - 24px) / 2);
   }
-  .up-to-header .up{
+  .up-to-header .up {
     transform: rotate(180deg);
   }
 
@@ -1008,15 +998,15 @@ input::placeholder {
     align-items: flex-start;
     position: relative;
   }
-  .paws{
+  .paws {
     position: absolute;
     width: 80px;
     height: 150px;
     top: 40%;
-    left:70%;
+    left: 70%;
     z-index: 999;
     transform: rotate(15deg);
-   }
+  }
   .links-footer-section {
     align-items: center;
     justify-content: center;
@@ -1187,7 +1177,7 @@ input::placeholder {
   }
 
   .home::after {
-    content: "";
+    content: '';
     width: 100%;
     height: 4px;
     background-color: #404bbf;
@@ -1221,7 +1211,7 @@ input::placeholder {
   /*==================================HERO STYLES================================== */
   .hero {
     background-color: #2e2f42;
-   
+
     padding-top: 128px;
     padding-bottom: 76px;
     background-image: linear-gradient(
@@ -1240,16 +1230,16 @@ input::placeholder {
     position: relative;
   }
 
-  .dark-hero{
+  .dark-hero {
     display: block;
-    top: 0;             
-    left: 450px;            
-    width: calc(100% - 450px);        
+    top: 0;
+    left: 450px;
+    width: calc(100% - 450px);
     height: 100%;
     background-color: #2e2f42;
     position: absolute;
   }
-  .hero > .container{
+  .hero > .container {
     margin-top: 25px;
     margin-bottom: 250px;
     width: 662px;
@@ -1257,11 +1247,11 @@ input::placeholder {
     margin-right: auto;
   }
 
-  .photo-hero{
+  .photo-hero {
     display: block;
-    top: 100px;             
-    left: 275px;            
-    width: 350px;        
+    top: 100px;
+    left: 275px;
+    width: 350px;
     height: 570px;
     background-color: #ffffff;
     position: absolute;
@@ -1282,7 +1272,7 @@ input::placeholder {
     padding: 0 25px 0 0;
     text-transform: uppercase;
   }
-  .third-header{
+  .third-header {
     color: #fdfdfd;
     text-transform: uppercase;
     font-size: 32px;
@@ -1295,16 +1285,15 @@ input::placeholder {
     display: block;
     padding: 0 25px 0 0;
   }
-  .waves{
+  .waves {
     display: block;
-    position:absolute;
+    position: absolute;
     z-index: 3;
     top: 559px;
     left: calc(100% - 500px);
-
   }
 
-  .add-hero-info{
+  .add-hero-info {
     color: #fdfdfd;
     z-index: 5;
     font-size: 24px;
@@ -1317,7 +1306,7 @@ input::placeholder {
     display: block;
     padding: 0 25px 0 0;
   }
-  .hero-headers{
+  .hero-headers {
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -1326,8 +1315,8 @@ input::placeholder {
 
   a.button-style {
     background-color: #4d5ae5;
- 
-   width: 269px;
+
+    width: 269px;
     height: 56px;
     border: none;
     border-radius: 8px;
@@ -1335,23 +1324,19 @@ input::placeholder {
     padding: 0 32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 5;
-    
   }
   button:hover,
-  button:focus{
+  button:focus {
     background-color: #31d0aa;
     /* background-color:#be8047; */
   }
 
-  .subscribe-button:hover{
-    background-color: #404bbf;;
+  .subscribe-button:hover {
+    background-color: #404bbf;
   }
 
-
   /*================================== /HERO STYLES================================== */
-  
 
-  
   /*==================================SECTION OUR SKILLS STYLES================================== */
   .our-skills {
     padding-top: 220px;
@@ -1457,7 +1442,7 @@ input::placeholder {
     gap: 24px;
     row-gap: 48px;
   }
-  .up-to-header{
+  .up-to-header {
     left: calc(100% - 76px);
   }
 
@@ -1468,21 +1453,21 @@ input::placeholder {
   }
   .container-footer {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     position: relative;
   }
 
-  .paws{
+  .paws {
     position: absolute;
     width: 80px;
     height: 150px;
     top: 0;
-    left:70%;
+    left: 70%;
     z-index: 999;
     transform: rotate(15deg);
-   }
+  }
 
   .footer-text {
     color: #f4f4fd;
@@ -1512,7 +1497,7 @@ input::placeholder {
     gap: 16px;
     flex-wrap: nowrap;
   }
-  
+
   .social-links-item-footer {
     width: 40px;
     height: 40px;
@@ -1653,9 +1638,8 @@ input::placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 448px;
-    
   }
-  .backdrop-user.mobile > .modal-user{
+  .backdrop-user.mobile > .modal-user {
     padding: 72px 42px 42px 42px;
   }
 }
@@ -1666,7 +1650,7 @@ input::placeholder {
     transform: translate(-50%, -50%);
     width: 288px;
   }
-  .backdrop-user.mobile > .modal-user{
+  .backdrop-user.mobile > .modal-user {
     padding: 72px 32px 42px 32px;
   }
 }
@@ -1879,16 +1863,15 @@ input:checked {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  
 }
 
-span.input-checkbox-icon{
-  flex-shrink: 0; flex-grow: 0; 
+span.input-checkbox-icon {
+  flex-shrink: 0;
+  flex-grow: 0;
   flex-basis: auto;
 }
 .privacy-policy-text {
   color: #4d5ae5;
-  
 }
 .checkbox-icon {
   cursor: pointer;
