@@ -9,7 +9,7 @@ const termsCheckbox = document.getElementById("user-privacy")
 const form = document.querySelector(".form")
 const STORAGE_KEY = 'contact-form-state';
 
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
 axios.defaults.withCredentials = true;
 
 

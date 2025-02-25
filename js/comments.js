@@ -4,7 +4,7 @@ const receivedComment = document.querySelector(".received-comment")
 const prev = document.querySelector(".prev")
 const next = document.querySelector(".next")
 
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
 axios.defaults.withCredentials = true;
 
 

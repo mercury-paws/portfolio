@@ -1,4 +1,6 @@
-axios.defaults.baseURL = "http://localhost:3000";
+'use strict'
+
+axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
 axios.defaults.withCredentials = true;
 
 async function fetchArticle(id) {

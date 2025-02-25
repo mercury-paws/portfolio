@@ -27,3 +27,11 @@ p {
   background-color: transparent;
   cursor: pointer;
 }
+
+.article-container .blog-item {
+  padding: 36px 36px 16px 36px;
+}
+
+.article-container .date-btn-block {
+  justify-content: space-around;
+}

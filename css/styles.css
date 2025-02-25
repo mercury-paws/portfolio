@@ -1221,6 +1221,7 @@ input::placeholder {
   .menu-navigation:active {
     color: #404bbf;
   }
+
   /*==================================HERO STYLES================================== */
   .hero {
     background-color: #2e2f42;
@@ -1256,7 +1257,7 @@ input::placeholder {
     margin-top: 25px;
     margin-bottom: 250px;
     width: 662px;
-    margin-left: 668px;
+    margin-left: 568px;
     margin-right: auto;
   }
 
@@ -1328,7 +1329,6 @@ input::placeholder {
 
   a.button-style {
     background-color: #4d5ae5;
-
     width: 269px;
     height: 56px;
     border: none;
@@ -1667,6 +1667,17 @@ input::placeholder {
     padding: 72px 32px 42px 32px;
   }
 }
+
+@media screen and (min-width: 1158px) and (max-width: 1332px) {
+  .main-header {
+    width: 576px;
+  }
+
+  .add-hero-info {
+    width: 476px;
+  }
+}
+
 .is-open {
   visibility: visible;
   opacity: 1;

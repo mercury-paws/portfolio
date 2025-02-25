@@ -1,7 +1,7 @@
 'use strict'
 
 const blogList = document.querySelector('.blog-list');
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
 axios.defaults.withCredentials = true;
 
 async function fetchBlog() {
