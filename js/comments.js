@@ -23,8 +23,8 @@ async function renderComments() {
   let comments = await fetchComments();
   const { name, comment } = comments[index];
 
-  const sanitizedComment = sanitize(comment);
-  const sanitizedName = sanitize(name);
+  const sanitizedComment = DOMPurify.sanitize(comment);
+  const sanitizedName = DOMPurify.sanitize(name);
 
     const markup = `
     <p class="client-text-review">${sanitizedComment}</p>
