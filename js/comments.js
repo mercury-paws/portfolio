@@ -1,6 +1,4 @@
 "use strict";
-// Use named import syntax
-import * as DOMPurify from 'https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js';
 
 const receivedComment = document.querySelector(".received-comment")
 const prev = document.querySelector(".prev")
@@ -25,8 +23,8 @@ async function renderComments() {
   let comments = await fetchComments();
   const { name, comment } = comments[index];
 
-  const sanitizedComment = DOMPurify.sanitize(comment);
-  const sanitizedName = DOMPurify.sanitize(name);
+  const sanitizedComment = sanitize(comment);
+  const sanitizedName = sanitize(name);
 
     const markup = `
     <p class="client-text-review">${sanitizedComment}</p>
