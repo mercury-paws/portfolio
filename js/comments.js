@@ -1,4 +1,6 @@
 "use strict";
+// Use named import syntax
+import * as DOMPurify from 'https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js';
 
 const receivedComment = document.querySelector(".received-comment")
 const prev = document.querySelector(".prev")
