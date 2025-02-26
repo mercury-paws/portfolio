@@ -1,3 +1,11 @@
+
+
+@media screen and (max-width: 767px){
+  .article-container .blog-item {
+  padding: 36px 16px 16px 16px;
+}
+}
+
 .blog-quote {
   font-style: italic;
   padding: 16px 0;
