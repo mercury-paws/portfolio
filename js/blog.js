@@ -26,11 +26,11 @@ async function fetchBlog() {
                 _id
             }) => {
                 return `<li class="blog-item">
-              <h3 class="blog-item-header">${title}</h3>
-              <p class="blog-item-text">${header}</p>
+              <h3 class="blog-item-header">${DOMPurify.sanitize(title)}</h3>
+              <p class="blog-item-text">${DOMPurify.sanitize(header)}</p>
               <div class="date-btn-block">
-                <p>${date}</p>
-                <button type="button" class="blog-item-btn" data-id="${_id}">More</button>
+                <p>${DOMPurify.sanitize(date)}</p>
+                <button type="button" class="blog-item-btn" data-id="${DOMPurify.sanitize(_id)}">More</button>
               </div>
             </li>`;
             }
@@ -43,7 +43,6 @@ async function fetchBlog() {
               if (/^[a-zA-Z0-9_-]+$/.test(blogId)) { 
             window.location.href = `blogArticle.html?id=${blogId}`;
         }
-                    window.location.href = `blogArticle.html?id=${blogId}`
             });
         });
     }

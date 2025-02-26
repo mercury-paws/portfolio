@@ -21,12 +21,14 @@ async function fetchComments() {
 
 async function renderComments() {
   let comments = await fetchComments();
-  console.log(comments)
   const { name, comment } = comments[index];
 
+  const sanitizedComment = DOMPurify.sanitize(comment);
+  const sanitizedName = DOMPurify.sanitize(name);
+
     const markup = `
-    <p class="client-text-review">${comment}</p>
-    <p class="client-name">${name}</p>
+    <p class="client-text-review">${sanitizedComment}</p>
+    <p class="client-name">${sanitizedName}</p>
   `;
 
     receivedComment.innerHTML = markup;
