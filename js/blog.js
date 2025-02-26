@@ -1,5 +1,4 @@
 'use strict'
-import DOMPurify from 'dompurify';
 
 const blogList = document.querySelector('.blog-list');
 axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
