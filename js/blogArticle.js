@@ -1,4 +1,5 @@
 'use strict'
+import DOMPurify from 'dompurify';
 
 axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
 axios.defaults.withCredentials = true;

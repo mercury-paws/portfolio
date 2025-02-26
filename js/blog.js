@@ -1,4 +1,5 @@
 'use strict'
+import DOMPurify from 'dompurify';
 
 const blogList = document.querySelector('.blog-list');
 axios.defaults.baseURL = "https://profile-server-qbyd.onrender.com";
@@ -13,8 +14,6 @@ async function fetchBlog() {
       throw new Error(`Error fetching blog: ${error.response?.data?.message || error.message}`);
     }  
   }
-
-
 
   async function renderBlog() {
     let blog = await fetchBlog();

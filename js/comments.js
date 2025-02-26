@@ -1,4 +1,5 @@
 "use strict";
+import DOMPurify from 'dompurify';
 
 const receivedComment = document.querySelector(".received-comment")
 const prev = document.querySelector(".prev")
