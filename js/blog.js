@@ -39,7 +39,10 @@ async function fetchBlog() {
 
           document.querySelectorAll(".blog-item-btn").forEach(button => {
             button.addEventListener("click", async (event) => {
-                const blogId = event.target.getAttribute("data-id");
+              const blogId = event.target.getAttribute("data-id");
+              if (/^[a-zA-Z0-9_-]+$/.test(blogId)) { 
+            window.location.href = `blogArticle.html?id=${blogId}`;
+        }
                     window.location.href = `blogArticle.html?id=${blogId}`
             });
         });
