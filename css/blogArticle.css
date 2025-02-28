@@ -1,7 +1,3 @@
-
-
-
-
 .blog-quote {
   font-style: italic;
   padding: 16px 0;
@@ -11,7 +7,7 @@
   font-weight: bolder;
 }
 
-p {
+#article-text p {
   text-indent: 30px;
 }
 
@@ -40,12 +36,12 @@ p {
   justify-content: space-around;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .article-container .blog-item {
-  padding: 36px 16px 16px 16px;
-}
+    padding: 36px 16px 16px 16px;
+  }
 
-  .blog-section .article-container{
+  .blog-section .article-container {
     padding: 0 46px;
   }
 }
