@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6794e988cceca5d55875786e"
+  },
+  "name": "Sebastian",
+  "comment": "Working with you was an absolute pleasure! The process was smooth and easy. Thank you for teamwork and for building great page!",
+  "email": "asd@asd.asd",
+  "verify": true
+},
+{
+  "_id": {
+    "$oid": "67950b49cba2de7508e02c22"
+  },
+  "name": "Юлія",
+  "comment": "Дуже добре попрацювали разом над проектом. Завжди допомагала колегам, якщо виникали якісь питання, роботу робила вчасно. Дякую!",
+  "email": "wer@wer.wer",
+  "verify": true
+},
+{
+  "_id": {
+    "$oid": "67950c4dcba2de7508e02c23"
+  },
+  "name": "Natalia",
+  "comment": "Working with you felt like having a deep conversation with someone who understands human and the need for education. Thanks a lot!",
+  "email": "ert@ert.asd",
+  "verify": true
+},
+{
+  "_id": {
+    "$oid": "67950c96cba2de7508e02c24"
+  },
+  "name": "Helen",
+  "comment": "I couldn't be happier with the result! Your expertise and innovative approach made the entire experience smooth and rewarding.",
+  "email": "sdf@sdf.wer",
+  "verify": true
+}]
