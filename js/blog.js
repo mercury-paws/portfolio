@@ -16,6 +16,7 @@ async function fetchBlog() {
 
   async function renderBlog() {
     let blog = await fetchBlog();
+ 
     blogList.innerHTML = blog
         .map(
             ({  title, 
@@ -33,8 +34,9 @@ async function fetchBlog() {
             </li>`;
             }
           )
-          .join('');
-
+      .join('');
+    
+    
           document.querySelectorAll(".blog-item-btn").forEach(button => {
             button.addEventListener("click", async (event) => {
               const blogId = event.target.getAttribute("data-id");
