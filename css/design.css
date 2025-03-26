@@ -5,9 +5,9 @@
   --x: 20px; /* horizontal offset (no percentage) */
   --y: 10px; /* vertical offset (no percentage) */
 
-  width: 140px;
+  width: 240px;
   aspect-ratio: 1;
-  background: rgba(184, 184, 184, 0.17);
+  background: #f6808c;
   box-shadow: none;
 
   border-radius: var(--r);
@@ -24,6 +24,7 @@
   mask-repeat: no-repeat;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 1px solid #000;
 }
 
 .inverted-radius:hover {
@@ -38,8 +39,8 @@
   border-radius: inherit;
   transition: box-shadow 0.3s ease;
   z-index: -1;
-  filter: blur(10px);
-  box-shadow: 5px 5px 15px rgba(141, 255, 131, 0.3);
+  filter: blur(5px);
+  box-shadow: 5px 5px 15px rgba(109, 250, 96, 0.3);
 }
 
 .inverted-radius:hover::after {
@@ -64,14 +65,15 @@
   row-gap: 0px;
   gap: 0px;
   flex-wrap: wrap;
-  max-width: 444px;
+  max-width: 484px;
 }
 .design-aims {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 38%;
-  width: 60px;
+  width: 100px;
   transform: translate(-50%, -50%);
+  font-size: 26px;
 }
 
 .name-section > .container {
@@ -126,7 +128,7 @@
 }
 
 .aim-text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.8;
 }
 
@@ -322,6 +324,9 @@
 
 .typoghraphy-section h2 {
   padding-bottom: 35px;
+}
+.hero-section img {
+  opacity: 0.67;
 }
 
 .main-typo-section {
