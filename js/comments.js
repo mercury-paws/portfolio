@@ -38,7 +38,7 @@ async function fetchComments() {
 	return response.data.data.data;
   } catch (error) {
     console.warn("Server request failed. Using local comments.json instead.");
-    return localComments;
+    // return localComments;
   }  
 }
 
@@ -58,7 +58,9 @@ async function renderComments() {
     <p class="client-name">${sanitizedName}</p>
   `;
   } else {
-   
+    const { name, comment } = localComments[index];
+    const sanitizedComment = DOMPurify.sanitize(comment);
+  const sanitizedName = DOMPurify.sanitize(name);
     markup = `
     <p class="client-text-review">${sanitizedComment}</p>
     <p class="client-name">${sanitizedName}</p>
