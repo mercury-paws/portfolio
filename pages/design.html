@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-education</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Home</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation active-page"
+                href="../index.html#portfolio"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation aboutMe" href="../pages/aboutMe.html"
+                >About me</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a class="contact-us" href="mailto:info@devstudio.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main class="desing-css">
+      <section class="name-section">
+        <div class="container">
+          <div class="name-topic-block">
+            <h5 class="topic">design</h5>
+            <h1 class="design-name">
+              <span class="stroke">MediSync</span>.health
+            </h1>
+          </div>
+          <a class="go-to-web-link" href="/">App is under construction</a>
+        </div>
+      </section>
+      <section class="design-section">
+        <div class="container">
+          <article class="name-aim-block">
+            <h2>Research and Inspiration</h2>
+            <p class="aim-text">
+              A good doctor thrives on the ability to connect with patients and
+              deliver accurate, timely treatments, which an app can facilitate
+              through efficient data management and real-time updates.
+            </p>
+            <p class="aim-text">
+              This technological innovation empowers doctors to focus on what
+              truly matters - improving patient outcomes and maintaining the
+              well-being of individuals and communities.
+            </p>
+            <p class="aim-text">
+              A great article about user types and arc of need
+              <a href="https://uxpamagazine.org/social_health_networking/"
+                >here.</a
+              >
+            </p>
+          </article>
+          <div class="desigh-aims-block">
+            <div class="inverted-radius">
+              <p class="design-aims">enhancing healthcare</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">streamlining communication</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">enhancing care</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">optimizing workflow</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">supporting doctors</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">building trust</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">providing empathy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="persona-section">
+        <div class="container">
+          <article class="persona">
+            <div>
+              <h2>Persona</h2>
+              <p>
+                Creating a user persona helps define the needs, goals, and
+                frustrations of the target audience, ensuring a more
+                user-centered design. By crafting a detailed persona, we can
+                better understand the real-life challenges users face and tailor
+                solutions that truly benefit them. This approach enhances
+                usability, engagement, and overall satisfaction with the
+                product.
+              </p>
+            </div>
+
+            <img src="../images/design/persona.jpg" />
+          </article>
+          <article class="user-journey">
+            <img src="../images/design/user-journey-map.jpg" />
+            <div>
+              <h2>User Journey</h2>
+              <p>
+                Mapping the user journey helps visualize the steps a user takes
+                to achieve their goal, highlighting pain points and
+                opportunities for improvement. By understanding their
+                experience, we can design a more intuitive and seamless
+                interaction. This process ensures that the product effectively
+                meets user needs at every stage.
+              </p>
+            </div>
+          </article>
+          <article class="user-storyboard">
+            <div>
+              <h2>User Storyboard</h2>
+              <p>
+                Creating a user storyboard brings the user journey to life by
+                illustrating key interactions and emotions throughout their
+                experience. This visual approach helps identify challenges and
+                design solutions that align with real user needs. Storyboarding
+                ensures a more engaging and user-friendly product.
+              </p>
+            </div>
+
+            <img src="../images/design/user-storyboard.jpg" />
+          </article>
+          <article class="user-stories">
+            <h2 class="user-story-header">User Stories</h2>
+            <div class="design-cloud first">
+              <img src="../images/design/cloud1.png" />
+              <p class="text-one">
+                As a working student, I want the medical app to be fast and
+                always accessible, so I don't waste time finding appointments.
+              </p>
+            </div>
+
+            <div class="design-cloud second">
+              <img src="../images/design/cloud2.png" />
+              <p class="text-two">
+                As a mom and working professional, I want quick access to our
+                medical info for efficient health management.
+              </p>
+            </div>
+
+            <div class="design-cloud third">
+              <img src="../images/design/cloud6.png" />
+              <p class="text-three">
+                As a businessman, I want the medical app to remind me of my
+                appointments, so I don't have to keep track of them.
+              </p>
+            </div>
+
+            <img
+              src="../images/design/user-thinking.png"
+              class="thinking-person"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <img src="../images/design/hero-pic.jpg" />
+      </section>
+      <section class="symbol-section">
+        <div class="container">
+          <h2>Symbol</h2>
+          <div class="main-symbol-section">
+            <p class="symbol-explanation">
+              The goal was to represent care, wellness, and holistic well-being
+              in a minimal yet impactful way.
+            </p>
+            <div class="symbol-text-block">
+              <img src="../images/design/symbol-bg.png" class="symbol-img" />
+              <article class="symbol-text-art">
+                <p class="symbol-text">
+                  A human figure symbolizes the doctor-patient relationship,
+                  care, and support.
+                </p>
+                <p class="symbol-text">
+                  The leaf represents health, growth, and nature—key aspects of
+                  holistic and preventive medicine.
+                </p>
+              </article>
+            </div>
+            <p class="symbol-explanation-big">
+              The abstract human figure is dynamic, evoking movement, vitality,
+              and warmth. It subtly suggests both a doctor guiding a patient and
+              a person in balance with health. The leaf is integrated naturally
+              into the figure, reinforcing the idea that well-being comes from a
+              combination of medical expertise and a healthy lifestyle.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="typoghraphy-section">
+        <div class="container">
+          <h2>Fonts</h2>
+          <div class="main-typo-section">
+            <p>
+              Inter is an ideal font for MediSync due to its excellent
+              readability on both small and large screens, ensuring clarity for
+              users.
+            </p>
+            <table>
+              <tr>
+                <td class="reg typo">
+                  modern, professional design conveys trust
+                </td>
+                <td>Inter Regular</td>
+              </tr>
+              <tr>
+                <td class="med typo">flexible typography</td>
+                <td>Inter Medium</td>
+              </tr>
+              <tr>
+                <td class="bold typo">optimized for digital use</td>
+                <td>Inter Bold</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="typoghraphy-section">
+        <div class="container">
+          <h2>UI-kit</h2>
+          <img src="../images/design/ui-kit.jpg" />
+        </div>
+      </section>
+      <section class="proto-section">
+        <div class="container">
+          <h2>Prototype</h2>
+          <div class="main-proto-block">
+            <div class="cards-app">
+              <img src="../images/design/card1.jpg" />
+              <img src="../images/design/card2.jpg" />
+              <img src="../images/design/card3.jpg" />
+              <img src="../images/design/card4.jpg" />
+              <img src="../images/design/card5.jpg" />
+            </div>
+            <img
+              src="../images/design/thinking-person.png"
+              class="person-with-app"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Create a meaningful life with tools that guide, inspire, and
+              empower.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Social media</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Leave a review
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">&copy; 2025 mercury_paws. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Write down your thoughts about our work!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address (e.g. user@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment"> Comment </label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="text-privacy-style">
+                I accept the terms and conditions of the
+                <a
+                  href="../pages/privacyPolicy.html"
+                  class="privacy-policy-text"
+                  target="_blank"
+                >
+                  Privacy Policy
+                </a>
+              </p>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- backdrop mobile -->
+
+  <div class="backdrop">
+    <div class="modal">
+      <button class="close-mobile-menu-bttn" type="button">
+        <svg class="close-bttn" width="8" height="8">
+          <use href="../images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="backdrop-mobile-menu">
+        <li>
+          <a class="menu-navigation" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a
+            class="menu-navigation portfolio active-page"
+            href="../index.html#portfolio"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="menu-navigation" href="../pages/aboutMe.html">About me</a>
+        </li>
+        <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
+        <li>
+          <a class="menu-navigation" href="../pages/contact.html">Contacts</a>
+        </li>
+      </ul>
+      <address class="address-styles-mobile-backdrop">
+        <ul class="contact-us-list">
+          <li class="contact-us-list-item">
+            <a
+              class="contact-us mail"
+              href="mailto:anastasiia.kutsenkova@gmail.com"
+              >anastasiia.kutsenkova<br />@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="social-links-modal-wrapper">
+        <ul class="social-links-modal-list">
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.instagram.com/mercury_paws/"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://github.com/mercury-paws"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</html>
