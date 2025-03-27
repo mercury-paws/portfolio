@@ -117,10 +117,30 @@
 }
 
 .name-aim-block {
-  max-width: 600px;
+  max-width: 559px;
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.design-section {
+  position: relative;
+}
+
+.design-section::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, transparent 70%),
+    url(../images/design/dna.png);
+  background-position: left;
+  background-repeat: repeat;
+  transform: rotate(30deg);
+  opacity: 0.04;
+  z-index: -1;
 }
 
 .name-aim-block h2 {
@@ -190,8 +210,8 @@
 }
 
 .first {
-  top: 2%;
-  left: 60%;
+  top: 5%;
+  left: 63%;
 }
 
 .second {
@@ -214,10 +234,10 @@
 .text-one {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 45%;
-  left: 50%;
-  width: 370px;
-  line-height: 1.1;
+  top: 28%;
+  left: 48%;
+  width: 310px;
+  line-height: 1;
   font-size: 18px;
   font-style: italic;
 }
@@ -239,7 +259,10 @@
   font-size: 16px;
   line-height: 1.1;
 }
-
+.first img {
+  width: 430px;
+  height: 290px;
+}
 .third img {
   width: 380px;
   height: 270px;
@@ -297,11 +320,30 @@
   font-weight: 400;
   text-align: center;
 }
-.typoghraphy-section {
+.parts-of-symbol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.parts-of-symbol img:nth-child(1) {
+  height: 340px;
+  object-fit: contain;
+}
+.parts-of-symbol img:nth-child(2) {
+  width: 300px;
+  height: 200px;
+  opacity: 0.8;
+}
+
+.typoghraphy-section,
+.ui-kit-section {
   position: relative;
 }
 
-.typoghraphy-section::before {
+.typoghraphy-section::before,
+.ui-kit-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -316,13 +358,16 @@
   z-index: -1;
 }
 
-.typoghraphy-section .container {
+.typoghraphy-section .container,
+.ui-kit-section .container .proto-section .container {
   padding-top: 35px;
   padding-bottom: 35px;
   font-size: 24px;
 }
 
-.typoghraphy-section h2 {
+.typoghraphy-section h2,
+.ui-kit-section h2,
+.proto-section h2 {
   padding-bottom: 35px;
 }
 .hero-section img {
@@ -384,7 +429,7 @@
 }
 
 .proto-section .person-with-app {
-  width: 500px;
+  max-width: 500px;
 }
 
 .cards-app > img {
