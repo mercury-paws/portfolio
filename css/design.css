@@ -98,7 +98,7 @@
   background-color: rgb(115, 243, 126);
   color: #000;
   border-radius: 50px;
-  margin-right: 12px;
+  /* margin-right: 12px; */
   margin-top: -125px;
 }
 .go-to-web-link:hover {
