@@ -7,7 +7,7 @@
 
   width: 240px;
   aspect-ratio: 1;
-  background: #f6808c;
+  /* background: #f6808c; */
   box-shadow: none;
 
   border-radius: var(--r);
@@ -27,6 +27,35 @@
   border-top: 1px solid #000;
 }
 
+.desigh-aims-block .inverted-radius:nth-child(1),
+.desigh-aims-block .inverted-radius:nth-child(2),
+.desigh-aims-block .inverted-radius:nth-child(3),
+.desigh-aims-block .inverted-radius:nth-child(4),
+.desigh-aims-block .inverted-radius:nth-child(5),
+.desigh-aims-block .inverted-radius:nth-child(6) {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.desigh-aims-block .inverted-radius:nth-child(1) {
+  background-image: url(../images/design/3.jpg);
+}
+.desigh-aims-block .inverted-radius:nth-child(2) {
+  background-image: url(../images/design/2.jpg);
+}
+.desigh-aims-block .inverted-radius:nth-child(3) {
+  background-image: url(../images/design/6.jpg);
+}
+.desigh-aims-block .inverted-radius:nth-child(4) {
+  background-image: url(../images/design/4.jpg);
+}
+.desigh-aims-block .inverted-radius:nth-child(5) {
+  background-image: url(../images/design/5.jpg);
+}
+.desigh-aims-block .inverted-radius:nth-child(6) {
+  background-image: url(../images/design/1.jpg);
+}
+
 .inverted-radius:hover {
   z-index: 999;
   transform: scale(1.1);
@@ -35,7 +64,6 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: inherit;
   border-radius: inherit;
   transition: box-shadow 0.3s ease;
   z-index: -1;
@@ -46,6 +74,47 @@
 .inverted-radius:hover::after {
   box-shadow: 15px 0 15px 5px rgba(115, 243, 126, 0.4);
   border: 1px solid rgb(115, 243, 126);
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.inverted-radius:hover .design-aims {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 38%;
+  opacity: 1;
+}
+.design-aims {
+  background: transparent;
+  color: #000000;
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  font-size: 26px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.name-section {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.name-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, transparent 90%),
+    url(../images/design/background-first-section.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 90%;
+  /* transform: rotate(10deg); */
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .stroke {
@@ -67,14 +136,6 @@
   flex-wrap: wrap;
   max-width: 484px;
 }
-.design-aims {
-  position: absolute;
-  top: 50%;
-  left: 38%;
-  width: 100px;
-  transform: translate(-50%, -50%);
-  font-size: 26px;
-}
 
 .name-section > .container {
   padding-top: 178px;
@@ -95,15 +156,14 @@
   cursor: pointer;
   padding: 54px;
   box-shadow: -15px -15px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgb(115, 243, 126);
+  background-color: transparent;
   color: #000;
   border-radius: 50px;
-  /* margin-right: 12px; */
   margin-top: -125px;
 }
 .go-to-web-link:hover {
   color: #000;
-  background-color: rgb(102, 226, 112);
+  background-color: transparent;
 }
 
 .design-section > .container {
@@ -125,26 +185,6 @@
   gap: 25px;
 }
 
-.design-section {
-  position: relative;
-}
-
-.design-section::before {
-  content: '';
-  position: absolute;
-  top: -15%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, transparent 70%),
-    url(../images/design/dna.png);
-  background-position: left;
-  background-repeat: repeat;
-  transform: rotate(-40deg);
-  opacity: 0.2;
-  z-index: -1;
-}
-
 .name-aim-block h2 {
   padding-bottom: 35px;
 }
@@ -152,7 +192,6 @@
 .aim-text {
   font-size: 22px;
   line-height: 1.8;
-  /* background-color: rgb(255, 255, 255, 0.9); */
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.5),
@@ -163,6 +202,27 @@
 .persona-section > .container {
   padding-top: 35px;
   padding-bottom: 35px;
+}
+.research-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.research-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, transparent 90%),
+    url(../images/design/dna.png);
+  /* background-size:; */
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-30deg);
+  opacity: 0.1;
+  z-index: -1;
 }
 
 .persona,
