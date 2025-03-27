@@ -53,7 +53,7 @@
 }
 
 .desing-css h1 {
-  font-size: 42px;
+  font-size: 54px;
 }
 .desing-css h2 {
   font-size: 38px;
@@ -77,7 +77,7 @@
 }
 
 .name-section > .container {
-  padding-top: 78px;
+  padding-top: 178px;
   max-width: 1050px;
   padding-bottom: 35px;
   display: flex;
@@ -87,21 +87,23 @@
 }
 
 .topic {
-  font-size: 24px;
+  font-size: 32px;
   padding-bottom: 20px;
 }
 
 .go-to-web-link {
   cursor: pointer;
   padding: 54px;
-  border: 1px solid #000;
-  background-color: transparent;
+  box-shadow: -15px -15px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(115, 243, 126);
   color: #000;
   border-radius: 50px;
-  margin-right: 32px;
+  margin-right: 12px;
+  margin-top: -125px;
 }
 .go-to-web-link:hover {
   color: #000;
+  background-color: rgb(102, 226, 112);
 }
 
 .design-section > .container {
@@ -130,7 +132,7 @@
 .design-section::before {
   content: '';
   position: absolute;
-  top: 15%;
+  top: -15%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -138,8 +140,8 @@
     url(../images/design/dna.png);
   background-position: left;
   background-repeat: repeat;
-  transform: rotate(30deg);
-  opacity: 0.04;
+  transform: rotate(-40deg);
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -150,6 +152,12 @@
 .aim-text {
   font-size: 22px;
   line-height: 1.8;
+  /* background-color: rgb(255, 255, 255, 0.9); */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
 }
 
 .persona-section > .container {
