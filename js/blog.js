@@ -8,7 +8,7 @@ async function fetchBlog() {
     try {
       const response = await axios.get("/blog");
       console.log(response.data.data.data.data)
-      return response.data.data.data.items;
+      return response.data.data.items;
     } catch (error) {
       throw new Error(`Error fetching blog: ${error.response?.data?.message || error.message}`);
     }  
