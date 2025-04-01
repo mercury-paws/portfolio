@@ -7,7 +7,8 @@ axios.defaults.withCredentials = true;
 async function fetchBlog() {
     try {
       const response = await axios.get("/blog");
-      console.log(response.data.data.data.data)
+      // console.log(response.data.data.data.data)
+      console.log(response.data.data.items)
       return response.data.data.items;
     } catch (error) {
       throw new Error(`Error fetching blog: ${error.response?.data?.message || error.message}`);
@@ -16,7 +17,9 @@ async function fetchBlog() {
 
   async function renderBlog() {
     let blog = await fetchBlog();
- 
+    if (!blog || blog.length === 0) return;
+    console.log(blog)
+
     blogList.innerHTML = blog
         .map(
             ({  title, 
