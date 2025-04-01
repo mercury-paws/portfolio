@@ -7,7 +7,7 @@ async function fetchArticle(id) {
     try {
       const response = await axios.get(`/blog/${id}`);
       console.log(response.data.data)
-      return response.data.data;
+      return response.data.data.items;
     } catch (error) {
       throw new Error(`Error fetching blog: ${error.response?.data?.message || error.message}`);
     }  
