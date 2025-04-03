@@ -149,6 +149,10 @@ a {
   color: var(--red);
   font-weight: 400;
 }
+.stroke-two {
+  color: var(--orange);
+  font-weight: 400;
+}
 
 .desing-css h1 {
   font-size: 54px;
@@ -262,6 +266,13 @@ a {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  row-gap: 45px;
+  padding: 8px;
+  box-shadow: -15px 0 10px var(--turquoise);
+}
+
+.steps-list .steps-item:nth-child(2) {
+  box-shadow: 15px 0 10px var(--turquoise);
 }
 
 .steps-item p {
@@ -288,11 +299,29 @@ a {
 }
 .smart-letter {
   padding: 45px 55px;
-  background-color: #c6da20;
+
   text-transform: capitalize;
   font-size: 42px;
   border-radius: 50%;
+  font-weight: 700;
 }
+
+.smart-list .smart-item:nth-child(1) .smart-letter {
+  background-color: #c6da20;
+}
+.smart-list .smart-item:nth-child(2) .smart-letter {
+  background-color: var(--orange);
+}
+.smart-list .smart-item:nth-child(3) .smart-letter {
+  background-color: var(--turquoise);
+}
+.smart-list .smart-item:nth-child(4) .smart-letter {
+  background-color: var(--red);
+}
+.smart-list .smart-item:nth-child(5) .smart-letter {
+  background-color: #fffddc;
+}
+
 .persona-section > .container {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -324,13 +353,23 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
+  row-gap: 35px;
   justify-content: center;
   align-items: flex-start;
   font-size: 32px;
 }
 
 .focus-item {
-  max-width: 550px;
+  max-width: 520px;
+  padding: 8px;
+}
+
+.svg-focus-block {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .focus,
@@ -339,7 +378,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 0;
+
+  padding: 45px 0;
 }
 
 .user-stories {
