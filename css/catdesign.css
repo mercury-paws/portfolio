@@ -1,4 +1,14 @@
-/* HTML: <div class="inverted-radius"></div> */
+:root {
+  --common-white: #fff;
+  --orange: #f08c00;
+  --green: #c6da20;
+  --red: #da1212;
+  --turquoise: #f3f5d5;
+}
+a {
+  color: inherit;
+}
+
 .inverted-radius {
   --r: 20px; /* the radius */
   --s: 30px; /* size of inner curve */
@@ -38,22 +48,22 @@
   background-repeat: no-repeat;
 }
 .desigh-aims-block .inverted-radius:nth-child(1) {
-  background-image: url(../images/design/3.jpg);
+  background-image: url(../images/design/catdesign/2.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(2) {
-  background-image: url(../images/design/2.jpg);
+  background-image: url(../images/design/catdesign/7.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(3) {
-  background-image: url(../images/design/6.jpg);
+  background-image: url(../images/design/catdesign/3.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(4) {
-  background-image: url(../images/design/4.jpg);
+  background-image: url(../images/design/catdesign/4.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(5) {
-  background-image: url(../images/design/5.jpg);
+  background-image: url(../images/design/catdesign/8.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(6) {
-  background-image: url(../images/design/1.jpg);
+  background-image: url(../images/design/catdesign/1.jpg);
 }
 
 .inverted-radius:hover {
@@ -68,12 +78,12 @@
   transition: box-shadow 0.3s ease;
   z-index: -1;
   filter: blur(5px);
-  box-shadow: 5px 5px 15px rgba(109, 250, 96, 0.3);
+  box-shadow: var(--red);
 }
 
 .inverted-radius:hover::after {
-  box-shadow: 15px 0 15px 5px rgba(115, 243, 126, 0.4);
-  border: 1px solid rgb(115, 243, 126);
+  box-shadow: var(--red);
+  border: var(--red);
   background-color: rgb(255, 255, 255, 0.5);
 }
 
@@ -97,35 +107,58 @@
 .name-section {
   position: relative;
   /* overflow: hidden; */
+  z-index: 999;
 }
 
-.name-section::before {
-  content: '';
+.playful-cats {
   position: absolute;
+  z-index: 1;
+
+  object-fit: contain;
+}
+
+.playful-cats:nth-child(1) {
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, transparent 90%),
-    url(../images/design/background-first-section.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 90%;
-  /* transform: rotate(10deg); */
-  opacity: 0.2;
-  z-index: -1;
+  width: 613px;
+}
+.playful-cats:nth-child(2) {
+  top: 160%;
+  left: 25%;
+  width: 150px;
+  display: none;
+}
+.playful-cats:nth-child(3) {
+  top: 50%;
+  right: 42%;
+  width: 300px;
+}
+.playful-cats:nth-child(4) {
+  top: 240%;
+  right: 55%;
+  width: 300px;
+}
+.playful-cats:nth-child(5) {
+  /* top: 120%;
+  left: 30%;
+  width: 300px; */
+  display: none;
 }
 
 .stroke {
-  color: rgb(115, 243, 126);
+  color: var(--red);
+  font-weight: 400;
 }
 
 .desing-css h1 {
   font-size: 54px;
+  position: relative;
+  z-index: 999;
 }
 .desing-css h2 {
   font-size: 38px;
+  z-index: 999;
+  position: relative;
 }
 
 .desigh-aims-block {
@@ -150,6 +183,11 @@
 .topic {
   font-size: 32px;
   padding-bottom: 20px;
+  z-index: 999;
+  position: relative;
+}
+.article-block {
+  padding-bottom: 35px;
 }
 
 .go-to-web-link {
@@ -162,7 +200,7 @@
   margin-top: -125px;
 }
 .go-to-web-link:hover {
-  color: #000;
+  color: var(--orange);
   background-color: transparent;
 }
 
@@ -190,15 +228,71 @@
 }
 
 .aim-text {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.8;
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.1)
   );
+  position: relative;
+  z-index: 999;
 }
 
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.arc {
+  width: 300px;
+}
+.first,
+.third {
+  transform: rotate(180deg);
+}
+.second {
+  transform: rotate(360deg);
+}
+.steps-item {
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.steps-item p {
+  max-width: 750px;
+}
+.smart-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.smart-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.smart-item p {
+  max-width: 800px;
+  font-size: 28px;
+}
+.smart-letter {
+  padding: 45px 55px;
+  background-color: #c6da20;
+  text-transform: capitalize;
+  font-size: 42px;
+  border-radius: 50%;
+}
 .persona-section > .container {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -214,41 +308,38 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, transparent 90%),
-    url(../images/design/dna.png);
-  /* background-size:; */
+  bottom: 25%;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, transparent 90%),
+    url(../images/design/catdesign/6.jpg); */
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(-30deg);
-  opacity: 0.1;
+  /* transform: rotate(-30deg); */
+  opacity: 0.4;
   z-index: -1;
 }
 
-.persona,
-.user-journey,
-.user-storyboard {
+.focus-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 32px;
+}
+
+.focus-item {
+  max-width: 550px;
+}
+
+.focus,
+.steps,
+.smart {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.persona div,
-.user-journey div,
-.user-storyboard div {
-  max-width: 50%;
-  padding: 60px;
-  line-height: 1.8;
-  font-size: 18px;
-}
-
-.persona img,
-.user-journey img,
-.user-storyboard img {
-  width: 50%;
-  object-fit: cover;
-  height: 315px;
-  box-shadow: 15px 0 15px 5px rgba(0, 0, 0, 0.4);
+  padding: 25px 0;
 }
 
 .user-stories {
@@ -359,13 +450,16 @@
 .symbol-text-block {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
 }
 .symbol-text-art {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  /* gap: 25px; */
   justify-content: center;
 }
 .symbol-img {
@@ -384,7 +478,7 @@
 }
 
 .symbol-explanation-big {
-  width: 900px;
+  max-width: 900px;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -394,16 +488,6 @@
   flex-direction: column;
   gap: 16px;
   padding-top: 16px;
-}
-
-.parts-of-symbol img:nth-child(1) {
-  height: 340px;
-  object-fit: contain;
-}
-.parts-of-symbol img:nth-child(2) {
-  width: 300px;
-  height: 200px;
-  opacity: 0.8;
 }
 
 .typoghraphy-section,
@@ -420,7 +504,7 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, transparent 70%),
-    url(../images/design/green-leaves-white-background-removebg-preview.png);
+    url(../images/design/catdesign/paws-printing.png);
   background-position: center;
   background-repeat: repeat;
   opacity: 0.09;
@@ -437,47 +521,55 @@
 
 .typoghraphy-section h2,
 .ui-kit-section h2,
-.proto-section h2 {
+.proto-section h2,
+.persona-section h2 {
   padding-bottom: 35px;
 }
 .hero-section img {
   opacity: 0.67;
 }
 
-.main-typo-section {
+.color-container {
   display: flex;
   flex-direction: column;
+  gap: 35px;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+}
+.main-typo-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.main-typo-section p {
+  max-width: 700px;
+  height: auto;
 }
 
+.color {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.color-container > .main-typo-section:nth-child(1) > .color {
+  background-color: #f08c00;
+}
+
+.color-container > .main-typo-section:nth-child(2) > .color {
+  background-color: #c6da20;
+}
+.color-container > .main-typo-section:nth-child(3) > .color {
+  background-color: #da1212;
+}
+.color-container > .main-typo-section:nth-child(4) > .color {
+  background-color: #f3f5d5;
+}
 .typo {
   width: 400px;
   padding: 8px;
-}
-
-@font-face {
-  font-family: InterBold;
-  src: url(../fonts/InterBold.ttf);
-}
-@font-face {
-  font-family: InterMedium;
-  src: url(../fonts/InterMedium.ttf);
-}
-@font-face {
-  font-family: InterRegular;
-  src: url(../fonts/InterRegular.ttf);
-}
-
-.reg {
-  font-family: InterRegular, sans-serif;
-}
-.med {
-  font-family: InterMedium, sans-serif;
-}
-.bold {
-  font-family: InterBold, sans-serif;
 }
 
 .main-proto-block {

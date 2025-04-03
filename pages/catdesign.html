@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-education</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/catdesign.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Home</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation active-page"
+                href="../index.html#portfolio"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation aboutMe" href="../pages/aboutMe.html"
+                >About me</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a class="contact-us" href="mailto:info@devstudio.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main class="desing-css">
+      <section class="name-section">
+        <img
+          src="../images/design/catdesign/28.png"
+          alt=""
+          class="playful-cats"
+        />
+
+        <img
+          src="../images/design/catdesign/32.png"
+          alt=""
+          class="playful-cats"
+        />
+        <img
+          src="../images/design/catdesign/29.png"
+          alt=""
+          class="playful-cats"
+        />
+        <img
+          src="../images/design/catdesign/30.png"
+          alt=""
+          class="playful-cats"
+        />
+        <img
+          src="../images/design/catdesign/31.png"
+          alt=""
+          class="playful-cats"
+        />
+        <div class="container">
+          <div class="name-topic-block">
+            <h5 class="topic">design</h5>
+            <h1 class="design-name">PawPrints Journal</h1>
+          </div>
+          <a
+            class="go-to-web-link"
+            href="https://mercury-paws.github.io/cat-web"
+            >Go to the web</a
+          >
+        </div>
+      </section>
+      <section class="design-section">
+        <div class="container">
+          <article class="name-aim-block">
+            <h2>Research and Inspiration</h2>
+            <p class="aim-text">
+              Mental Health Benefits: With research indicating that cats, can
+              have positive effects on human mental health, a website like this
+              can promote the therapeutic benefits of owning a cat.
+            </p>
+            <p class="aim-text">
+              Raising Awareness: Many people are unaware of the importance of
+              proper care for cats, including the need for regular vet visits,
+              understanding breed-specific behaviors, and how lifestyle can
+              affect their health.
+            </p>
+          </article>
+          <div class="desigh-aims-block">
+            <div class="inverted-radius">
+              <p class="design-aims">feline wellness</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">cat diversity</p>
+            </div>
+            <!-- <div class="inverted-radius">
+              <p class="design-aims">enhancing care</p>
+            </div> -->
+            <div class="inverted-radius">
+              <p class="design-aims">educating on cat care</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">building bonds with cats</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">insipiring compassion</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">feline needs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="persona-section">
+        <div class="container">
+          <article class="article-block">
+            <p class="aim-text">
+              Numerous studies highlight how cats can help reduce stress,
+              anxiety, and depression. A
+              <a
+                href="https://www.researchgate.net/publication/364503284_Cat-human_related_activities_associated_with_human_well-being"
+                >2019 study</a
+              >
+              from Human-Animal Interaction Bulletin found that spending time
+              with cats significantly lowers blood pressure and reduces feelings
+              of anxiety.
+            </p>
+            <p class="aim-text">
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10262044/"
+                >'The Benefits of Pet Ownership on Mental Health'</a
+              >
+              published in Journal of Psychiatric Research discusses the
+              emotional and psychological benefits of cats for people suffering
+              from mental health conditions.
+            </p>
+          </article>
+          <div class="research-block">
+            <article class="focus">
+              <h2 class="focus-header">Our Focus</h2>
+              <ul class="focus-list">
+                <li class="focus-item">
+                  <span class="stroke">Education:</span><br />
+                  Providing in-depth, researched information about cat health,
+                  behavior, and breeds.
+                </li>
+                <li class="focus-item">
+                  <span class="stroke">Community:</span> <br />Creating a space
+                  for cat lovers to share their experiences, tips, and questions
+                  about feline care.
+                </li>
+                <li class="focus-item">
+                  <span class="stroke">Support:</span><br />
+                  Offering guidance on medical care, training, and emotional
+                  support for both cats and their owners.
+                </li>
+                <li class="focus-item">
+                  <span class="stroke">Awareness:</span><br />
+                  Highlighting the psychological and physical benefits of having
+                  a cat, along with ethical considerations regarding their care.
+                </li>
+              </ul>
+            </article>
+            <article class="steps">
+              <h2 class="steps-header">Our Steps</h2>
+              <div>
+                <ul class="steps-list">
+                  <li class="steps-item">
+                    <p>
+                      <span class="stroke">Design and Planning</span>
+                      <br />
+                      To design the structure, layout, and user interface. Plan
+                      the site's user experience, focusing on content
+                      categories, accessibility, and mobile responsiveness.
+                    </p>
+                    <img
+                      src="../images/design/catdesign/arrow.png"
+                      class="arc first"
+                    />
+                  </li>
+                  <li class="steps-item">
+                    <img
+                      src="../images/design/catdesign/arrow.png"
+                      class="arc second"
+                    />
+                    <p>
+                      <span class="stroke">Development</span><br />
+                      Develop the site using HTML, CSS, JavaScript/TypeScript.
+                      Implement interactive features like forms for pet care
+                      queries or a blog section. Use libraries or frameworks to
+                      make the development process more efficient.
+                    </p>
+                  </li>
+                  <li class="steps-item">
+                    <p>
+                      <span class="stroke">Testing and Launch</span><br />
+                      Test the website for functionality, user experience, and
+                      mobile responsiveness. After ensuring everything works
+                      well, deploy the site on a hosting platform, ensuring it's
+                      accessible to the target audience.
+                    </p>
+                    <img
+                      src="../images/design/catdesign/arrow.png"
+                      class="arc third"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="smart">
+              <h2>SMART strategy</h2>
+              <ul class="smart-list">
+                <li class="smart-item">
+                  <p class="smart-letter">s</p>
+                  <p>
+                    Specific: To provide comprehensive information on cats,
+                    including their breeds, physiology, care tips, and the
+                    health benefits of owning a cat.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">M</p>
+                  <p>
+                    Measurable: Success will be measured by the number of
+                    visitors who engage with educational content, the number of
+                    subscriptions or followers, and the amount of positive
+                    feedback received from the cat community.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">A</p>
+                  <p>
+                    Achievable: The website will be designed using accessible
+                    technologies like HTML, CSS, JavaScript/TypeScript, and
+                    deployed using industry-standard frameworks to ensure
+                    functionality and user engagement.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">r</p>
+                  <p>
+                    Relevant: The website serves the growing community of cat
+                    lovers, providing a reliable, evidence-based resource that
+                    educates and helps owners give better care to their pets.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">t</p>
+                  <p>
+                    Time-Bounded: The website is to be launched within months,
+                    with major milestones like content development, design
+                    finalization, and full deployment scheduled over the next
+                    three weeks.
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <img src="../images/design/catdesign/27.jpg" />
+      </section>
+      <section class="symbol-section">
+        <div class="container">
+          <h2>Name</h2>
+          <div class="main-symbol-section">
+            <p class="symbol-explanation">
+              The name Pawprints Journal encapsulates the journey and story of
+              every cat - from their playful antics to their gentle presence in
+              our lives.
+            </p>
+            <div class="symbol-text-block">
+              <img
+                src="../images/design/catdesign/paw-heart.png"
+                class="symbol-img"
+              />
+              <article class="symbol-text-art">
+                <p class="symbol-text">
+                  The word pawprints symbolizes the unique marks cats leave on
+                  our hearts, each cat's personality and experiences creating a
+                  lasting imprint on our lives.
+                </p>
+                <p class="symbol-text">
+                  Journal reflects the idea of a record, a collection of
+                  knowledge, and a space for ongoing discovery.
+                </p>
+              </article>
+            </div>
+            <p class="symbol-explanation-big">
+              Just as a journal captures thoughts, memories, and experiences,
+              Pawprints Journal is a place to document and share the rich,
+              varied lives of cats, their health, behaviors, and the joy they
+              bring to us. This name is designed to evoke a sense of warmth,
+              curiosity, and care, inviting cat lovers to explore, learn, and
+              reflect on the wonderful journey that is life with cats.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="ui-kit-section">
+        <div class="container">
+          <h2>Colors</h2>
+          <div class="color-container">
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Orange (#f08c00): This vibrant color is associated with energy,
+                enthusiasm, and warmth. It can evoke feelings of happiness,
+                playfulness, and friendliness. This is perfect for a cat-themed
+                site, where the goal is to connect emotionally with visitors and
+                create a welcoming environment.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Green (#c6da20): Green represents health, growth, and nature,
+                which fits perfectly for a website dedicated to promoting a
+                cat's lifestyle and well-being. It's a soothing color often
+                linked to peace and balance, making it ideal for a site focused
+                on both the physical and emotional health of cats.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Red (#da1212): Red is a bold color that grabs attention,
+                signifying importance or urgency. It can be used to highlight
+                critical points or call attention to important topics like
+                safety or immediate health concerns. It adds a touch of
+                intensity to the design.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Turquoise (#f3f5d5): Turquoise evokes tranquility, calmness, and
+                peace. It has a soothing effect, making it a great background
+                color that won't overwhelm the user. This color can contribute
+                to the website's peaceful, harmonious feel, perfect for a site
+                that aims to educate and inform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="proto-section">
+        <div class="container">
+          <h2>Prototype</h2>
+          <p>
+            The prototype of the Pawprints Journal website showcases a
+            user-friendly interface designed to offer both simplicity and
+            functionality. With a focus on providing valuable information and
+            resources, it features key elements such as breed profiles, health
+            tips, and care guides. The layout is crafted to ensure smooth
+            navigation, allowing both seasoned cat lovers and new pet parents to
+            easily access insightful content and connect with a community of
+            fellow enthusiasts. The design prioritizes an engaging, informative
+            experience tailored to the needs of every cat and their human
+            companions.
+          </p>
+          <div class="main-proto-block">
+            <div class="cards-app">
+              <img src="../images/design/catdesign/scr1.png" />
+              <img src="../images/design/catdesign/scr3.png" />
+              <img src="../images/design/catdesign/scr5.png" />
+              <img src="../images/design/catdesign/src2.png" />
+              <img src="../images/design/catdesign/src4.png" />
+            </div>
+            <img
+              src="../images/design/thinking-person.png"
+              class="person-with-app"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Create a meaningful life with tools that guide, inspire, and
+              empower.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Social media</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Leave a review
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">&copy; 2025 mercury_paws. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Write down your thoughts about our work!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address (e.g. user@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment"> Comment </label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="text-privacy-style">
+                I accept the terms and conditions of the
+                <a
+                  href="../pages/privacyPolicy.html"
+                  class="privacy-policy-text"
+                  target="_blank"
+                >
+                  Privacy Policy
+                </a>
+              </p>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- backdrop mobile -->
+
+  <div class="backdrop">
+    <div class="modal">
+      <button class="close-mobile-menu-bttn" type="button">
+        <svg class="close-bttn" width="8" height="8">
+          <use href="../images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="backdrop-mobile-menu">
+        <li>
+          <a class="menu-navigation" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a
+            class="menu-navigation portfolio active-page"
+            href="../index.html#portfolio"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="menu-navigation" href="../pages/aboutMe.html">About me</a>
+        </li>
+        <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
+        <li>
+          <a class="menu-navigation" href="../pages/contact.html">Contacts</a>
+        </li>
+      </ul>
+      <address class="address-styles-mobile-backdrop">
+        <ul class="contact-us-list">
+          <li class="contact-us-list-item">
+            <a
+              class="contact-us mail"
+              href="mailto:anastasiia.kutsenkova@gmail.com"
+              >anastasiia.kutsenkova<br />@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="social-links-modal-wrapper">
+        <ul class="social-links-modal-list">
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.instagram.com/mercury_paws/"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://github.com/mercury-paws"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</html>
