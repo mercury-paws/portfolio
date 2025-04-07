@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-education</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/petlovedesign.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Home</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation active-page"
+                href="../index.html#portfolio"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation aboutMe" href="../pages/aboutMe.html"
+                >About me</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a class="contact-us" href="mailto:info@devstudio.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main class="desing-css">
+      <section class="name-section">
+        <div class="container">
+          <div class="name-topic-block">
+            <h5 class="topic">design</h5>
+            <h1 class="design-name">petl♥ove</h1>
+          </div>
+          <div class="btn-block">
+            <a class="go-to-link" href="https://mercury-paws.github.io/cat-web"
+              >Web is under construction</a
+            >
+            <a class="go-to-link" href="https://github.com/mercury-paws/cat-web"
+              >Go to the GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="design-section">
+        <div class="container">
+          <article class="name-aim-block">
+            <h2>Research Insights</h2>
+            <p class="aim-text">
+              According to a 2023 study by Pet Care Industry Trends, over 67% of
+              households in the US own a pet, and the demand for trusted
+              information and services is growing. The global pet care market is
+              expected to reach $325 billion by 2028, showcasing the need for
+              streamlined platforms.
+            </p>
+            <p class="aim-text">
+              Social media shows a rise in pet-related communities, yet lacks
+              structure and verified resources.
+            </p>
+            <h2>Inspirations</h2>
+            <ul class="aim-text">
+              <li>The Dodo - For emotionally engaging rescue stories.</li>
+              <li>Petfinder - A great platform for adoption listings.</li>
+              <li>
+                GoodRx Pets - Reliable source of pet medications and tips.
+              </li>
+              <li>
+                Reddit (r/pets) - Reflects real concerns of pet owners:
+                behavioral help, vet costs, nutrition, etc.
+              </li>
+            </ul>
+          </article>
+          <div class="desigh-aims-block">
+            <div class="inverted-radius">
+              <p class="design-aims">pet health & happiness</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">diverse pet care options</p>
+            </div>
+            <!-- <div class="inverted-radius">
+              <p class="design-aims">enhancing care</p>
+            </div> -->
+            <div class="inverted-radius">
+              <p class="design-aims">teaching responsible pet ownership</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">strengthening pet connections</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">fostering kindness for pets</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">caring for pet needs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="persona-section">
+        <div class="container">
+          <div class="research-block">
+            <article class="user-focus">
+              <h2 class="focus-header">
+                Target User Segments (Representative Sample)
+              </h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table-header">Group</th>
+                    <th class="table-header">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-cell">New pet owners</td>
+                    <td class="table-cell">
+                      People who recently adopted or bought a pet
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Long-time pet parents</td>
+                    <td class="table-cell">
+                      Experienced caretakers of dogs, cats, or exotic pets
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Animal lovers w/o pets</td>
+                    <td class="table-cell">
+                      People interested in rescue, volunteering, or future
+                      adoption
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Pet business reps</td>
+                    <td class="table-cell">
+                      From pet food, vet clinics, or shelters
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Young adults (18-30)</td>
+                    <td class="table-cell">
+                      Socially active, digitally native pet lovers
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Families with kids</td>
+                    <td class="table-cell">
+                      Parents looking for safe, educational pet platforms
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <article class="focus">
+              <h2 class="focus-header">
+                Empathy Map (User Perspective: "A pet owner or animal lover")
+              </h2>
+              <ul class="focus-list">
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Says</p>
+                  </div>
+
+                  <p>
+                    "I just want to give my pet the best life."<br />"Why is vet
+                    info so expensive?"<br />"I wish I could adopt but don't'
+                    know where to start."
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Thinks</p>
+                  </div>
+                  <p>
+                    "Am I doing this right?"<br />
+                    "I need trustworthy info."<br />
+                    "I want to help animals in need but don't know how."<br />
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Does</p>
+                  </div>
+
+                  <p>
+                    Reads pet forums<br />
+                    Searches pet health articles<br />
+                    Scrolls social media for tips<br />
+                    Shares pet pics and stories
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Feels</p>
+                  </div>
+                  <ul>
+                    <li>Overwhelmed by info</li>
+                    <li>Emotionally invested in animals</li>
+                    <li>Wants community and support</li>
+                    <li>Stressed by costs and conflicting advice</li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+            <article class="steps">
+              <h2 class="steps-header">Pain Points</h2>
+              <div>
+                <ul class="steps-list">
+                  <li class="steps-item">
+                    <p>Scattered resources and unreliable info</p>
+                    <img
+                      src="../images/design/petlovedesign/1.png"
+                      class="arc first"
+                    />
+                  </li>
+                  <li class="steps-item">
+                    <img
+                      src="../images/design/petlovedesign/2.png"
+                      class="arc second"
+                    />
+                    <p>Lack of community for emotional support</p>
+                  </li>
+                  <li class="steps-item">
+                    <p>
+                      No single platform for learning, adopting, shopping, and
+                      helping
+                    </p>
+                    <img
+                      src="../images/design/petlovedesign/3.png"
+                      class="arc third"
+                    />
+                  </li>
+                  <li class="steps-item">
+                    <img
+                      src="../images/design/petlovedesign/4.png"
+                      class="arc third"
+                    />
+                    <p>Time-consuming research process</p>
+                  </li>
+                  <li class="steps-item">
+                    <p>Confusion about pet laws and care standards</p>
+                    <img
+                      src="../images/design/petlovedesign/5.png"
+                      class="arc third"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="smart">
+              <h2>Defining the Problem</h2>
+              <p class="smart-text">
+                In the modern digital space, pet lovers face fragmented
+                resources:
+              </p>
+              <ul class="smart-list">
+                <li class="smart-item">
+                  <p class="smart-letter">1</p>
+                  <p>Adoptions are scattered across platforms.</p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">2</p>
+                  <p>
+                    News about animal laws or medical advice is hard to find in
+                    one place.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">3</p>
+                  <p>
+                    Rescue missions and ways to support them are often invisible
+                    to the general public.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">4</p>
+                  <p>
+                    Pet owners need guidance on feeding, care, and behavior
+                    management, but must visit multiple sources.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">5</p>
+                  <p>
+                    New pet parents are often overwhelmed by information
+                    overload or misinformation.
+                  </p>
+                </li>
+              </ul>
+              <p class="smart-text">
+                petl♥ve centralizes all of this — creating a unified, reliable,
+                and emotional space for users to stay informed, act
+                compassionately, and connect meaningfully.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <img src="../images/design/petlovedesign/petlove.jpg" />
+      </section>
+      <section class="symbol-section">
+        <div class="container">
+          <h2>Name</h2>
+          <div class="main-symbol-section">
+            <p class="symbol-explanation">
+              The logo reflects the core mission: helping people connect with
+              and care for animals, not just through information and commerce,
+              but with love and empathy.
+            </p>
+            <div class="symbol-text-block">
+              <img
+                src="../images/design/catdesign/paw-heart.png"
+                class="symbol-img"
+              />
+              <article class="symbol-text-art">
+                <p class="symbol-text">
+                  The heart acts as a universal symbol of compassion.
+                </p>
+                <p class="symbol-text">
+                  Lowercase lettering makes the brand feel approachable and
+                  friendly.
+                </p>
+              </article>
+            </div>
+            <p class="symbol-explanation-big">
+              petl♥ve combines simplicity and sentiment. The heart (♥) replaces
+              the "o" to symbolize affection, care, and emotional bonding
+              between humans and pets.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="ui-kit-section">
+        <div class="container">
+          <h2>Colors</h2>
+          <div class="color-container">
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Charcoal Gray (#262626): A strong neutral that brings depth and
+                readability. It offers a grounded, modern look, letting other
+                colors shine.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Golden Orange (#F6B83D): A warm, friendly accent that evokes
+                sunshine, energy, and warmth — great for emotional engagement
+                and call-to-action buttons.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Cream Beige (#FFF4DF): A soft background that feels cozy and
+                safe — reminiscent of home and warmth, creating trust and
+                comfort.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Pure White (#ffffff): Used for contrast, clarity, and clean
+                whitespace — it enhances readability and keeps the UI feeling
+                fresh and open.
+              </p>
+            </div>
+            <p>
+              Together, these colors strike a balance between professionalism,
+              warmth, and care — reflecting the essence of Petl♥ve as a reliable
+              yet heart-centered platform.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="proto-section">
+        <div class="container">
+          <h2>Prototype</h2>
+          <p>
+            The prototype of the Petl♥ve App is designed as a vibrant and
+            inclusive platform that brings together pet enthusiasts, caregivers,
+            and rescuers under one digital roof. With a warm, accessible
+            interface and a focus on compassion-driven functionality, Petl♥ve
+            offers users the ability to:
+          </p>
+          <ul>
+            <li>Register and create pet profiles</li>
+            <li>
+              Read curated news about pet medicine, animal laws, rescue efforts,
+              pet care, and global pet-related stories
+            </li>
+            <li>Adopt or buy pets responsibly</li>
+            <li>Find and support animal rescue efforts</li>
+            <li>Browse and connect with pet food companies</li>
+            <li>Add personal pets with photos, health logs, and more</li>
+          </ul>
+          <p>
+            The app aims to be a hub for both emotional connection and practical
+            support, combining a news feed with community features and
+            resources. The layout encourages smooth navigation, optimized both
+            for desktop and mobile users. Petl♥ve is built for pet lovers of all
+            kinds — whether you're a first-time dog owner, a lifelong cat
+            guardian, or a passionate animal rights advocate.
+          </p>
+          <div class="main-proto-block">
+            <div class="cards-app">
+              <img src="../images/design/catdesign/scr1.png" />
+              <img src="../images/design/catdesign/scr3.png" />
+              <img src="../images/design/catdesign/scr5.png" />
+              <img src="../images/design/catdesign/src2.png" />
+              <img src="../images/design/catdesign/src4.png" />
+            </div>
+            <img
+              src="../images/design/thinking-person.png"
+              class="person-with-app"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Create a meaningful life with tools that guide, inspire, and
+              empower.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Social media</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Leave a review
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">&copy; 2025 mercury_paws. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Write down your thoughts about our work!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address (e.g. user@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment"> Comment </label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="text-privacy-style">
+                I accept the terms and conditions of the
+                <a
+                  href="../pages/privacyPolicy.html"
+                  class="privacy-policy-text"
+                  target="_blank"
+                >
+                  Privacy Policy
+                </a>
+              </p>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- backdrop mobile -->
+
+  <div class="backdrop">
+    <div class="modal">
+      <button class="close-mobile-menu-bttn" type="button">
+        <svg class="close-bttn" width="8" height="8">
+          <use href="../images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="backdrop-mobile-menu">
+        <li>
+          <a class="menu-navigation" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a
+            class="menu-navigation portfolio active-page"
+            href="../index.html#portfolio"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="menu-navigation" href="../pages/aboutMe.html">About me</a>
+        </li>
+        <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
+        <li>
+          <a class="menu-navigation" href="../pages/contact.html">Contacts</a>
+        </li>
+      </ul>
+      <address class="address-styles-mobile-backdrop">
+        <ul class="contact-us-list">
+          <li class="contact-us-list-item">
+            <a
+              class="contact-us mail"
+              href="mailto:anastasiia.kutsenkova@gmail.com"
+              >anastasiia.kutsenkova<br />@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="social-links-modal-wrapper">
+        <ul class="social-links-modal-list">
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.instagram.com/mercury_paws/"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://github.com/mercury-paws"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</html>
