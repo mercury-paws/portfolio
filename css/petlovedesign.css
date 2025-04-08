@@ -1,12 +1,17 @@
 :root {
   --common-white: #fff;
-  --orange: #f08c00;
-  --green: #c6da20;
-  --red: #da1212;
-  --turquoise: #f3f5d5;
+  --orange: #f6b83d;
+  --blue: #54adff;
+  --red: #f43f5e;
+  --beige: #fff4df;
+  --grey: #262626;
 }
 a {
   color: inherit;
+}
+
+* {
+  color: var(--grey);
 }
 
 .inverted-radius {
@@ -48,22 +53,22 @@ a {
   background-repeat: no-repeat;
 }
 .desigh-aims-block .inverted-radius:nth-child(1) {
-  background-image: url(../images/design/catdesign/2.jpg);
+  background-image: url(../images/design/petlovedesign/6.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(2) {
-  background-image: url(../images/design/catdesign/7.jpg);
+  background-image: url(../images/design/petlovedesign/7.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(3) {
-  background-image: url(../images/design/catdesign/3.jpg);
+  background-image: url(../images/design/petlovedesign/8.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(4) {
-  background-image: url(../images/design/catdesign/4.jpg);
+  background-image: url(../images/design/petlovedesign/9.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(5) {
-  background-image: url(../images/design/catdesign/8.jpg);
+  background-image: url(../images/design/petlovedesign/10.jpg);
 }
 .desigh-aims-block .inverted-radius:nth-child(6) {
-  background-image: url(../images/design/catdesign/1.jpg);
+  background-image: url(../images/design/petlovedesign/11.jpg);
 }
 
 .inverted-radius:hover {
@@ -112,11 +117,21 @@ a {
 
 .stroke {
   color: var(--red);
-  font-weight: 400;
+  font-weight: 600;
 }
 .stroke-two {
   color: var(--orange);
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.stroke-three {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.stroke-it {
+  font-style: italic;
+  font-size: 42px;
 }
 
 .desing-css h1 {
@@ -169,6 +184,7 @@ a {
   background-color: transparent;
   color: #000;
   border-radius: 50px;
+  text-align: center;
 }
 
 .go-to-link:hover {
@@ -226,6 +242,10 @@ a {
   z-index: 999;
 }
 
+.inspiration {
+  font-weight: 600;
+}
+
 .steps-list {
   display: flex;
   flex-direction: column;
@@ -248,11 +268,11 @@ a {
   gap: 25px;
   row-gap: 45px;
   padding: 8px;
-  box-shadow: -15px 0 10px var(--turquoise);
+  box-shadow: -15px 0 10px var(--orange);
 }
 
 .steps-list .steps-item:nth-child(2n) {
-  box-shadow: 15px 0 10px var(--turquoise);
+  box-shadow: 15px 0 10px var(--orange);
 }
 
 .steps-item p {
@@ -263,7 +283,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 25px;
+  gap: 2px;
 }
 .smart-item {
   display: flex;
@@ -271,7 +291,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 36px;
   flex-grow: 1;
 }
 .smart p {
@@ -281,13 +301,17 @@ a {
   text-align: left;
 }
 
-.smart .smart-text {
+.smart .smart-text:nth-of-type(1) {
   max-width: 1000px;
-  padding: 16px 0;
+  padding: 0;
+}
+.smart .smart-text:nth-of-type(2) {
+  max-width: 1000px;
+  padding: 36px 0 0 0;
 }
 
 .smart-letter {
-  padding: 25px 25px;
+  padding: 16px 25px;
 
   text-transform: capitalize;
   font-size: 42px;
@@ -330,6 +354,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   font-size: 32px;
+  padding: 35px 0 0 0;
 }
 
 .focus-item {
@@ -351,7 +376,6 @@ a {
 .smart {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 45px 0;
 }
 
@@ -381,7 +405,7 @@ a {
 }
 .user-focus p:nth-of-type(2) {
   font-size: 24px;
-  padding-top: 35px;
+  padding: 35px 0;
 }
 
 .user-stories {
@@ -449,7 +473,7 @@ a {
 .symbol-text {
   font-size: 24px;
   line-height: 1.8;
-  padding: 25px;
+  padding: 16px;
 }
 .symbol-explanation {
   font-size: 24px;
@@ -559,10 +583,18 @@ a {
 }
 
 .main-proto-block {
+  padding-top: 35px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 25px;
+}
+.proto-list {
+  padding: 25px 0;
+}
+.proto-item {
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .proto-section .cards-app {
