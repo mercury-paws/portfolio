@@ -124,6 +124,16 @@
 .desing-css h1 {
   font-size: 54px;
 }
+
+@media (max-width: 420px) {
+  .desing-css h1 {
+    font-size: 24px;
+    padding-bottom: 36px;
+  }
+  .topic {
+    font-size: 14px;
+  }
+}
 .desing-css h2 {
   font-size: 38px;
 }
@@ -145,6 +155,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 420px) {
+  .name-section > .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .topic {
@@ -176,6 +194,13 @@
   flex-direction: row;
   gap: 75px;
   align-items: center;
+}
+
+@media (max-width: 420px) {
+  .design-section .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .name-aim-block {
@@ -249,6 +274,32 @@
   object-fit: cover;
   height: 315px;
   box-shadow: 15px 0 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 780px) {
+  .persona,
+  .user-journey,
+  .user-storyboard {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6px;
+  }
+
+  .persona div,
+  .user-journey div,
+  .user-storyboard div {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .persona img,
+  .user-journey img,
+  .user-storyboard img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    box-shadow: 15px 0 15px 5px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .user-stories {
@@ -339,6 +390,97 @@
 .thinking-person {
   width: 650px;
 }
+@media (max-width: 480px) {
+  .user-stories {
+    padding-top: 175px;
+    padding-bottom: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-story-header {
+    position: absolute;
+    font-size: 358px;
+    top: 92%;
+    left: 0;
+    text-align: justify;
+    line-height: 1.2;
+    z-index: -1;
+    color: #a8a8a8;
+    padding: 16px;
+  }
+
+  .design-cloud {
+    width: 180px;
+    height: 150px;
+    position: absolute;
+  }
+
+  .first {
+    top: 0;
+    left: 63%;
+  }
+
+  .second {
+    top: 0;
+    left: 2%;
+  }
+
+  .third {
+    top: 35%;
+    left: 64%;
+  }
+
+  .design-cloud img {
+    object-fit: contain;
+  }
+  .design-cloud p {
+    font-style: italic;
+  }
+
+  .text-one {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 48%;
+    width: 80px;
+    line-height: 1;
+    font-size: 6px;
+    font-style: italic;
+  }
+  .text-two {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 53%;
+    width: 110px;
+    line-height: 1.1;
+    font-size: 7px;
+  }
+  .text-three {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 35%;
+    width: 70px;
+    font-size: 6px;
+    line-height: 1.1;
+  }
+  .first img {
+    width: 130px;
+    height: 190px;
+  }
+  .third img {
+    width: 120px;
+    height: 120px;
+    object-fit: fill;
+  }
+  .thinking-person {
+    width: 250px;
+  }
+}
 
 .symbol-section .container {
   padding-top: 75px;
@@ -404,6 +546,69 @@
   width: 300px;
   height: 200px;
   opacity: 0.8;
+}
+
+@media (max-width: 790px) {
+  .main-symbol-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .symbol-section h2 {
+    padding: 16px;
+  }
+
+  .symbol-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .symbol-text-art {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    justify-content: center;
+  }
+  .symbol-img {
+    object-fit: cover;
+    max-width: 500px;
+  }
+
+  .symbol-text {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  .symbol-explanation {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .symbol-explanation-big {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    width: 280px;
+    padding-top: 36px;
+  }
+  .parts-of-symbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+  }
+
+  .parts-of-symbol img:nth-child(1) {
+    object-fit: contain;
+  }
+  .parts-of-symbol img:nth-child(2) {
+    opacity: 0.8;
+  }
 }
 
 .typoghraphy-section,
@@ -529,4 +734,10 @@
   position: absolute;
   top: 60%;
   left: 20%;
+}
+
+@media (max-width: 420px) {
+  .main-proto-block {
+    display: none;
+  }
 }

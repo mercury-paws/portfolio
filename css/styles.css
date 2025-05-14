@@ -528,6 +528,7 @@ img {
 }
 .text-of-the-paragraphs-portfolio {
   font-size: 16px;
+  color: inherit;
 }
 .portfolio-list {
   display: flex;
@@ -1905,4 +1906,37 @@ span.input-checkbox-icon {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
+}
+
+.btn-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 540px;
+}
+.go-to-link {
+  cursor: pointer;
+  padding: 34px;
+  box-shadow: -15px -15px 10px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  color: #000;
+  border-radius: 50px;
+  flex-grow: 1;
+  width: 269px;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .btn-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 275px;
+  }
+}
+
+.fifth {
+  padding-top: 76px;
+  color: #000000;
+  text-shadow: 3px 3px 10px rgba(224, 172, 0, 0.548);
 }

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-education</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Home</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation active-page"
+                href="../index.html#portfolio"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation aboutMe" href="../pages/aboutMe.html"
+                >About me</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a class="contact-us" href="mailto:info@devstudio.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main class="desing-css">
+      <section class="name-section">
+        <div class="container">
+          <article class="article-block">
+            <h2>The Evolution of Typefaces</h2>
+            <p class="aim-text">
+              The history of typefaces is a journey through culture, technology,
+              and artistic expression. From the meticulous serifs of Renaissance
+              printing to the clean lines of modern digital fonts, typefaces
+              have shaped how we read and interpret the world around us.
+            </p>
+            <p class="aim-text">
+              Early type mirrored handwritten scripts, while industrialization
+              birthed bold slab serifs and streamlined sans serifs for mass
+              communication. In the digital age, type design embraces both form
+              and function, with families created for clarity, emotion, and
+              brand identity across screens and print alike.
+            </p>
+          </article>
+
+          <h2>Serif Typefaces</h2>
+
+          <div class="design-section">
+            <img src="../images/fontimg/garamond.jpg" alt="Garamond sample" />
+            <div>
+              <h3>Garamond: The Classic Book Typeface</h3>
+              <p>
+                Garamond was designed in the 16th century by Claude Garamond and
+                later revived by many type designers. It reflects the elegance
+                and balance of Renaissance letterforms and is often used in
+                books, including the Harry Potter series and Dr. Seuss books. It
+                symbolizes tradition, elegance, and sophistication.
+              </p>
+              <p>
+                In the wild: Harry Potter books, Dr. Seuss, Google's original
+                logo, Abercrombie & Fitch, Apple's Think Different campaign.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/bembo.jpg" alt="Bembo sample" />
+            <div>
+              <h3>Bembo: The Renaissance Revival</h3>
+              <p>
+                Bembo was based on a type used by Aldus Manutius in 1496 and
+                revived by Monotype in 1929. It has a classical, elegant form
+                ideal for book typography, offering great readability and beauty
+                in print.
+              </p>
+              <p>
+                In the wild: Oxford University Press, Penguin Classics, academic
+                publishing.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/georgia.jpg" alt="Georgia sample" />
+            <div>
+              <h3>Georgia: Screen-Friendly Elegance</h3>
+              <p>
+                Georgia was designed by Matthew Carter in 1993 for Microsoft. It
+                is a serif font optimized for screen readability with generous
+                spacing and sturdy forms, making it ideal for digital use and
+                legible in small sizes.
+              </p>
+              <p>
+                In the wild: New York Times website, default Windows/Mac fonts,
+                blogs and news sites.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/didot.jpg" alt="Didot sample" />
+            <div>
+              <h3>Didot: The Haute Couture Serif</h3>
+              <p>
+                Didot was created in France during the late 18th century by
+                Firmin Didot. With high contrast and hairline serifs, it is
+                associated with fashion and luxury. It reflects Enlightenment
+                ideals of order, clarity, and refinement.
+              </p>
+              <p>
+                In the wild: Vogue logo, high fashion editorials, upscale
+                packaging and invitations.
+              </p>
+            </div>
+          </div>
+          <div class="design-section">
+            <img src="../images/fontimg/caslon.jpg" alt="Caslon sample" />
+            <div>
+              <h3>Caslon: The English Classic</h3>
+              <p>
+                Designed in the 1720s by William Caslon, this old-style serif is
+                known for its warm, readable forms. It was used in many
+                historical documents, including the U.S. Declaration of
+                Independence.
+              </p>
+              <p>
+                In the wild: Classic book printing, formal invitations,
+                editorial design.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img
+              src="../images/fontimg/baskerville.jpg"
+              alt="Baskerville sample"
+            />
+            <div>
+              <h3>Baskerville: Precision and Elegance</h3>
+              <p>
+                Created by John Baskerville in 1757, this transitional serif
+                introduced sharper contrasts and a more refined structure,
+                reflecting Enlightenment ideals of clarity and reason.
+              </p>
+              <p>
+                In the wild: Literature covers, academic publications, luxury
+                branding.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/bodoni.jpg" alt="Bodoni sample" />
+            <div>
+              <h3>Bodoni: High Contrast Glamour</h3>
+              <p>
+                Designed by Giambattista Bodoni in the late 18th century, Bodoni
+                features extreme contrast between thick and thin strokes, giving
+                it a refined and dramatic style.
+              </p>
+              <p>
+                In the wild: Fashion magazines, elegant branding, Italian
+                design.
+              </p>
+            </div>
+          </div>
+
+          <h2>Slab Serif Typefaces</h2>
+
+          <div class="design-section">
+            <img src="../images/fontimg/clarendon.jpg" alt="Clarendon sample" />
+            <div>
+              <h3>Clarendon: The Slab Serif Classic</h3>
+              <p>
+                Designed in 1845 by Robert Besley, Clarendon was one of the
+                first registered typefaces. Its bold, bracketed serifs make it
+                ideal for posters, headlines, and emphasis. It conveys a robust,
+                vintage feel.
+              </p>
+              <p>
+                In the wild: Wanted posters, signage, branding with heritage
+                vibes.
+              </p>
+            </div>
+          </div>
+
+          <h2>Sans Serif Typefaces</h2>
+
+          <div class="design-section">
+            <img
+              src="../images/fontimg/akzidenzgrotesk.jpg"
+              alt="Akzidenz Grotesk sample"
+            />
+            <div>
+              <h3>Akzidenz Grotesk: The Pioneer Sans Serif</h3>
+              <p>
+                Created in 1896 by H. Berthold AG, Akzidenz Grotesk is
+                considered the precursor to modern sans serif typefaces. It
+                influenced many later fonts including Helvetica. Known for its
+                neutral, functional look, it set the stage for 20th-century type
+                design.
+              </p>
+              <p>
+                In the wild: Swiss design posters, Bauhaus publications, and
+                minimalist branding.
+              </p>
+            </div>
+          </div>
+          <div class="design-section">
+            <img
+              src="../images/fontimg/franklin-gothic.jpg"
+              alt="Franklin Gothic sample"
+            />
+            <div>
+              <h3>Franklin Gothic: American Strength</h3>
+              <p>
+                Created by Morris Fuller Benton in 1902, Franklin Gothic is a
+                strong, no-nonsense sans serif that conveys boldness and
+                authority while remaining highly legible.
+              </p>
+              <p>
+                In the wild: Newspaper headlines, advertising, political
+                posters.
+              </p>
+            </div>
+          </div>
+          <div class="design-section">
+            <img src="../images/fontimg/gill-sans.jpg" alt="Gill Sans sample" />
+            <div>
+              <h3>Gill Sans: British Humanism</h3>
+              <p>
+                Designed by Eric Gill in 1928, Gill Sans is a humanist sans
+                serif with classical proportions. It balances warmth and
+                modernity, often seen as the British answer to geometric
+                sans-serifs.
+              </p>
+              <p>
+                In the wild: BBC branding, British Railways, Penguin book
+                covers.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/avenir.jpg" alt="Avenir sample" />
+            <div>
+              <h3>Avenir: The Geometric Humanist</h3>
+              <p>
+                Designed by Adrian Frutiger in 1988, Avenir merges the geometric
+                style of Futura with humanist touches for readability. It's
+                widely used for its clean yet warm aesthetic and is versatile
+                across print and digital formats.
+              </p>
+              <p>
+                In the wild: Apple Maps, Disney+, European signage, branding and
+                UI design.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/din.jpg" alt="DIN sample" />
+            <div>
+              <h3>DIN: The Industrial Standard</h3>
+              <p>
+                DIN 1451 was developed in Germany in the 1930s for road signs
+                and engineering. It is highly legible and has a mechanical,
+                precise feel. Later adapted into FF DIN for commercial use, it's
+                known for its functional and modern aesthetic.
+              </p>
+              <p>
+                In the wild: German road signs, NASA documents, Spotify
+                branding, contemporary editorial design.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/meta.jpg" alt="Meta sample" />
+            <div>
+              <h3>Meta: The Humanist Corporate Typeface</h3>
+              <p>
+                Designed by Erik Spiekermann in the 1990s, Meta is a humanist
+                sans serif developed for Deutsche Post. It emphasizes
+                readability, personality, and efficiency, becoming a popular
+                choice for branding and editorial use.
+              </p>
+              <p>
+                In the wild: Deutsche Post, Office of Fair Trading (UK),
+                branding and design systems worldwide.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/gotham.jpg" alt="Gotham sample" />
+            <div>
+              <h3>Gotham: The American Voice</h3>
+              <p>
+                Designed by Tobias Frere-Jones in 2000, Gotham was inspired by
+                New York City signage. Its bold, clean geometry gained
+                prominence in politics, particularly Obama's 2008 campaign, and
+                became a favorite for modern branding.
+              </p>
+              <p>
+                In the wild: Obama campaign, Spotify, GQ magazine, One World
+                Trade Center cornerstone.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/futura.jpg" alt="Futura sample" />
+            <div>
+              <h3>Futura: The Geometric Modernist</h3>
+              <p>
+                Futura was designed by Paul Renner in 1927 as a reflection of
+                Bauhaus ideals. It uses simple geometric forms and minimal
+                strokes. It's widely used for its timeless, clean look and
+                modernist appeal.
+              </p>
+              <p>
+                In the wild: IKEA (past branding), NASA plaque on the moon,
+                Supreme, Volkswagen.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img src="../images/fontimg/helvetica.jpg" alt="Helvetica sample" />
+            <div>
+              <h3>Helvetica: The Global Neutral</h3>
+              <p>
+                Designed in 1957 by Max Miedinger, Helvetica is one of the most
+                widely used typefaces in the world. Its clean, neutral design
+                embodies Swiss modernism and is known for its clarity and
+                versatility in design.
+              </p>
+              <p>
+                In the wild: NYC Subway, Lufthansa, American Apparel, countless
+                logos and interfaces.
+              </p>
+            </div>
+          </div>
+
+          <div class="design-section">
+            <img
+              src="../images/fontimg/scalasans.jpg"
+              alt="Scala Sans sample"
+            />
+            <div>
+              <h3>Scala Sans: The Elegant Companion</h3>
+              <p>
+                Designed by Martin Majoor in 1993, Scala Sans is the sans-serif
+                companion to the serif Scala. It retains classical proportions
+                and was one of the first digital font superfamilies designed for
+                editorial use.
+              </p>
+              <p>
+                In the wild: Dutch cultural institutions, academic publishing,
+                museums and design magazines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Create a meaningful life with tools that guide, inspire, and
+              empower.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Social media</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Leave a review
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">&copy; 2025 mercury_paws. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Write down your thoughts about our work!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address (e.g. user@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment"> Comment </label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="text-privacy-style">
+                I accept the terms and conditions of the
+                <a
+                  href="../pages/privacyPolicy.html"
+                  class="privacy-policy-text"
+                  target="_blank"
+                >
+                  Privacy Policy
+                </a>
+              </p>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- backdrop mobile -->
+
+  <div class="backdrop">
+    <div class="modal">
+      <button class="close-mobile-menu-bttn" type="button">
+        <svg class="close-bttn" width="8" height="8">
+          <use href="../images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="backdrop-mobile-menu">
+        <li>
+          <a class="menu-navigation" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a
+            class="menu-navigation portfolio active-page"
+            href="../index.html#portfolio"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="menu-navigation" href="../pages/aboutMe.html">About me</a>
+        </li>
+        <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
+        <li>
+          <a class="menu-navigation" href="../pages/contact.html">Contacts</a>
+        </li>
+      </ul>
+      <address class="address-styles-mobile-backdrop">
+        <ul class="contact-us-list">
+          <li class="contact-us-list-item">
+            <a
+              class="contact-us mail"
+              href="mailto:anastasiia.kutsenkova@gmail.com"
+              >anastasiia.kutsenkova<br />@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="social-links-modal-wrapper">
+        <ul class="social-links-modal-list">
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.instagram.com/mercury_paws/"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://github.com/mercury-paws"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-modal-item">
+            <a
+              href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+              target="_blank"
+              class="link"
+            >
+              <svg width="24" height="24" class="icon">
+                <use href="../images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</html>

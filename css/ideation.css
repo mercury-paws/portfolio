@@ -1,0 +1,115 @@
+.desing-css h1 {
+  font-size: 54px;
+  position: relative;
+  z-index: 999;
+}
+.desing-css h2 {
+  font-size: 38px;
+  z-index: 999;
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.desing-css h3 {
+  font-size: 32px;
+  z-index: 999;
+  position: relative;
+}
+
+.desigh-aims-block {
+  display: flex;
+  flex-direction: row;
+  row-gap: 0px;
+  gap: 0px;
+  flex-wrap: wrap;
+  max-width: 484px;
+}
+
+.name-section > .container {
+  padding-top: 78px;
+  max-width: 1050px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-block {
+  padding-bottom: 35px;
+}
+
+.go-to-link:hover {
+  color: var(--orange);
+  background-color: transparent;
+}
+.design-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 420px) {
+  .name-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .desing-css h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .design-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.name-aim-block {
+  max-width: 559px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.name-aim-block h2 {
+  padding-bottom: 35px;
+}
+
+.aim-text {
+  font-size: 24px;
+  line-height: 1.8;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  position: relative;
+  z-index: 999;
+}
+
+.main-typo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+
+.design-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.design-section p {
+  font-size: 18px;
+  padding-bottom: 16px;
+}
+
+.design-section img {
+  width: 320px;
+}
