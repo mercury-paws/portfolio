@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-o mně</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/ideation.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+    <script src="../js/sqew.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Domů</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html#portfolio"
+                >Projekty</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation aboutMe active-page"
+                href="../pages/aboutMe.html"
+                >O mně</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main class="desing-css">
+      <section class="name-section">
+        <div class="container">
+          <article class="article-block">
+            <h2>Generování nápadů</h2>
+            <div class="sqewText">
+              <p class="aim-text sqewOne">
+                V neustále se vyvíjejícím oboru grafického designu je průběžné
+                vzdělávání a experimentování nezbytné. Vzdělávání v grafickém
+                designu vybavuje designéry potřebnými dovednostmi pro kritické
+                myšlení, rozvoj strategií vizuální komunikace a přizpůsobení se
+                trendům v oboru.
+              </p>
+              <p class="aim-text sqewTwo">
+                Vytváření moodboardů, plakátů a dalších vizuálních konceptů
+                pomáhá zdokonalit tvůrčí proces sbíráním inspirace, definováním
+                estetiky a efektivním předáváním sdělení.
+              </p>
+              <p class="aim-text sqewThree">
+                Tyto cvičení nejen zlepšují technické schopnosti, ale také
+                prohlubují pochopení principů designu, jako je typografie,
+                barevná teorie a kompozice rozvržení.
+              </p>
+              <p class="aim-text sqewFour">
+                Proces tvorby moodboardů je například klíčový pro nastavení tónu
+                projektu, umožňuje designérům zkoumat vizuální nápady,
+                harmonizovat prvky a vytvářet soudržný příběh.
+              </p>
+              <p class="aim-text sqewFive">
+                Díky pravidelnému procvičování a zkoumání různých forem designu
+                se grafik vyvíjí jak technicky, tak kreativně, což zajišťuje, že
+                jeho práce zůstává inovativní a působivá v neustále se měnícím
+                světě.
+              </p>
+            </div>
+          </article>
+
+          <article class="article-block">
+            <h2>Náladové koláže</h2>
+            <ul class="pic-section">
+              <li>
+                <img
+                  src="../images/graphicDesign/moodBoards/wheeloftime.jpg"
+                  alt="wheeloftime"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/moodBoards/grapes.jpg"
+                  alt="grapes"
+                />
+              </li>
+            </ul>
+          </article>
+          <article class="article-block">
+            <h2>Příběhy</h2>
+            <h3>Noc ve městě</h3>
+
+            <ul class="pic-section">
+              <li>
+                <img src="../images/graphicDesign/stories/1.jpg" alt="cats" />
+              </li>
+              <li>
+                <img src="../images/graphicDesign/stories/2.jpg" alt="cats" />
+              </li>
+              <li>
+                <img src="../images/graphicDesign/stories/3.jpg" alt="cats" />
+              </li>
+              <li>
+                <img src="../images/graphicDesign/stories/4.jpg" alt="cats" />
+              </li>
+              <li>
+                <img src="../images/graphicDesign/stories/5.jpg" alt="cats" />
+              </li>
+              <li>
+                <img src="../images/graphicDesign/stories/6.jpg" alt="cats" />
+              </li>
+            </ul>
+          </article>
+          <article class="article-block">
+            <h2>Plakáty</h2>
+
+            <ul class="pic-section">
+              <li>
+                <img
+                  src="../images/graphicDesign/posters/astrology.jpg"
+                  alt="astrology poster"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/posters/einshtein.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/posters/ples.jpg"
+                  alt="blood"
+                />
+              </li>
+            </ul>
+          </article>
+          <article class="article-block">
+            <h2>Letáky</h2>
+
+            <ul class="pic-section">
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/aquaf.jpg"
+                  alt="astrology poster"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/aquaf1.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/aquaf2.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/aquaf3.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/catf1.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/catf2.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/chocf.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/chocf1.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/chocf3.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/chocf4.jpg"
+                  alt="blood"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/vyshf1.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/vyshf2.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/vyshf3.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/yogaf1.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/yogaf2.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/flyers/yogaf3.jpg"
+                  alt="blood"
+                />
+              </li>
+            </ul>
+          </article>
+          <article class="article-block">
+            <h2>Obálky časopisů</h2>
+
+            <ul class="pic-section">
+              <li>
+                <img
+                  src="../images/graphicDesign/journal/choc.jpg"
+                  alt="astrology poster"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/journal/vyshyv.jpg"
+                  alt="blood"
+                />
+              </li>
+            </ul>
+          </article>
+          <article class="article-block">
+            <h2>Karty</h2>
+
+            <ul class="pic-section">
+              <li>
+                <img
+                  src="../images/graphicDesign/vCards/my-visit-card.jpg"
+                  alt="astrology poster"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/vCards/s-visit-card.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/vCards/visit card 1.jpg"
+                  alt="blood"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/graphicDesign/vCards/visit card v2.jpg"
+                  alt="blood"
+                />
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- <section class="design-section">
+        <div class="container"></div>
+      </section>
+      <section class="persona-section">
+        <div class="container"></div>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Vytvářejte smysluplný život s nástroji, které vedou, inspirují a
+              posilují.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Sociální sítě</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Zanechat recenzi
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">
+          &copy; 2025 mercury_paws. Všechna práva vyhrazena.
+        </p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Napište své myšlenky o naší práci!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Jméno</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Zadejte platný email (např. uzivatel@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment">Komentář</label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Zadejte text"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Souhlasím se zpracováním osobních údajů
+            </label>
+          </div>
+          <button class="submit-form-button" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

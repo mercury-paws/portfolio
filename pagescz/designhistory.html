@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-o mně</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/designhistory.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Domů</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html#portfolio"
+                >Projekty</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation aboutMe active-page"
+                href="../pages/aboutMe.html"
+                >O mně</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main class="desing-css">
+      <section class="name-section">
+        <div class="container">
+          <article class="article-block">
+            <h2>Dějiny designu</h2>
+            <p class="aim-text">
+              Dějiny designu sahají přes století a odrážejí vyvíjející se vztah
+              lidstva k funkci, formě a kráse. Od starověkých symbolických vzorů
+              po moderní minimalismus byl design vizuálním jazykem používaným k
+              vyjádření hodnot, postavení a inovací. Každá doba přinesla
+              charakteristické styly ovlivněné kulturou, technologií a
+              společenskými změnami.
+            </p>
+            <p class="aim-text">
+              Jak společnosti rostly a stávaly se složitějšími, design se
+              vyvíjel od řemeslné ornamentiky k mocné disciplíně, která
+              formovala vše od každodenních předmětů až po architektonické
+              krajiny.
+            </p>
+          </article>
+
+          <article class="article-block">
+            <h2>Opakující se designové vzory</h2>
+            <p class="aim-text">
+              Opakování v designu vytváří harmonii, rytmus a kontinuitu. Napříč
+              civilizacemi opakující se motivy symbolizovaly víry, strukturovaly
+              kompozice a zlepšovaly estetiku. Tyto vzory, často hluboce
+              zakořeněné v kulturní identitě, překonávají čas díky svým
+              vyváženým, symetrickým uspořádáním.
+            </p>
+            <p class="aim-text">
+              Prozkoumejme šest vlivných stylů, které opakování využívají
+              jedinečně:
+            </p>
+          </article>
+
+          <!-- Victorian -->
+          <div class="design-section">
+            <img
+              src="../images/designhistory/victorian.jpg"
+              alt="Victorian Design"
+              style="max-width: 400px"
+            />
+            <div>
+              <h3>Viktoriánský</h3>
+              <p>
+                Viktoriánský design vznikl během vlády královny Viktorie
+                (1837–1901) a zdůrazňoval okázalost a propracované detaily.
+                Opakující se květinové vzory, damasky a zdobené ornamenty
+                odrážely bohatství a sofistikovanost. Doba upřednostňovala
+                symetrii a vrstvení vzorů v tapetách, textiliích a nábytku.
+              </p>
+            </div>
+          </div>
+
+          <!-- Art Deco -->
+          <div class="design-section">
+            <img
+              src="../images/designhistory/art_deco_rd.jpg"
+              alt="Art Deco Design"
+              style="max-width: 400px"
+            />
+            <div>
+              <h3>Art Deco</h3>
+              <p>
+                Art Deco, populární v 20. a 30. letech 20. století, přijal
+                geometrické opakování, výrazné linie a kovové prvky. Byl to styl
+                luxusu a modernity, často s motivy slunečních paprsků, šipek a
+                stupňovitých tvarů. Opakování přidávalo eleganci a futuristický
+                nádech budovám, interiérům i módě.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bauhaus -->
+          <div class="design-section">
+            <img
+              src="../images/designhistory/bauhaus.jpg"
+              alt="Bauhaus Design"
+              style="max-width: 400px"
+            />
+            <div>
+              <h3>Bauhaus</h3>
+              <p>
+                Škola Bauhaus, založená v roce 1919 v Německu, prosazovala
+                jednoduchost a funkci. Opakování základních geometrických tvarů
+                – kruhů, trojúhelníků, čtverců – definovalo její minimalistickou
+                estetiku. Tento přístup zpřístupnil design, sjednocoval umění,
+                řemeslo a průmysl.
+              </p>
+            </div>
+          </div>
+
+          <!-- Aztec -->
+          <div class="design-section">
+            <img
+              src="../images/designhistory/aztec.jpg"
+              alt="Aztec Design"
+              style="max-width: 400px"
+            />
+            <div>
+              <h3>Aztecký</h3>
+              <p>
+                Aztecký design je poznatelný díky odvážným, symetrickým motivům
+                a symbolickým obrazům. Opakované cik-cak vzory, stupňovité tvary
+                a stylizovaná zvířata vyjadřovaly duchovní význam a kosmický
+                řád. Tyto vzory zdobily textilie, chrámy a keramiku, vyjadřovaly
+                moc a víru.
+              </p>
+            </div>
+          </div>
+
+          <!-- Islamic -->
+          <div class="design-section">
+            <img
+              src="../images/designhistory/islamic.jpg"
+              alt="Islamic Design"
+              style="max-width: 400px"
+            />
+            <div>
+              <h3>Islámský</h3>
+              <p>
+                Islámský design je známý nekonečnými geometrickými vzory,
+                teselacemi a arabeskami. Vyhýbá se figurativním obrazům a
+                oslavuje božskou jednotu prostřednictvím složitého opakování.
+                Tyto motivy jsou k nalezení v mešitách, dlaždicích a rukopisech,
+                často používají proplétané hvězdy a mnohoúhelníky.
+              </p>
+            </div>
+          </div>
+
+          <!-- Japanese -->
+          <div class="design-section">
+            <img
+              src="../images/designhistory/japan.jpg"
+              alt="Japanese Design"
+              style="max-width: 400px"
+            />
+            <div>
+              <h3>Japonský</h3>
+              <p>
+                Tradiční japonské vzory, nebo *wagara*, zahrnují přírodní motivy
+                jako vlny, mraky a chryzantémy. Tyto motivy, opakované v
+                elegantních rytmech, odrážejí harmonii a jednoduchost. Opakování
+                v japonském designu zdůrazňuje rovnováhu, sezónnost a spojení s
+                přírodou.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Vytvářejte smysluplný život s nástroji, které vedou, inspirují a
+              posilují.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Sociální sítě</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Zanechat recenzi
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">
+          &copy; 2025 mercury_paws. Všechna práva vyhrazena.
+        </p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Napište své myšlenky o naší práci!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Jméno</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Zadejte platný email (např. uzivatel@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment">Komentář</label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Zadejte text"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Souhlasím se zpracováním osobních údajů
+            </label>
+          </div>
+          <button class="submit-form-button" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

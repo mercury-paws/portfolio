@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-o mně</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/catdesign.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Domů</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html#portfolio"
+                >Projekty</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation aboutMe active-page"
+                href="../pages/aboutMe.html"
+                >O mně</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main class="desing-css">
+      <section class="name-section">
+        <img
+          src="../images/design/catdesign/28.png"
+          alt=""
+          class="playful-cats"
+        />
+
+        <img
+          src="../images/design/catdesign/32.png"
+          alt=""
+          class="playful-cats"
+        />
+        <img
+          src="../images/design/catdesign/29.png"
+          alt=""
+          class="playful-cats"
+        />
+        <img
+          src="../images/design/catdesign/30.png"
+          alt=""
+          class="playful-cats"
+        />
+        <img
+          src="../images/design/catdesign/31.png"
+          alt=""
+          class="playful-cats"
+        />
+        <div class="container">
+          <div class="name-topic-block">
+            <h5 class="topic">design</h5>
+            <h1 class="design-name">PawPrints Journal</h1>
+          </div>
+          <div class="btn-block">
+            <a
+              class="go-to-link"
+              target="_blank"
+              href="https://mercury-paws.github.io/cat-web"
+              >Přejít na web</a
+            >
+            <a
+              class="go-to-link"
+              target="_blank"
+              href="https://github.com/mercury-paws/cat-web"
+              >Přejít na GitHub</a
+            >
+            <a
+              class="go-to-link"
+              target="_blank"
+              href="https://www.figma.com/design/Zkz1mCWpcfUzRFXOkvF2Z3/Grids-with-cats?node-id=0-1&p=f&t=h6H7fotJK55tx1Yb-0"
+              >Figma</a
+            >
+            <a
+              href="../images/branding_paw_prints_journal.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="go-to-link"
+              >Branding</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="design-section">
+        <div class="container">
+          <article class="name-aim-block">
+            <h2>Výzkum a inspirace</h2>
+            <p class="aim-text">
+              Přínosy pro duševní zdraví: Výzkumy naznačují, že kočky mohou mít
+              pozitivní vliv na duševní zdraví lidí, takže web jako tento může
+              propagovat terapeutické výhody vlastnictví kočky.
+            </p>
+            <p class="aim-text">
+              Zvýšení povědomí: Mnoho lidí si neuvědomuje důležitost správné
+              péče o kočky, včetně potřeby pravidelných návštěv veterináře,
+              porozumění specifickému chování plemen a vlivu životního stylu na
+              jejich zdraví.
+            </p>
+          </article>
+          <div class="desigh-aims-block">
+            <div class="inverted-radius">
+              <p class="design-aims">kočičí pohoda</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">rozmanitost koček</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">vzdělávání o péči o kočky</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">budování vztahů s kočkami</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">inspirace soucitem</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">potřeby koček</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="persona-section">
+        <div class="container">
+          <article class="article-block">
+            <p class="aim-text">
+              Řada studií zdůrazňuje, jak kočky pomáhají snižovat stres, úzkost
+              a depresi.
+              <a
+                href="https://www.researchgate.net/publication/364503284_Cat-human_related_activities_associated_with_human_well-being"
+                >Studie z roku 2019</a
+              >
+              z Human-Animal Interaction Bulletin zjistila, že trávení času s
+              kočkami významně snižuje krevní tlak a pocity úzkosti.
+            </p>
+            <p class="aim-text">
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10262044/"
+                >„Přínosy vlastnictví domácího mazlíčka pro duševní zdraví“</a
+              >
+              publikované v Journal of Psychiatric Research pojednává o
+              emocionálních a psychologických přínosech koček pro lidi trpící
+              duševními obtížemi.
+            </p>
+          </article>
+          <div class="research-block">
+            <article class="focus">
+              <h2 class="focus-header">Naše zaměření</h2>
+              <ul class="focus-list">
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <svg class="focus-icon" width="44" height="44">
+                      <use href="../images/icons.svg#education"></use>
+                    </svg>
+                    <p class="stroke">Vzdělávání</p>
+                  </div>
+
+                  <p>
+                    Poskytování hlubokých, vědecky podložených informací o
+                    zdraví koček, chování a plemenech.
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <svg class="focus-icon" width="44" height="44">
+                      <use href="../images/icons.svg#community"></use>
+                    </svg>
+                    <p class="stroke">Komunita</p>
+                  </div>
+                  <p>
+                    Vytváření prostoru pro milovníky koček ke sdílení
+                    zkušeností, tipů a otázek týkajících se péče o kočky.
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <svg class="focus-icon" width="44" height="44">
+                      <use href="../images/icons.svg#support"></use>
+                    </svg>
+                    <p class="stroke">Podpora</p>
+                  </div>
+                  <p>
+                    Nabízení rad ohledně lékařské péče, výcviku a emocionální
+                    podpory jak pro kočky, tak jejich majitele.
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <svg class="focus-icon" width="44" height="44">
+                      <use href="../images/icons.svg#awareness"></use>
+                    </svg>
+                    <p class="stroke">Povědomí</p>
+                  </div>
+                  <p>
+                    Zvýraznění psychologických a fyzických přínosů vlastnictví
+                    kočky, spolu s etickými aspekty péče o ně.
+                  </p>
+                </li>
+              </ul>
+            </article>
+            <article class="steps">
+              <h2 class="steps-header">Naše kroky</h2>
+              <div>
+                <ul class="steps-list">
+                  <li class="steps-item">
+                    <p>
+                      <span class="stroke-two">Návrh a plánování</span>
+                      <br />
+                      Navrhnout strukturu, rozložení a uživatelské rozhraní.
+                      Naplánovat uživatelskou zkušenost se zaměřením na obsahové
+                      kategorie, přístupnost a responzivitu na mobilních
+                      zařízeních.
+                    </p>
+                    <img
+                      src="../images/design/catdesign/arrow.png"
+                      class="arc first"
+                    />
+                  </li>
+                  <li class="steps-item">
+                    <img
+                      src="../images/design/catdesign/arrow.png"
+                      class="arc second"
+                    />
+                    <p>
+                      <span class="stroke-two">Vývoj</span><br />
+                      Vyvinout web pomocí HTML, CSS, JavaScript/TypeScript.
+                      Implementovat interaktivní prvky jako formuláře pro dotazy
+                      o péči o mazlíčky nebo blog. Použít knihovny či frameworky
+                      pro efektivnější vývoj.
+                    </p>
+                  </li>
+                  <li class="steps-item">
+                    <p>
+                      <span class="stroke-two">Testování a spuštění</span><br />
+                      Otestovat web z hlediska funkčnosti, uživatelského zážitku
+                      a responzivity. Po ověření správné funkčnosti nasadit web
+                      na hostingovou platformu, aby byl přístupný cílové
+                      skupině.
+                    </p>
+                    <img
+                      src="../images/design/catdesign/arrow.png"
+                      class="arc third"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="smart">
+              <h2>SMART strategie</h2>
+              <ul class="smart-list">
+                <li class="smart-item">
+                  <p class="smart-letter">s</p>
+                  <p>
+                    Specifické: Poskytnout komplexní informace o kočkách, včetně
+                    jejich plemen, fyziologie, tipů na péči a zdravotních
+                    přínosů vlastnictví kočky.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">M</p>
+                  <p>
+                    Měřitelné: Úspěch bude měřen počtem návštěvníků, kteří se
+                    zapojí do vzdělávacího obsahu, počtem odběrů nebo
+                    sledujících a množstvím pozitivní zpětné vazby od kočičí
+                    komunity.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">A</p>
+                  <p>
+                    Dosažitelné: Web bude navržen pomocí přístupných technologií
+                    jako HTML, CSS, JavaScript/TypeScript a nasazen pomocí
+                    průmyslových standardních frameworků, aby byla zajištěna
+                    funkčnost a zapojení uživatelů.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">r</p>
+                  <p>
+                    Relevantní: Web slouží rostoucí komunitě milovníků koček,
+                    poskytuje spolehlivý, vědecky podložený zdroj, který
+                    vzdělává a pomáhá majitelům lépe pečovat o své mazlíčky.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">t</p>
+                  <p>
+                    Časově ohraničené: Web má být spuštěn během několika měsíců,
+                    přičemž hlavní milníky jako vývoj obsahu, dokončení designu
+                    a plné nasazení jsou naplánovány na příští tři týdny.
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <img src="../images/design/catdesign/27.jpg" />
+      </section>
+      <section class="symbol-section">
+        <div class="container">
+          <h2>Název</h2>
+          <div class="main-symbol-section">
+            <p class="symbol-explanation">
+              Název Pawprints Journal vystihuje cestu a příběh každé kočky – od
+              jejich hravých kousků po jejich jemnou přítomnost v našich
+              životech.
+            </p>
+            <div class="symbol-text-block">
+              <img
+                src="../images/design/catdesign/paw-heart.png"
+                class="symbol-img"
+              />
+              <article class="symbol-text-art">
+                <p class="symbol-text">
+                  Slovo "pawprints" symbolizuje jedinečné stopy, které kočky
+                  zanechávají na našich srdcích, každá kočka svým charakterem a
+                  zkušenostmi vytváří trvalý otisk v našich životech.
+                </p>
+                <p class="symbol-text">
+                  Journal odráží myšlenku záznamu, sbírky poznatků a prostoru
+                  pro neustálé objevování.
+                </p>
+              </article>
+            </div>
+            <p class="symbol-explanation-big">
+              Stejně jako deník zachycuje myšlenky, vzpomínky a zkušenosti,
+              Pawprints Journal je místem pro dokumentaci a sdílení bohatých,
+              rozmanitých životů koček, jejich zdraví, chování a radosti, kterou
+              nám přinášejí. Tento název má vyvolat pocit tepla, zvědavosti a
+              péče, zve milovníky koček k objevování, učení a zamyšlení nad
+              úžasnou cestou, kterou je život s kočkami.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="ui-kit-section">
+        <div class="container">
+          <h2>Barvy</h2>
+          <div class="color-container">
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Oranžová (#f08c00): Tato živá barva je spojována s energií,
+                nadšením a teplem. Může vyvolat pocity štěstí, hravosti a
+                přátelskosti. Je ideální pro web zaměřený na kočky, kde je cílem
+                navázat emocionální spojení s návštěvníky a vytvořit přívětivé
+                prostředí.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Zelená (#c6da20): Zelená reprezentuje zdraví, růst a přírodu,
+                což perfektně sedí pro web věnovaný podpoře životního stylu a
+                dobré kondice koček. Je to uklidňující barva často spojená s
+                klidem a rovnováhou, ideální pro stránku zaměřenou na fyzické i
+                emocionální zdraví koček.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Červená (#da1212): Červená je výrazná barva, která přitahuje
+                pozornost a značí důležitost nebo naléhavost. Lze ji použít k
+                zdůraznění klíčových bodů nebo upozornění na důležitá témata,
+                jako je bezpečnost či akutní zdravotní problémy. Dodává designu
+                intenzitu.
+              </p>
+            </div>
+            <div class="main-typo-section">
+              <div class="color"></div>
+              <p>
+                Tyrkysová (#f3f5d5): Tyrkysová evokuje klid, mír a harmonii. Má
+                uklidňující účinek, což z ní činí skvělou barvu pozadí, která
+                uživatele nepřetíží. Tato barva přispívá k pokojnému a
+                harmonickému pocitu webu, který má za cíl vzdělávat a
+                informovat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="proto-section">
+        <div class="container">
+          <h2>Prototyp</h2>
+          <p>
+            Prototyp webu Pawprints Journal představuje uživatelsky přívětivé
+            rozhraní navržené tak, aby nabídlo jednoduchost i funkčnost. S
+            důrazem na poskytování hodnotných informací a zdrojů obsahuje
+            klíčové prvky jako profily plemen, zdravotní tipy a návody na péči.
+            Rozložení je vytvořeno tak, aby zajišťovalo plynulou navigaci,
+            umožňující zkušeným milovníkům koček i novým majitelům snadno získat
+            užitečný obsah a spojit se s komunitou nadšenců. Design klade důraz
+            na poutavý a informativní zážitek přizpůsobený potřebám každé kočky
+            a jejich lidských společníků.
+          </p>
+          <div class="main-proto-block">
+            <div class="cards-app">
+              <img src="../images/design/catdesign/scr1.png" />
+              <img src="../images/design/catdesign/scr3.png" />
+              <img src="../images/design/catdesign/scr5.png" />
+              <img src="../images/design/catdesign/src2.png" />
+              <img src="../images/design/catdesign/src4.png" />
+            </div>
+            <img
+              src="../images/design/thinking-person.png"
+              class="person-with-app"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Vytvářejte smysluplný život s nástroji, které vedou, inspirují a
+              posilují.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Sociální sítě</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Zanechat recenzi
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">
+          &copy; 2025 mercury_paws. Všechna práva vyhrazena.
+        </p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Napište své myšlenky o naší práci!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Jméno</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Zadejte platný email (např. uzivatel@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment">Komentář</label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Zadejte text"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Souhlasím se zpracováním osobních údajů
+            </label>
+          </div>
+          <button class="submit-form-button" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

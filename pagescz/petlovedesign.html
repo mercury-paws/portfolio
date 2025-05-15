@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-o mně</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/petlovedesign.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Domů</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html#portfolio"
+                >Projekty</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation aboutMe active-page"
+                href="../pages/aboutMe.html"
+                >O mně</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main class="desing-css">
+      <section class="name-section">
+        <div class="container">
+          <div class="name-topic-block">
+            <h5 class="topic">design</h5>
+            <div class="love-header">
+              <h1 class="design-name">petl</h1>
+              <img
+                src="../images/design/petlovedesign/Icon.jpg"
+                width="12px"
+                class="love"
+              />
+              <h1>ve</h1>
+            </div>
+          </div>
+          <div class="btn-block">
+            <a class="go-to-link" target="_blank">Aplikace je ve výstavbě</a>
+            <a
+              class="go-to-link"
+              target="_blank"
+              href="https://github.com/mercury-paws/petlove"
+              >Přejít na GitHub</a
+            >
+            <a
+              class="go-to-link"
+              target="_blank"
+              href="https://www.figma.com/design/o2rBoAOb1pLYcwk8iXslDc/Petl%F0%9F%92%9Bve?t=5HQ4IQ1Wo5K14aLU-0"
+              >Přejít na Figma</a
+            >
+            <a class="go-to-link" target="_blank">Branding je v návrhu</a>
+          </div>
+        </div>
+      </section>
+      <section class="design-section">
+        <div class="container">
+          <article class="name-aim-block">
+            <h2>Výzkumné poznatky a inspirace</h2>
+            <p class="aim-text">
+              Podle studie Pet Care Industry Trends z roku 2023 vlastní více než
+              67 % domácností v USA domácí mazlíčky a poptávka po důvěryhodných
+              informacích a službách roste. Globální trh s péčí o mazlíčky by
+              měl do roku
+              <span class="stroke-three"
+                >dosáhnout 325 miliard dolarů do roku 2028</span
+              >, což ukazuje potřebu efektivních platforem.
+            </p>
+            <p class="aim-text">
+              Sociální média zaznamenávají vzestup komunit zaměřených na
+              mazlíčky, ale chybí jim struktura a ověřené zdroje.
+            </p>
+            <p class="aim-text inspiration">Inspirace:</p>
+            <ul class="aim-text">
+              <li>
+                <span class="stroke">Dodo</span> – Pro emocionálně poutavé
+                záchranné příběhy.
+              </li>
+              <li>
+                <span class="stroke">Petfinder</span> – Skvělá platforma pro
+                seznamy k adopci.
+              </li>
+              <li>
+                <span class="stroke">GoodRx Pets</span> – Spolehlivý zdroj léků
+                a tipů pro mazlíčky.
+              </li>
+              <li>
+                <span class="stroke">Reddit (r/pets)</span> – Zobrazuje skutečné
+                starosti majitelů mazlíčků: pomoc s chováním, veterinární
+                náklady, výživa atd.
+              </li>
+            </ul>
+          </article>
+          <div class="desigh-aims-block">
+            <div class="inverted-radius">
+              <p class="design-aims">zdraví a štěstí mazlíčků</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">různorodé možnosti péče o mazlíčky</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">výchova k odpovědnému chovu mazlíčků</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">posilování vazeb mezi lidmi a mazlíčky</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">pěstování laskavosti k mazlíčkům</p>
+            </div>
+            <div class="inverted-radius">
+              <p class="design-aims">péče o potřeby mazlíčků</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="persona-section">
+        <div class="container">
+          <div class="research-block">
+            <article class="user-focus">
+              <h2 class="focus-header">
+                Cílové uživatelské segmenty. Reprezentativní vzorek.
+              </h2>
+              <p>
+                Tyto uživatelské segmenty byly identifikovány prostřednictvím
+                počátečního průzkumu trhu a pozorování běžných trendů v chovu a
+                péči o mazlíčky analýzou fór, skupin na sociálních sítích a
+                existujících platforem pro mazlíčky.
+              </p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table-header">Skupina</th>
+                    <th class="table-header">Popis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-cell">Noví majitelé mazlíčků</td>
+                    <td class="table-cell">
+                      Lidé, kteří nedávno adoptovali nebo koupili mazlíčka.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Dlouhodobí pečovatelé</td>
+                    <td class="table-cell">
+                      Zkušení pečovatelé psů, koček nebo exotických mazlíčků.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Milovníci zvířat bez mazlíčků</td>
+                    <td class="table-cell">
+                      Lidé zajímající se o záchranu, dobrovolnictví nebo budoucí
+                      adopci.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Zástupci pet byznysu</td>
+                    <td class="table-cell">
+                      Z oblasti krmiv pro mazlíčky, veterinárních klinik nebo
+                      útulků.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Mladí dospělí (18–30 let)</td>
+                    <td class="table-cell">
+                      Společensky aktivní, digitálně zdatní milovníci mazlíčků.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">Rodiny s dětmi</td>
+                    <td class="table-cell">
+                      Rodiče hledající bezpečné a vzdělávací platformy pro
+                      mazlíčky.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                Tyto různorodé uživatelské segmenty tvoří
+                <span class="stroke-three">základ</span> komunity petl♥ve,
+                přičemž každý přináší jedinečné potřeby, zkušenosti a motivace.
+                Porozumění jejich chování a očekáváním pomáhá přizpůsobit
+                funkce, obsah a podporu tak, aby vznikla skutečně inkluzivní a
+                užitečná platforma pro všechny milovníky mazlíčků.
+              </p>
+            </article>
+
+            <article class="focus">
+              <h2 class="focus-header">
+                Empatická mapa. Perspektiva uživatele:
+                <span class="stroke-it"
+                  >„Majitel domácího mazlíčka nebo milovník zvířat“.</span
+                >
+              </h2>
+              <ul class="focus-list">
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Říká</p>
+                  </div>
+                  <p>
+                    „Chci svému mazlíčkovi dát ten nejlepší život.“<br />
+                    „Proč je veterinární péče tak drahá?“<br />
+                    „Přál bych si adoptovat, ale nevím, kde začít.“
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Myslí</p>
+                  </div>
+                  <p>
+                    „Dělám to správně?“<br />
+                    „Potřebuji důvěryhodné informace.“<br />
+                    „Chci pomáhat zvířatům v nouzi, ale nevím jak.“
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Dělá</p>
+                  </div>
+                  <p>
+                    Čte fóra o mazlíčcích<br />
+                    Vyhledává články o zdraví zvířat<br />
+                    Prohlíží sociální sítě pro rady<br />
+                    Sdílí fotky a příběhy svých mazlíčků
+                  </p>
+                </li>
+                <li class="focus-item">
+                  <div class="svg-focus-block">
+                    <p class="stroke">Cítí</p>
+                  </div>
+                  <ul>
+                    <li>Přetížený množstvím informací</li>
+                    <li>Emocionálně zaujatý ke zvířatům</li>
+                    <li>Potřebuje komunitu a podporu</li>
+                    <li>Stresovaný náklady a rozporuplnými radami</li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+
+            <article class="steps">
+              <h2 class="steps-header">Bolestné body</h2>
+              <div>
+                <ul class="steps-list">
+                  <li class="steps-item">
+                    <p>Rozptýlené zdroje a nedůvěryhodné informace</p>
+                    <img
+                      src="../images/design/petlovedesign/1.png"
+                      class="arc first"
+                    />
+                  </li>
+                  <li class="steps-item">
+                    <img
+                      src="../images/design/petlovedesign/2.png"
+                      class="arc second"
+                    />
+                    <p>Chybějící komunita pro emocionální podporu</p>
+                  </li>
+                  <li class="steps-item">
+                    <p>
+                      Žádná jednotná platforma pro vzdělávání, adopce, nákupy a
+                      pomoc
+                    </p>
+                    <img
+                      src="../images/design/petlovedesign/3.png"
+                      class="arc third"
+                    />
+                  </li>
+                  <li class="steps-item">
+                    <img
+                      src="../images/design/petlovedesign/4.png"
+                      class="arc third"
+                    />
+                    <p>Časově náročný proces hledání informací</p>
+                  </li>
+                  <li class="steps-item">
+                    <p>Zmatek ohledně zákonů o mazlíčcích a standardů péče</p>
+                    <img
+                      src="../images/design/petlovedesign/5.png"
+                      class="arc third"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="smart">
+              <h2 class="smart-header">Definování problému</h2>
+              <p class="smart-text">
+                V moderním digitálním prostoru čelí milovníci zvířat
+                roztříštěným zdrojům:
+              </p>
+              <ul class="smart-list">
+                <li class="smart-item">
+                  <p class="smart-letter">1</p>
+                  <p>
+                    Novinky o zákonech pro zvířata nebo lékařské rady jsou těžko
+                    dohledatelné na jednom místě a v potřebný čas.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">2</p>
+                  <p>
+                    Adopce jsou roztroušeny napříč různými platformami a fóry.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">3</p>
+                  <p>
+                    Záchranné mise a možnosti jejich podpory jsou často pro
+                    širokou veřejnost neviditelné.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">4</p>
+                  <p>
+                    Majitelé mazlíčků potřebují rady ohledně krmení, péče a
+                    chování, ale musí navštěvovat více zdrojů.
+                  </p>
+                </li>
+                <li class="smart-item">
+                  <p class="smart-letter">5</p>
+                  <p>
+                    Noví majitelé mazlíčků jsou často zahlceni přemírou
+                    informací nebo dezinformacemi.
+                  </p>
+                </li>
+              </ul>
+              <p class="smart-text">
+                petl♥ve centralizuje vše toto — vytváří sjednocený, spolehlivý a
+                emocionální prostor, kde uživatelé mohou být informováni, jednat
+                soucitně a navazovat smysluplné vztahy.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <img src="../images/design/petlovedesign/petlove.jpg" />
+      </section>
+
+      <section class="symbol-section">
+        <div class="container">
+          <h2>Jméno</h2>
+          <div class="main-symbol-section">
+            <p class="symbol-explanation">
+              Logo odráží hlavní poslání: pomáhat lidem spojit se a starat se o
+              zvířata nejen skrze informace a obchod, ale
+              <span class="stroke-two">láskou a empatií</span>.
+            </p>
+            <div class="symbol-text-block">
+              <img
+                src="../images/design/petlovedesign/symbol.png"
+                class="symbol-img"
+              />
+              <article class="symbol-text-art">
+                <p class="symbol-text">
+                  Srdce funguje jako univerzální symbol soucitu.
+                </p>
+                <p class="symbol-text">
+                  Malá písmena dodávají značce přátelský a přístupný dojem.
+                </p>
+              </article>
+            </div>
+            <p class="symbol-explanation">
+              petl♥ve kombinuje jednoduchost a cit. Srdce (♥) nahrazuje „o“, aby
+              symbolizovalo náklonnost, péči a emocionální vazbu mezi lidmi a
+              mazlíčky.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-kit-section">
+        <div class="container">
+          <h2>UI-kit</h2>
+          <div class="main-typo-section">
+            <p>
+              UI-kit slouží jako základ prototypu mé zdravotnické aplikace,
+              poskytuje elegantní a soudržný designový systém, který zajišťuje
+              konzistenci ve všech uživatelských rozhraních.
+            </p>
+            <img src="../images/design/petlovedesign/ui-kit.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="proto-section">
+        <div class="container">
+          <h2>Prototyp</h2>
+          <p>
+            Prototyp aplikace petl♥ve je navržen jako živá a inkluzivní
+            platforma, která sjednocuje
+            <span class="stroke-three"
+              >milovníky mazlíčků, pečovatele a zachránce</span
+            >
+            pod jednou digitální střechou. S teplým, přístupným rozhraním a
+            důrazem na soucitné funkce petl♥ve nabízí uživatelům možnost:
+          </p>
+          <ul class="proto-list">
+            <li class="proto-item">
+              Registrovat se a vytvářet profily mazlíčků
+            </li>
+            <li class="proto-item">
+              Číst pečlivě vybrané novinky o veterinární medicíně, zákonech o
+              zvířatech, záchranných akcích, péči o mazlíčky a globálních
+              příbězích týkajících se zvířat
+            </li>
+            <li class="proto-item">
+              Adoptovat nebo zodpovědně nakupovat mazlíčky
+            </li>
+            <li class="proto-item">
+              Najít a podpořit záchranné akce pro zvířata
+            </li>
+            <li class="proto-item">
+              Prohlížet a spojovat se se společnostmi vyrábějícími krmivo pro
+              mazlíčky
+            </li>
+            <li class="proto-item">
+              Přidávat své mazlíčky s fotkami, zdravotními záznamy a dalšími
+              informacemi
+            </li>
+          </ul>
+          <p>
+            Aplikace je navržena jako centrum pro emocionální
+            <span class="stroke-two">spojení</span> i praktickou podporu,
+            kombinující zpravodajský kanál s komunitními funkcemi a zdroji.
+            Rozvržení podporuje hladkou navigaci, optimalizovanou jak pro
+            desktopové, tak mobilní uživatele. petl♥ve je určena pro všechny
+            milovníky mazlíčků — ať už jste poprvé majitel psa, celoživotní
+            ochránce koček nebo vášnivý obhájce práv zvířat.
+          </p>
+          <div class="main-proto-block">
+            <div class="cards-app">
+              <img src="../images/design/petlovedesign/12.jpg" />
+              <img src="../images/design/petlovedesign/13.jpg" />
+              <img src="../images/design/petlovedesign/16.jpg" />
+              <img src="../images/design/petlovedesign/15.jpg" />
+              <img src="../images/design/petlovedesign/14.jpg" />
+            </div>
+            <img
+              src="../images/design/thinking-person.png"
+              class="person-with-app"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Vytvářejte smysluplný život s nástroji, které vedou, inspirují a
+              posilují.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Sociální sítě</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Zanechat recenzi
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">
+          &copy; 2025 mercury_paws. Všechna práva vyhrazena.
+        </p>
+      </div>
+    </footer>
+
+    <!-- review -->
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Napište své myšlenky o naší práci!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Jméno</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="comment-user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="comment-user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Zadejte platný email (např. uzivatel@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment">Komentář</label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Zadejte text"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Souhlasím se zpracováním osobních údajů
+            </label>
+          </div>
+          <button class="submit-form-button" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
