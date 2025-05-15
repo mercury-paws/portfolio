@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercury_paws-o mně</title>
+    <link
+      rel="icon"
+      href="../images/paw.svg"
+      type="image/svg+xml"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/aboutMe.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/sliderAboutMe.js" type="module"></script>
+    <script src="../js/leaveReview.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="container-header container">
+        <nav class="navigation-block">
+          <a href="../index.html" class="logo-header"
+            >M<span class="studio-class">P</span></a
+          >
+          <ul class="menu">
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html">Domů</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../index.html#portfolio"
+                >Projekty</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a
+                class="menu-navigation aboutMe active-page"
+                href="../pages/aboutMe.html"
+                >O mně</a
+              >
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
+            </li>
+            <li class="menu-navigation-list">
+              <a class="menu-navigation" href="../pages/contact.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-wrapper" type="button">
+          <svg class="burger" width="24" height="24">
+            <use href="../images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- contact details -->
+        <address class="address-styles">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main class="about-me-page">
+      <!-- cloud section -->
+
+      <section class="section-two-our-team about-me">
+        <h2 class="visually-hidden">o mně</h2>
+        <div class="container">
+          <div class="img-and-article">
+            <article class="about-me-article">
+              <h1 class="visually-hidden">sekce o mně</h1>
+              <h2 class="aboutMe-header">
+                "Slyšíš-li křik racka na pobřeží, tvé srdce už nenalezne klid v
+                lese."
+              </h2>
+              <div class="aboutMe-text">
+                <p class="text">
+                  Jakmile začneme hledat pravdu, není cesty zpět k nevědomosti.
+                </p>
+                <p class="text">
+                  Jako webový vývojář chci skrze digitální svět sdílet vědomí a
+                  porozumění, čerpající ze zkušeností napříč různými oblastmi
+                  života.
+                </p>
+                <p class="text">
+                  Kladu si otázky o <span class="spec-aboutMe">životě</span> a
+                  lidské povaze, ale těžko odpouštím bezmyšlenkovitost poháněnou
+                  egem.
+                </p>
+                <p class="text">
+                  Buduji tuto platformu pro ty, kdo hledají změnu, poznání a
+                  spojení. Chci pomáhat vyjadřovat myšlenky a sdílet hlasy se
+                  světem. Pokud<span class="spec-aboutMe">ty</span>
+                  s tím souzníš, s mou osobností nebo máš vizi, kterou stojí za
+                  to sdílet, ozvi se. Pojďme oživit myšlenky.
+                </p>
+              </div>
+            </article>
+            <div class="img-container">
+              <img
+                src="../images/aboutMe/photo-of-me.jpg"
+                class="my-photo"
+                alt="Moje fotografie v lese"
+              />
+            </div>
+          </div>
+          <ul class="about-me-cv-edu">
+            <a href="../pages/education.html" class="education-link"
+              >Moje vzdělání</a
+            >
+            <a
+              href="../images/Anastasiia_Kutsenko_Junior_Frontend developer_for web.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="education-link"
+              >Zobrazit CV</a
+            >
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-my-interests">
+        <h1 class="visually-hidden">sekce mých zájmů</h1>
+        <div class="container">
+          <h2>O MNĚ</h2>
+          <div id="slide">
+            <div
+              class="item"
+              style="background-image: url(../images/slider/yoga.jpg)"
+            >
+              <div class="content">
+                <div class="name">Jóga</div>
+                <div class="des">
+                  Jógu praktikuji už 8 let. Je to cvičení síly, flexibility a
+                  uvědomění, které vyživuje tělo i duši.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/vegetarian.jpg)"
+            >
+              <div class="content">
+                <div class="name">Vegetariánství</div>
+                <div class="des">
+                  Být vegetariánem je můj způsob, jak projevovat úctu k životu.
+                  Jsem člověk, mám mysl – a proto nesu větší odpovědnost. Mám na
+                  výběr. Odmítám být součástí neustálého zabíjení, utrpení a
+                  ničení, které lidé způsobují jiným druhům. Nejsem nadřazený
+                  žádnému jinému zvířeti.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/earth.jpg)"
+            >
+              <div class="content">
+                <div class="name">Příroda</div>
+                <div class="des">
+                  V jejím tichu nacházím jasnost; v její rozlehlosti vidím své
+                  místo ve světě. Respektovat a chránit ji není volba – je to
+                  odpovědnost. Příroda je nejčistší formou ideálu a moudrosti.
+                  Jsme jen jednou částí obrovského, propojeného světa. Jsme
+                  všichni stvořeni z hvězd, naše tělo je darem Země.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/programming.jpg)"
+            >
+              <div class="content">
+                <div class="name">Programování</div>
+                <div class="des">
+                  Vnímám svět jako propojený skrze čísla, smyčky, zákony a
+                  závislosti – to mě přivedlo k programování. Není to jen
+                  kódování, je to vlastně výuka. Učit co dělat, jak, kdy.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/psychology.jpg)"
+            >
+              <div class="content">
+                <div class="name">Psychologie</div>
+                <div class="des">
+                  Práce v logistice ve mně zanechala prázdnotu. Povaha byznysu
+                  poháněná egem je něco, co lidé musí překonat. Ale ke změně
+                  musí člověk nejprve padnout – otázkou je, jak hluboko.
+                  Hledajíc odpovědi jsem se pustila do druhého studia – bakaláře
+                  z psychologie – abych porozuměla více.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/reading.jpg)"
+            >
+              <div class="content">
+                <div class="name">Čtení</div>
+                <div class="des">
+                  „Ráda čtu“ – první věta, kterou jsem napsala anglicky v páté
+                  třídě. Od té doby se nic nezměnilo. Knihy otevírají světy,
+                  prohlubují porozumění a formují názory. Nabízejí nekonečné
+                  vědění a tiché útočiště před hlukem života.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/hiking.jpg)"
+            >
+              <div class="content">
+                <div class="name">Turistika</div>
+                <div class="des">
+                  Procházky lesem a přes kopce čistí mysl, posilují tělo a
+                  připomínají mi, jak malí, ale zároveň propojení jsme s
+                  přírodou.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/6.jpg)"
+            >
+              <div class="content">
+                <div class="name">Fotografie</div>
+                <div class="des" style="width: 260px">
+                  Každý z nás vidí svět jinak, protože jsme různí. V jistém
+                  smyslu jsme všichni fotografové – zachycujeme okamžiky slovy,
+                  kódem nebo obrazem. Tohle je můj pohled, můj způsob, jak
+                  rámovat svět.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item"
+              style="background-image: url(../images/slider/astrology.png)"
+            >
+              <div class="content">
+                <div class="name">Astrologie</div>
+                <div class="des">
+                  Můj zájem o astrologii začal už v dětství, kdy mě fascinovaly
+                  hvězdy a jejich vliv, stejně jako práce s Tarotovými kartami.
+                  Od té doby se tato fascinace jen prohloubila. Astrologie není
+                  jen víra - je to způsob, jak lépe porozumět sobě samému i
+                  druhým, hluboký psychologický nástroj k získání vhledů do
+                  životních cyklů a do toho, jak jsme všichni propojeni s
+                  vesmírem.
+                </div>
+                <!-- <button>see more</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="prev">
+              <svg
+                class="scroll left"
+                aria-hidden="true"
+                width="36"
+                height="36"
+              >
+                <use href="../images/icons.svg#arrow-icon"></use>
+              </svg>
+            </button>
+            <button id="next">
+              <svg
+                class="scroll right"
+                aria-hidden="true"
+                width="36"
+                height="36"
+              >
+                <use href="../images/icons.svg#arrow-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-text-footer">
+            <a class="logo-footer" href="../index.html"
+              >mercury<span class="studio-footer">paws</span></a
+            >
+            <p class="footer-text">
+              Vytvoř si smysluplný život s nástroji, které tě vedou, inspirují a
+              posilují.
+            </p>
+          </div>
+          <div class="links-footer-section">
+            <p class="media-text-footer">Sociální média</p>
+            <ul class="social-links-list-footer">
+              <li class="social-links-item-footer">
+                <a
+                  href="https://github.com/mercury-paws"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.instagram.com/mercury_paws/"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item-footer">
+                <a
+                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                  target="_blank"
+                  class="link"
+                >
+                  <svg width="24" height="24" class="icon">
+                    <use href="../images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-section">
+            <button class="subscribe-button" type="submit">
+              Zanechte recenzi
+            </button>
+          </div>
+          <img src="../images/footer/cat-paws.png" class="paws" />
+        </div>
+        <p class="rights-res">&copy; 2025 mercury_paws. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- review -->
+
+    <div class="backdrop-user mobile">
+      <div class="modal-user">
+        <button class="close-icon" type="button">
+          <svg width="8" height="8" class="close-icon-svg">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="explanation-of-form-text">
+          Napište nám své názory na naši práci!
+        </p>
+        <form class="form" name="leave-your-contacts" autocomplete="off">
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-name">Jméno</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-svg-wrapper">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="input-svg-relative">
+              <input
+                class="form-input"
+                id="user-email"
+                type="email"
+                name="email"
+                required
+                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address (e.g. user@example.com)"
+              />
+              <svg width="18" height="24" class="input-icon">
+                <use href="../images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="form-label" for="user-comment"> Komentář </label>
+            <textarea
+              class="review-form-field-message"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="terms-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+            />
+            <label class="terms-conditions" for="user-privacy">
+              <span class="input-checkbox-icon">
+                <svg width="10" height="10" class="checkbox-icon">
+                  <use href="../images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="text-privacy-style">
+                Souhlasím s podmínkami a zásadami ochrany
+                <a
+                  href="../pages/privacyPolicy.html"
+                  class="privacy-policy-text"
+                  target="_blank"
+                >
+                  osobních údajů.
+                </a>
+              </p>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- backdrop mobile -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="close-mobile-menu-bttn" type="button">
+          <svg class="close-bttn" width="8" height="8">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="backdrop-mobile-menu">
+          <li>
+            <a class="menu-navigation active-page" href="../index.html">Domů</a>
+          </li>
+          <li>
+            <a class="menu-navigation portfolio" href="../index.html#portfolio"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="menu-navigation" href="../pages/aboutMe.html">O mně</a>
+          </li>
+          <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
+          <li>
+            <a class="menu-navigation" href="../pages/contact.html">Kontakt</a>
+          </li>
+        </ul>
+        <address class="address-styles-mobile-backdrop">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us mail"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova<br />@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="social-links-modal-wrapper">
+          <ul class="social-links-modal-list">
+            <li class="social-links-modal-item">
+              <a
+                href="https://www.instagram.com/mercury_paws/"
+                target="_blank"
+                class="link"
+              >
+                <svg width="24" height="24" class="icon">
+                  <use href="../images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a
+                href="https://github.com/mercury-paws"
+                target="_blank"
+                class="link"
+              >
+                <svg width="24" height="24" class="icon">
+                  <use href="../images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a
+                href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                target="_blank"
+                class="link"
+              >
+                <svg width="24" height="24" class="icon">
+                  <use href="../images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
