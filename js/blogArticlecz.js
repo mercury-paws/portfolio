@@ -31,7 +31,7 @@ async function fetchArticle(id) {
 }
 
 document.getElementById("back-btn").addEventListener("click", () => {
-    window.location.href = "blogcz.html";
+    window.location.href = "blog.html";
 });
 
 window.onload = renderArticle;
