@@ -149,6 +149,15 @@ a {
   align-items: center;
 }
 
+@media (max-width: 760px) {
+  .name-section > .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+  }
+}
+
 .topic {
   font-size: 32px;
   padding-bottom: 20px;

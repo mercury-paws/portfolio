@@ -109,13 +109,19 @@ a {
   /* overflow: hidden; */
   z-index: 999;
 }
-@media (max-width: 420px) {
+@media (max-width: 540px) {
   .playful-cats {
     display: none;
   }
   .design-section .container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  .playful-cats:nth-child(1) {
+    display: none;
   }
 }
 
@@ -191,6 +197,15 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 420px) {
+  .name-section > .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+  }
 }
 
 .topic {
