@@ -34,6 +34,7 @@
 
     <link rel="stylesheet" href="../css/blogArticle.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js"></script>
     <script src="../js/blogArticlecz.js" type="module"></script>
     <script src="../js/leaveReview.js" type="module"></script>
   </head>
@@ -107,14 +108,14 @@
           </div>
         </div>
       </section>
-      <ul class="language">
+      <!-- <ul class="language">
         <li class="menu-navigation-list">
           <a class="lang" href="../pages/blogArticle.html">eng</a>
         </li>
         <li class="menu-navigation-list">
           <a class="lang" href="../pagescz/blogArticle.html">cz</a>
         </li>
-      </ul>
+      </ul> -->
     </main>
 
     <footer class="footer">
@@ -264,85 +265,85 @@
         </form>
       </div>
     </div>
-  </body>
 
-  <!-- backdrop mobile -->
+    <!-- backdrop mobile -->
 
-  <div class="backdrop">
-    <div class="modal">
-      <button class="close-mobile-menu-bttn" type="button">
-        <svg class="close-bttn" width="8" height="8">
-          <use href="../images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <ul class="backdrop-mobile-menu">
-        <li>
-          <a class="menu-navigation active-page" href="../index.html">Domů</a>
-        </li>
-        <li>
-          <a class="menu-navigation portfolio" href="../index.html#portfolio"
-            >Projekty</a
-          >
-        </li>
-        <li>
-          <a class="menu-navigation" href="../pages/aboutMe.html">O mně</a>
-        </li>
-        <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
-        <li>
-          <a class="menu-navigation" href="../pages/contact.html">Kontakty</a>
-        </li>
-      </ul>
-      <address class="address-styles-mobile-backdrop">
-        <ul class="contact-us-list">
-          <li class="contact-us-list-item">
-            <a
-              class="contact-us mail"
-              href="mailto:anastasiia.kutsenkova@gmail.com"
-              >anastasiia.kutsenkova<br />@gmail.com</a
+    <div class="backdrop">
+      <div class="modal">
+        <button class="close-mobile-menu-bttn" type="button">
+          <svg class="close-bttn" width="8" height="8">
+            <use href="../images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="backdrop-mobile-menu">
+          <li>
+            <a class="menu-navigation active-page" href="../index.html">Domů</a>
+          </li>
+          <li>
+            <a class="menu-navigation portfolio" href="../index.html#portfolio"
+              >Projekty</a
             >
+          </li>
+          <li>
+            <a class="menu-navigation" href="../pages/aboutMe.html">O mně</a>
+          </li>
+          <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
+          <li>
+            <a class="menu-navigation" href="../pages/contact.html">Kontakty</a>
           </li>
         </ul>
-      </address>
-      <div class="social-links-modal-wrapper">
-        <ul class="social-links-modal-list">
-          <li class="social-links-modal-item">
-            <a
-              href="https://github.com/mercury-paws"
-              target="_blank"
-              class="link"
-            >
-              <svg width="24" height="24" class="icon">
-                <use href="../images/icons.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links-modal-item">
-            <a
-              href="https://www.instagram.com/mercury_paws/"
-              target="_blank"
-              class="link"
-            >
-              <svg width="24" height="24" class="icon">
-                <use href="../images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links-modal-item">
-            <a
-              href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
-              target="_blank"
-              class="link"
-            >
-              <svg width="24" height="24" class="icon">
-                <use href="../images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <address class="address-styles-mobile-backdrop">
+          <ul class="contact-us-list">
+            <li class="contact-us-list-item">
+              <a
+                class="contact-us mail"
+                href="mailto:anastasiia.kutsenkova@gmail.com"
+                >anastasiia.kutsenkova<br />@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="social-links-modal-wrapper">
+          <ul class="social-links-modal-list">
+            <li class="social-links-modal-item">
+              <a
+                href="https://github.com/mercury-paws"
+                target="_blank"
+                class="link"
+              >
+                <svg width="24" height="24" class="icon">
+                  <use href="../images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a
+                href="https://www.instagram.com/mercury_paws/"
+                target="_blank"
+                class="link"
+              >
+                <svg width="24" height="24" class="icon">
+                  <use href="../images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-modal-item">
+              <a
+                href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
+                target="_blank"
+                class="link"
+              >
+                <svg width="24" height="24" class="icon">
+                  <use href="../images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="rights-res-mobile">
+          © 2025 mercury_paws. Všechna práva vyhrazena.
+        </p>
       </div>
-      <p class="rights-res-mobile">
-        © 2025 mercury_paws. Všechna práva vyhrazena.
-      </p>
     </div>
-  </div>
+  </body>
 </html>
