@@ -34,4 +34,19 @@ document.getElementById("back-btn").addEventListener("click", () => {
     window.location.href = "blog.html";
 });
 
+document.querySelectorAll(".lang").forEach(langLink => {
+  langLink.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    const urlParams = new URLSearchParams(window.location.search);
+    const blogId = urlParams.get("id");
+    const targetHref = langLink.getAttribute("href");
+
+    if (blogId) {
+      window.location.href = `${targetHref}?id=${blogId}`;
+    } else {
+      window.location.href = targetHref; // Fallback
+    }
+  });
+});
+
 window.onload = renderArticle;
