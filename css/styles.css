@@ -308,7 +308,7 @@ main section:first-child {
       rgba(202, 236, 8, 0.533) 0 75%,
       #00000000 0
     )
-    border-box #63c0e6; /* the color */
+    border-box #63c0e6;
 }
 
 .language li:nth-child(2) {
@@ -333,7 +333,7 @@ main section:first-child {
       rgba(202, 236, 8, 0.533) 0 75%,
       #00000000 0
     )
-    border-box #e955c9; /* the color */
+    border-box #e955c9;
 }
 
 .dark-hero {
