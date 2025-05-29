@@ -41,7 +41,7 @@ main {
 }
 
 .article-block {
-  padding-bottom: 35px;
+  padding-bottom: 16px;
 }
 
 .go-to-link:hover {
@@ -115,6 +115,8 @@ main {
   transition: transform 0.3s ease;
   position: relative; /* no more absolute */
   cursor: pointer;
+  border: 1px solid #111;
+  font-size: 16px;
 }
 
 /* keep your individual gradients and transform */
@@ -171,6 +173,14 @@ main {
   position: static;
   top: auto;
   left: auto;
+  font-size: 24px;
+  border: none;
+}
+
+.monitor {
+  width: 275px;
+  height: 495px;
+  object-fit: cover;
 }
 
 @media (max-width: 1000px) {
@@ -185,6 +195,11 @@ main {
     position: static;
     top: auto;
     left: auto;
+    font-size: inherit;
+    border: none;
+  }
+  .monitor {
+    display: none;
   }
 }
 
