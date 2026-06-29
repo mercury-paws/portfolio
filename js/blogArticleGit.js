@@ -2,7 +2,7 @@
 
 // 👉 Same JSON source
 const BLOG_URL =
-  'https://github.com/mercury-paws/profile-server/tree/main/src/data/blogs.json';
+  'https://raw.githubusercontent.com/mercury-paws/portfolio/main/data/blogs.json';
 
 async function fetchArticle(id) {
   try {
