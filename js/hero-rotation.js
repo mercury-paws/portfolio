@@ -11,17 +11,40 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const words = {
     en: ['Pause', 'Play', 'Pause image rotation', 'Resume image rotation'],
-    cs: ['Pozastavit', 'Spustit', 'Pozastavit střídání obrázků', 'Obnovit střídání obrázků'],
-    ru: ['Пауза', 'Продолжить', 'Остановить смену изображений', 'Продолжить смену изображений'],
-    uk: ['Пауза', 'Продовжити', 'Зупинити зміну зображень', 'Продовжити зміну зображень']
-  }[document.documentElement.lang] || ['Pause', 'Play', 'Pause image rotation', 'Resume image rotation'];
+    cs: [
+      'Pozastavit',
+      'Spustit',
+      'Pozastavit střídání obrázků',
+      'Obnovit střídání obrázků',
+    ],
+    ru: [
+      'Пауза',
+      'Продолжить',
+      'Остановить смену изображений',
+      'Продолжить смену изображений',
+    ],
+    uk: [
+      'Пауза',
+      'Продовжити',
+      'Зупинити зміну зображень',
+      'Продовжити зміну зображень',
+    ],
+  }[document.documentElement.lang] || [
+    'Pause',
+    'Play',
+    'Pause image rotation',
+    'Resume image rotation',
+  ];
   let current = 0;
   let paused = false;
   let timer;
 
   image.addEventListener('error', () => image.classList.add('is-unavailable'));
-  image.addEventListener('load', () => image.classList.remove('is-unavailable'));
-  if (image.complete && !image.naturalWidth) image.classList.add('is-unavailable');
+  image.addEventListener('load', () =>
+    image.classList.remove('is-unavailable')
+  );
+  if (image.complete && !image.naturalWidth)
+    image.classList.add('is-unavailable');
 
   // GitHub Pages cannot list a folder. Probe consecutive filenames instead.
   function preload(index) {
@@ -63,7 +86,8 @@
       index = 1;
       url = await preload(1);
     }
-    if (url && index !== current && !(paused && current)) await display(url, index);
+    if (url && index !== current && !(paused && current))
+      await display(url, index);
   }
 
   async function tick() {
@@ -80,5 +104,7 @@
     if (!paused) timer = window.setTimeout(tick, 45000);
   });
 
-  advance().finally(() => { if (!paused) timer = window.setTimeout(tick, 45000); });
+  advance().finally(() => {
+    if (!paused) timer = window.setTimeout(tick, 45000);
+  });
 })();
