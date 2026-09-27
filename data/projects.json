@@ -1,0 +1,422 @@
+{
+  "items": [
+    {
+      "id": "aquatrack",
+      "title": "AquaTrack",
+      "status": "Demo linked",
+      "problem": "A daily hydration tracker that helps people remember to drink water and follow personal goals without pressure.",
+      "scope": "Branding, interface design, and application development.",
+      "technology": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "demo": "https://water-app-f.vercel.app/",
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Sledování pitného režimu pomáhá lidem pamatovat na vodu a plnit osobní cíle bez tlaku.",
+          "scope": "Branding, návrh rozhraní a vývoj aplikace."
+        },
+        "ru": {
+          "problem": "Трекер помогает помнить о воде и следовать личным целям по гидратации без давления.",
+          "scope": "Брендинг, дизайн интерфейса и разработка приложения."
+        },
+        "uk": {
+          "problem": "Трекер допомагає пам’ятати про воду й дотримуватися особистих цілей гідратації без тиску.",
+          "scope": "Брендинг, дизайн інтерфейсу та розробка застосунку."
+        }
+      }
+    },
+    {
+      "id": "vyshyvanka",
+      "title": "Vyshyvanka Vibes",
+      "status": "Team project",
+      "problem": "A responsive showcase for Ukrainian embroidery, connecting product presentation with cultural identity.",
+      "scope": "Design, branding, and web development.",
+      "technology": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Figma"
+      ],
+      "demo": "https://juliase4.github.io/vyshyvanka-vibes-team-20/",
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Responzivní prezentace ukrajinských výšivek propojuje výrobky s kulturní identitou.",
+          "scope": "Design, branding a vývoj webu."
+        },
+        "ru": {
+          "problem": "Адаптивная витрина украинской вышивки связывает представление изделий с культурной идентичностью.",
+          "scope": "Дизайн, брендинг и веб-разработка."
+        },
+        "uk": {
+          "problem": "Адаптивна вітрина української вишивки поєднує представлення виробів із культурною ідентичністю.",
+          "scope": "Дизайн, брендинг і веброзробка."
+        }
+      }
+    },
+    {
+      "id": "simplychocolate",
+      "title": "Simply Chocolate",
+      "status": "Demo linked",
+      "problem": "A chocolate brand website that brings product discovery, visual identity, and a clear browsing experience together.",
+      "scope": "Design, branding, and web development.",
+      "technology": [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "Figma"
+      ],
+      "demo": "https://mercury-paws.github.io/simply_chocolate/",
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Web čokoládové značky propojuje objevování výrobků, vizuální identitu a přehledné procházení.",
+          "scope": "Design, branding a vývoj webu."
+        },
+        "ru": {
+          "problem": "Сайт шоколадного бренда объединяет знакомство с продуктами, визуальный стиль и понятную навигацию.",
+          "scope": "Дизайн, брендинг и веб-разработка."
+        },
+        "uk": {
+          "problem": "Сайт шоколадного бренду поєднує знайомство з продуктами, візуальний стиль і зрозумілу навігацію.",
+          "scope": "Дизайн, брендинг і веброзробка."
+        }
+      }
+    },
+    {
+      "id": "catdesign",
+      "title": "PawPrints Journal",
+      "status": "Demo linked",
+      "problem": "A cat-focused journal that makes animal care and responsible ownership easier to explore.",
+      "scope": "Design, branding, and web development.",
+      "technology": [
+        "JavaScript",
+        "TypeScript",
+        "CSS Grid",
+        "Node.js",
+        "Express",
+        "Figma"
+      ],
+      "demo": "https://mercury-paws.github.io/cat-web",
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Deník zaměřený na kočky usnadňuje poznávání péče o zvířata a odpovědného přístupu k nim.",
+          "scope": "Design, branding a vývoj webu."
+        },
+        "ru": {
+          "problem": "Журнал о кошках помогает находить информацию об уходе и ответственном отношении к животным.",
+          "scope": "Дизайн, брендинг и веб-разработка."
+        },
+        "uk": {
+          "problem": "Журнал про котів допомагає знаходити інформацію про догляд і відповідальне ставлення до тварин.",
+          "scope": "Дизайн, брендинг і веброзробка."
+        }
+      }
+    },
+    {
+      "id": "petlovedesign",
+      "title": "PetLove App",
+      "status": "In development",
+      "problem": "An animal-care concept that connects pet owners with information, services, and opportunities to support animals.",
+      "scope": "Design, branding, and application development.",
+      "technology": [
+        "React",
+        "Redux",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Tailwind CSS",
+        "Figma"
+      ],
+      "demo": null,
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Koncept péče o zvířata propojuje majitele s informacemi, službami a možnostmi pomoci.",
+          "scope": "Design, branding a vývoj aplikace."
+        },
+        "ru": {
+          "problem": "Концепция приложения связывает владельцев животных с информацией, услугами и возможностями помощи.",
+          "scope": "Дизайн, брендинг и разработка приложения."
+        },
+        "uk": {
+          "problem": "Концепція застосунку пов’язує власників тварин з інформацією, послугами та можливостями допомоги.",
+          "scope": "Дизайн, брендинг і розробка застосунку."
+        }
+      }
+    },
+    {
+      "id": "design",
+      "title": "MediSync.health",
+      "status": "Prototype",
+      "problem": "A family-health interface concept focused on making healthcare information and services easier to navigate.",
+      "scope": "Design, branding, and web and application concepts.",
+      "technology": [
+        "React",
+        "Redux",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Tailwind CSS",
+        "Figma"
+      ],
+      "demo": null,
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Koncept rozhraní pro rodinné zdraví usnadňuje orientaci ve zdravotních informacích a službách.",
+          "scope": "Design, branding a koncept webu a aplikace."
+        },
+        "ru": {
+          "problem": "Концепция интерфейса семейной медицины помогает ориентироваться в медицинской информации и услугах.",
+          "scope": "Дизайн, брендинг и концепции сайта и приложения."
+        },
+        "uk": {
+          "problem": "Концепція інтерфейсу сімейної медицини допомагає орієнтуватися в медичній інформації та послугах.",
+          "scope": "Дизайн, брендинг і концепції сайту та застосунку."
+        }
+      }
+    },
+    {
+      "id": "portfolio-template",
+      "title": "Portfolio Template",
+      "status": "Team project",
+      "problem": "A reusable portfolio website for presenting a personal brand and a collection of work.",
+      "scope": "Web development in a group project.",
+      "technology": [
+        "JavaScript",
+        "Figma",
+        "Node.js",
+        "Express"
+      ],
+      "demo": "https://klimovanton.github.io/Team15-project/",
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Opakovaně použitelná šablona portfolia pro prezentaci osobní značky a práce.",
+          "scope": "Vývoj webu v týmovém projektu."
+        },
+        "ru": {
+          "problem": "Шаблон портфолио для представления личного бренда и коллекции работ.",
+          "scope": "Веб-разработка в командном проекте."
+        },
+        "uk": {
+          "problem": "Шаблон портфоліо для представлення особистого бренду й колекції робіт.",
+          "scope": "Веброзробка в командному проєкті."
+        }
+      }
+    },
+    {
+      "id": "crm-template",
+      "title": "CRM Template",
+      "status": "Demo linked",
+      "problem": "A CRM interface template that organizes information in a dashboard layout.",
+      "scope": "Web development and Sass styling.",
+      "technology": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Sass",
+        "Express"
+      ],
+      "demo": "https://mercury-paws.github.io/sass/",
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Šablona rozhraní CRM organizuje informace do přehledného dashboardu.",
+          "scope": "Vývoj webu a styly v Sass."
+        },
+        "ru": {
+          "problem": "Шаблон CRM организует информацию в интерфейсе панели управления.",
+          "scope": "Веб-разработка и стилизация с Sass."
+        },
+        "uk": {
+          "problem": "Шаблон CRM організовує інформацію в інтерфейсі панелі керування.",
+          "scope": "Веброзробка та стилізація із Sass."
+        }
+      }
+    },
+    {
+      "id": "astrology",
+      "title": "Astrology consulting in UnL",
+      "status": "In development",
+      "problem": "A planned web presence for astrology consulting.",
+      "scope": "Design and web development.",
+      "technology": [
+        "JavaScript",
+        "Figma",
+        "Node.js",
+        "Express"
+      ],
+      "demo": null,
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Plánovaná webová prezentace astrologického poradenství.",
+          "scope": "Design a vývoj webu."
+        },
+        "ru": {
+          "problem": "Планируемый сайт для астрологических консультаций.",
+          "scope": "Дизайн и веб-разработка."
+        },
+        "uk": {
+          "problem": "Запланований сайт для астрологічних консультацій.",
+          "scope": "Дизайн і веброзробка."
+        }
+      }
+    },
+    {
+      "id": "designhistory",
+      "title": "History of Design",
+      "status": "Design study",
+      "problem": "An exploration of repeated visual patterns and personal responses to works of art.",
+      "scope": "Visual analysis and written reflections.",
+      "technology": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign"
+      ],
+      "demo": null,
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Zkoumání opakujících se vizuálních vzorů a osobních reakcí na umělecká díla.",
+          "scope": "Vizuální analýza a písemné úvahy."
+        },
+        "ru": {
+          "problem": "Исследование повторяющихся визуальных узоров и личные размышления об искусстве.",
+          "scope": "Визуальный анализ и письменные размышления."
+        },
+        "uk": {
+          "problem": "Дослідження повторюваних візуальних візерунків і особисті роздуми про мистецтво.",
+          "scope": "Візуальний аналіз і письмові роздуми."
+        }
+      }
+    },
+    {
+      "id": "fonts",
+      "title": "Typefaces",
+      "status": "Design study",
+      "problem": "A study of typeface history and how typography changes the character and readability of a design.",
+      "scope": "Typography research and examples.",
+      "technology": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign"
+      ],
+      "demo": null,
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Studie historie písem a vlivu typografie na charakter a čitelnost designu.",
+          "scope": "Výzkum typografie a příklady."
+        },
+        "ru": {
+          "problem": "Исследование истории шрифтов и влияния типографики на характер и читаемость дизайна.",
+          "scope": "Исследование типографики и примеры."
+        },
+        "uk": {
+          "problem": "Дослідження історії шрифтів і впливу типографіки на характер та читабельність дизайну.",
+          "scope": "Дослідження типографіки та приклади."
+        }
+      }
+    },
+    {
+      "id": "ideation",
+      "title": "Ideation",
+      "status": "Design study",
+      "problem": "A collection of moodboards, posters, covers, and visual experiments for developing design ideas.",
+      "scope": "Graphic design exercises and visual exploration.",
+      "technology": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign",
+        "Figma"
+      ],
+      "demo": null,
+      "role": null,
+      "challenge": null,
+      "rationale": null,
+      "learning": null,
+      "next": null,
+      "outcomes": null,
+      "translations": {
+        "cs": {
+          "problem": "Sbírka moodboardů, plakátů, obálek a vizuálních experimentů.",
+          "scope": "Cvičení grafického designu a vizuální průzkum."
+        },
+        "ru": {
+          "problem": "Коллекция мудбордов, плакатов, обложек и визуальных экспериментов.",
+          "scope": "Упражнения по графическому дизайну и поиск идей."
+        },
+        "uk": {
+          "problem": "Колекція мудбордів, плакатів, обкладинок і візуальних експериментів.",
+          "scope": "Вправи з графічного дизайну та пошук ідей."
+        }
+      }
+    }
+  ]
+}

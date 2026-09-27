@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mercury-paws.github.io/portfolio/sitemap.xml

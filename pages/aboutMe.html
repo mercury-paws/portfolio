@@ -1,565 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About me page" />
-    <title>mercury_paws-about me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About me · mercury_paws</title>
+    <meta
+      name="description"
+      content="Create a meaningful life with tools that guide, inspire, and empower."
+    />
+    <link
+      rel="canonical"
+      href="https://mercury-paws.github.io/portfolio/pages/aboutMe.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://mercury-paws.github.io/portfolio/pages/aboutMe.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="cs"
+      href="https://mercury-paws.github.io/portfolio/pagescz/aboutMe.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://mercury-paws.github.io/portfolio/pagesru/aboutMe.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="uk"
+      href="https://mercury-paws.github.io/portfolio/pagesuk/aboutMe.html"
+    />
+    <meta name="theme-color" content="#3d303d" />
     <link
       rel="icon"
-      href="../images/paw.svg"
+      href="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/paw.svg"
       type="image/svg+xml"
-      sizes="32x32"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/aboutMe.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../js/main.js" type="module"></script>
-    <script src="../js/sliderAboutMe.js" type="module"></script>
-    <script src="../js/leaveReview.js" type="module"></script>
+    <link rel="stylesheet" href="../css/site.css" />
+    <script src="../js/site.js" defer></script>
   </head>
-
-  <body>
-    <header class="header-section">
-      <div class="container-header container">
-        <nav class="navigation-block">
-          <a href="../index.html" class="logo-header"
-            >M<span class="studio-class">P</span></a
-          >
-          <ul class="menu">
-            <li class="menu-navigation-list">
-              <a class="menu-navigation" href="../index.html">Home</a>
-            </li>
-            <li class="menu-navigation-list">
-              <a class="menu-navigation" href="../index.html#portfolio"
-                >Projects</a
-              >
-            </li>
-            <li class="menu-navigation-list">
-              <a
-                class="menu-navigation aboutMe active-page"
-                href="../pages/aboutMe.html"
-                >About me</a
-              >
-            </li>
-            <li class="menu-navigation-list">
-              <a class="menu-navigation" href="../pages/blog.html">Blog</a>
-            </li>
-            <li class="menu-navigation-list">
-              <a class="menu-navigation" href="../pages/contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <button class="burger-wrapper" type="button">
-          <svg class="burger" width="24" height="24">
-            <use href="../images/icons.svg#burger-icon"></use>
-          </svg>
+  <body data-page="aboutMe">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a
+          class="wordmark"
+          href="../index.html"
+          aria-label="mercury paws · Home"
+          >mercury<span>paws</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          hidden
+        >
+          Menu <span aria-hidden="true">☰</span>
         </button>
-        <!-- contact details -->
-        <address class="address-styles">
-          <ul class="contact-us-list">
-            <li class="contact-us-list-item">
-              <a
-                class="contact-us"
-                href="mailto:anastasiia.kutsenkova@gmail.com"
-                >anastasiia.kutsenkova@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
+        <nav class="site-nav" id="site-nav" aria-label="Menu">
+          <a href="../index.html">Home</a
+          ><a href="../index.html#portfolio">Projects</a
+          ><a href="aboutMe.html" aria-current="page">About me</a
+          ><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+        </nav>
+        <nav class="languages" aria-label="Language">
+          <a lang="en" hreflang="en" href="aboutMe.html" aria-current="page"
+            >EN</a
+          ><a lang="cs" hreflang="cs" href="../pagescz/aboutMe.html">CS</a
+          ><a lang="ru" hreflang="ru" href="../pagesru/aboutMe.html">RU</a
+          ><a lang="uk" hreflang="uk" href="../pagesuk/aboutMe.html">UK</a>
+        </nav>
       </div>
     </header>
-
-    <main class="about-me-page">
-      <!-- cloud section -->
-
-      <section class="section-two-our-team about-me">
-        <h2 class="visually-hidden">about me</h2>
-        <div class="container">
-          <div class="img-and-article">
-            <article class="about-me-article">
-              <h1 class="visually-hidden">about me section</h1>
-              <h2 class="aboutMe-header">
-                "If thou hearest the cry of the gull on the shore, Thy heart
-                shall then rest in the forest no more."
-              </h2>
-              <div class="aboutMe-text">
-                <p class="text">
-                  Once we start seeking truth, we can never return to ignorance.
-                </p>
-                <p class="text">
-                  As a web developer, I want to share mindfulness and
-                  understanding through the digital world, drawing from my
-                  experiences across different fields of life.
-                </p>
-                <p class="text">
-                  I question <span class="spec-aboutMe">life</span> and human
-                  nature but struggle to forgive thoughtlessness driven by ego.
-                </p>
-                <p class="text">
-                  I am building this platform for those who seek change,
-                  knowledge, and connection. I want to help express ideas and
-                  share voices with the world. If<span class="spec-aboutMe"
-                    >you</span
-                  >
-                  resonate with this, with my personality, or have a vision
-                  worth sharing, reach out. Let's bring ideas to life.
-                </p>
-              </div>
-            </article>
-            <div class="img-container">
-              <img
-                src="../images/aboutMe/photo-of-me.jpg"
-                class="my-photo"
-                alt="My Photo in the forest"
-              />
+    <main id="main">
+      <section class="about-intro container">
+        <p class="eyebrow">01 / About me</p>
+        <h1>About me</h1>
+        <div class="about-grid">
+          <div>
+            <h2 class="quote-title">
+              "If thou hearest the cry of the gull on the shore, Thy heart shall
+              then rest in the forest no more."
+            </h2>
+            <div class="prose">
+              <p>
+                Once we start seeking truth, we can never return to ignorance.
+              </p>
+              <p>
+                As a web developer, I want to share mindfulness and
+                understanding through the digital world, drawing from my
+                experiences across different fields of life.
+              </p>
+              <p>
+                I question life and human nature but struggle to forgive
+                thoughtlessness driven by ego.
+              </p>
+              <p>
+                I am building this platform for those who seek change,
+                knowledge, and connection. I want to help express ideas and
+                share voices with the world. Ifyou resonate with this, with my
+                personality, or have a vision worth sharing, reach out. Let's
+                bring ideas to life.
+              </p>
+            </div>
+            <div class="actions">
+              <a class="button" href="education.html">My education</a
+              ><a
+                class="text-link"
+                href="https://mercury-paws.github.io/portfolio/images/Anastasiia_Kutsenko_Junior_Frontend%20developer_for%20web.pdf"
+                >View CV ↗</a
+              >
             </div>
           </div>
-          <ul class="about-me-cv-edu">
-            <li>
-              <a href="../pages/education.html" class="education-link"
-                >My education</a
-              >
-            </li>
-            <li>
-              <a
-                href="../images/Anastasiia_Kutsenko_Junior_Frontend developer_for web.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="education-link"
-                >View CV</a
-              >
-            </li>
-          </ul>
+          <figure>
+            <img
+              src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/aboutMe/photo-of-me.png"
+              alt="About me"
+              loading="lazy"
+              decoding="async"
+              width="1083"
+              height="1080"
+            />
+            <figcaption>
+              Mindfulness, curiosity, and a different perspective.
+            </figcaption>
+          </figure>
         </div>
-        <ul class="language">
-          <li class="menu-navigation-list">
-            <a class="lang" href="../pages/aboutMe.html">eng</a>
-          </li>
-          <li class="menu-navigation-list">
-            <a class="lang" href="../pagescz/aboutMe.html">cz</a>
-          </li>
-        </ul>
       </section>
-
-      <section class="section-my-interests">
-        <h1 class="visually-hidden">my interests section</h1>
+      <section class="interests-section">
         <div class="container">
-          <h2>ABOUT ME</h2>
-          <div id="slide">
-            <div
-              class="item"
-              style="background-image: url(../images/slider/yoga.jpg)"
-            >
-              <div class="content">
-                <div class="name">Yoga</div>
-                <div class="des">
+          <div class="section-heading">
+            <p class="eyebrow">02 / About me</p>
+            <h2>Beyond the screen</h2>
+          </div>
+          <div class="interest-grid">
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/yoga.jpg"
+                alt="Yoga"
+                loading="lazy"
+                decoding="async"
+                width="2000"
+                height="1333"
+              />
+              <div>
+                <span class="index">01</span>
+                <h3>Yoga</h3>
+                <p>
                   I have been practicing yoga for 8 years already. It's a
                   practice of strength, flexibility, and mindfulness that
                   nourishes both body and soul.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-
-            <div
-              class="item"
-              style="background-image: url(../images/slider/vegetarian.jpg)"
-            >
-              <div class="content">
-                <div class="name">Vegetarian</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/vegetarian.jpg"
+                alt="Vegetarian"
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="1280"
+              />
+              <div>
+                <span class="index">02</span>
+                <h3>Vegetarian</h3>
+                <p>
                   Being vegetarian is my way of respecting life. I am human, and
                   I have a mind—thus, I bear a greater responsibility. I have a
                   choice. I refuse to be part of the constant killing, agony,
                   and destruction that humans bring to other species. I am not
                   above any other animal.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(../images/slider/earth.jpg)"
-            >
-              <div class="content">
-                <div class="name">Nature</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/earth.jpg"
+                alt="Nature"
+                loading="lazy"
+                decoding="async"
+                width="1500"
+                height="1000"
+              />
+              <div>
+                <span class="index">03</span>
+                <h3>Nature</h3>
+                <p>
                   In its silence, I find clarity; in its vastness, I see my
                   place in the world. Respecting and preserving it is not a
                   choice—it's a responsibility. Nature is the purest form ideal
                   and wisdom. We are just one part of a vast, interconnected
                   world. We are all made from stars, our body is the credit
                   taken from the earth.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(../images/slider/programming.jpg)"
-            >
-              <div class="content">
-                <div class="name">Programming</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/programming.jpg"
+                alt="Programming"
+                loading="lazy"
+                decoding="async"
+                width="2000"
+                height="2000"
+              />
+              <div>
+                <span class="index">04</span>
+                <h3>Programming</h3>
+                <p>
                   I see the world as interconnected through numbers, loops,
                   laws, and dependencies — this led me to programming. At it is
                   not just programming, it is Teaching in fact. Teach what to
                   do, how, when.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(../images/slider/psychology.jpg)"
-            >
-              <div class="content">
-                <div class="name">Psychology</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/psychology.jpg"
+                alt="Psychology"
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="1789"
+              />
+              <div>
+                <span class="index">05</span>
+                <h3>Psychology</h3>
+                <p>
                   My work in logistics left a void in me. The ego-driven nature
                   of business is something people must move beyond. But to
                   change, one must first fall—how far, though, is the question.
                   Seeking answers, I pursued a second degree—a Bachelor's in
                   Psychology—to understand more.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(../images/slider/reading.jpg)"
-            >
-              <div class="content">
-                <div class="name">Reading</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/reading.jpg"
+                alt="Reading"
+                loading="lazy"
+                decoding="async"
+                width="2000"
+                height="1500"
+              />
+              <div>
+                <span class="index">06</span>
+                <h3>Reading</h3>
+                <p>
                   "I am fond of reading"—the first sentence I wrote in English
                   back in fifth grade. Nothing has changed since then. Books
                   open worlds, deepen understanding, and shape perspectives,
                   offering endless knowledge and a quiet refuge from the noise
                   of life.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(../images/slider/hiking.jpg)"
-            >
-              <div class="content">
-                <div class="name">Hiking</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/hiking.jpg"
+                alt="Hiking"
+                loading="lazy"
+                decoding="async"
+                width="2000"
+                height="1333"
+              />
+              <div>
+                <span class="index">07</span>
+                <h3>Hiking</h3>
+                <p>
                   Walking through forests and over hills clears the mind,
                   strengthens the body, and reminds me how small yet connected
                   we are to nature.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(../images/slider/6.jpg)"
-            >
-              <div class="content">
-                <div class="name">Photography</div>
-                <div class="des" style="width: 260px">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/6.jpg"
+                alt="Photography"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="759"
+              />
+              <div>
+                <span class="index">08</span>
+                <h3>Photography</h3>
+                <p>
                   Each of us sees the world differently because we are
                   different. In a way, we are all photographers—capturing
                   moments through words, code, or images. This is my
                   perspective, my way of framing the world.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-
-            <div
-              class="item"
-              style="background-image: url(../images/slider/astrology.png)"
-            >
-              <div class="content">
-                <div class="name">Astrology</div>
-                <div class="des">
+            </article>
+            <article class="interest-card">
+              <img
+                src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/slider/astrology.png"
+                alt="Astrology"
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="1800"
+              />
+              <div>
+                <span class="index">09</span>
+                <h3>Astrology</h3>
+                <p>
                   My fascination with astrology began when I was young, curious
                   about the stars and their influence, about work of Tarot. All
                   of it has only deepened since then. Astrology is more than
                   just a belief—it's a way to understand oneself and others,
                   deep psychological tool to gain insight into life's cycles and
                   how we are all connected to the universe.
-                </div>
-                <!-- <button>see more</button> -->
+                </p>
               </div>
-            </div>
-          </div>
-          <div class="buttons">
-            <button id="prev" aria-label="previous">
-              <svg
-                class="scroll left"
-                aria-hidden="true"
-                width="36"
-                height="36"
-              >
-                <use href="../images/icons.svg#arrow-icon"></use>
-              </svg>
-            </button>
-            <button id="next" aria-label="next">
-              <svg
-                class="scroll right"
-                aria-hidden="true"
-                width="36"
-                height="36"
-              >
-                <use href="../images/icons.svg#arrow-icon"></use>
-              </svg>
-            </button>
+            </article>
           </div>
         </div>
       </section>
     </main>
-
-    <footer class="footer">
+    <footer class="site-footer">
       <div class="container">
-        <div class="container-footer">
-          <div class="logo-text-footer">
-            <a class="logo-footer" href="../index.html"
-              >mercury<span class="studio-footer">paws</span></a
-            >
-            <p class="footer-text">
+        <div class="footer-top">
+          <div>
+            <a class="wordmark" href="../index.html"
+              >mercury<span>paws</span>
+            </a>
+            <p>
               Create a meaningful life with tools that guide, inspire, and
               empower.
             </p>
           </div>
-          <div class="links-footer-section">
-            <p class="media-text-footer">Social media</p>
-            <ul class="social-links-list-footer">
-              <li class="social-links-item-footer">
-                <a
-                  href="https://github.com/mercury-paws"
-                  target="_blank"
-                  class="link"
-                >
-                  <svg width="24" height="24" class="icon">
-                    <use href="../images/icons.svg#icon-github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-links-item-footer">
-                <a
-                  href="https://www.instagram.com/mercury_paws/"
-                  target="_blank"
-                  class="link"
-                >
-                  <svg width="24" height="24" class="icon">
-                    <use href="../images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-links-item-footer">
-                <a
-                  href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
-                  target="_blank"
-                  class="link"
-                >
-                  <svg width="24" height="24" class="icon">
-                    <use href="../images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="subscribe-section">
-            <button class="subscribe-button" type="submit">
-              Leave a review
-            </button>
-          </div>
-          <img src="../images/footer/cat-paws.png" class="paws" alt="paws" />
+          <a class="footer-contact" href="contact.html"
+            >Say Hello <span aria-hidden="true">↗</span></a
+          >
         </div>
-        <p class="rights-res">&copy; 2025 mercury_paws. All Rights Reserved.</p>
+        <div class="footer-bottom">
+          <p>© 2026 mercury_paws. All rights reserved.</p>
+          <nav aria-label="Social">
+            <a href="https://github.com/mercury-paws">GitHub ↗</a
+            ><a href="https://www.instagram.com/mercury_paws/">Instagram ↗</a
+            ><a
+              href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/"
+              >LinkedIn ↗</a
+            >
+          </nav>
+          <a href="contact.html?review=1">Leave a review</a
+          ><a href="privacyPolicy.html">Privacy</a>
+        </div>
       </div>
     </footer>
-
-    <!-- review -->
-
-    <div class="backdrop-user mobile">
-      <div class="modal-user">
-        <button class="close-icon" type="button">
-          <svg width="8" height="8" class="close-icon-svg">
-            <use href="../images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="explanation-of-form-text">
-          Write down your thoughts about our work!
-        </p>
-        <form class="form" name="leave-your-contacts" autocomplete="off">
-          <div class="input-svg-wrapper">
-            <label class="form-label" for="user-name">Name</label>
-            <div class="input-svg-relative">
-              <input
-                class="form-input"
-                id="user-name"
-                type="text"
-                name="name"
-                required
-              />
-              <svg width="18" height="24" class="input-icon">
-                <use href="../images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="input-svg-wrapper">
-            <label class="form-label" for="user-email">Email</label>
-            <div class="input-svg-relative">
-              <input
-                class="form-input"
-                id="user-email"
-                type="email"
-                name="email"
-                required
-                pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
-                title="Please enter a valid email address (e.g. user@example.com)"
-              />
-              <svg width="18" height="24" class="input-icon">
-                <use href="../images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="review-form-field-wrapper">
-            <label class="form-label" for="user-comment"> Comment </label>
-            <textarea
-              class="review-form-field-message"
-              name="comment"
-              rows="5"
-              placeholder="Text input"
-              id="user-comment"
-            ></textarea>
-          </div>
-          <div class="review-form-checkbox-wrapper">
-            <input
-              class="terms-conditions-checkbox visually-hidden"
-              type="checkbox"
-              name="user-privacy"
-              value="true"
-              required
-              id="user-privacy"
-            />
-            <label class="terms-conditions" for="user-privacy">
-              <span class="input-checkbox-icon">
-                <svg width="10" height="10" class="checkbox-icon">
-                  <use href="../images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              <p class="text-privacy-style">
-                I accept the terms and conditions of the
-                <a
-                  href="../pages/privacyPolicy.html"
-                  class="privacy-policy-text"
-                  target="_blank"
-                >
-                  Privacy Policy
-                </a>
-              </p>
-            </label>
-          </div>
-          <button class="form-button" type="submit">Send</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- backdrop mobile -->
-
-    <div class="backdrop">
-      <div class="modal">
-        <button class="close-mobile-menu-bttn" type="button">
-          <svg class="close-bttn" width="8" height="8">
-            <use href="../images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="backdrop-mobile-menu">
-          <li>
-            <a class="menu-navigation active-page" href="../index.html">Home</a>
-          </li>
-          <li>
-            <a class="menu-navigation portfolio" href="../index.html#portfolio"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a class="menu-navigation" href="../pages/aboutMe.html">About me</a>
-          </li>
-          <li><a class="menu-navigation" href="../pages/blog.html">Blog</a></li>
-          <li>
-            <a class="menu-navigation" href="../pages/contact.html">Contacts</a>
-          </li>
-        </ul>
-        <address class="address-styles-mobile-backdrop">
-          <ul class="contact-us-list">
-            <li class="contact-us-list-item">
-              <a
-                class="contact-us mail"
-                href="mailto:anastasiia.kutsenkova@gmail.com"
-                >anastasiia.kutsenkova<br />@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <div class="social-links-modal-wrapper">
-          <ul class="social-links-modal-list">
-            <li class="social-links-modal-item">
-              <a
-                href="https://www.instagram.com/mercury_paws/"
-                target="_blank"
-                class="link"
-              >
-                <svg width="24" height="24" class="icon">
-                  <use href="../images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links-modal-item">
-              <a
-                href="https://github.com/mercury-paws"
-                target="_blank"
-                class="link"
-              >
-                <svg width="24" height="24" class="icon">
-                  <use href="../images/icons.svg#icon-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links-modal-item">
-              <a
-                href="https://www.linkedin.com/in/anastasiia-kutsenko-13b6a42b9/?trk=PROFILE_DROP_DOWN"
-                target="_blank"
-                class="link"
-              >
-                <svg width="24" height="24" class="icon">
-                  <use href="../images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <script type="application/json" id="ui-messages">
+      {
+        "ready": "Your email draft is ready. Open your email app and press Send there. If no app opens, copy the message into your email service.",
+        "copied": "Message copied. Paste it into your email and send it to the address above.",
+        "copyFail": "Copy is unavailable here. Select and copy the draft below.",
+        "noConsent": "For private feedback only; please do not publish.",
+        "reviewConsent": "You may publish my review and name on this website.",
+        "tooShort": "Please write at least 10 characters."
+      }
+    </script>
   </body>
 </html>
