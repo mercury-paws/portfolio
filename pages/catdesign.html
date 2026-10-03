@@ -27,6 +27,11 @@
 .pawprints-screens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.5rem, 2vw, 2rem); align-items: start; margin-top: 2rem; }
 .pawprints-screens img { display: block; position: static; width: 100%; max-width: 100%; height: auto; object-fit: contain; transform: none; }
 @media (max-width: 640px) { .pawprints-page .focus-list { grid-template-columns: 1fr; } }
+
+/* Icons sit above the existing Focus labels and inherit the page text color. */
+.pawprints-page .svg-focus-block { display: flex; flex-direction: column; align-items: flex-start; gap: .75rem; }
+.pawprints-page .pawprints-focus-icon { display: block; position: static; width: 40px; height: 40px; flex: none; color: inherit; fill: none; stroke: currentColor; transform: none; }
+.pawprints-page .svg-focus-block .stroke { margin: 0; }
 </style></head>
 <body data-page="catdesign"><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header" id="top"><div class="container header-inner"><a class="wordmark" href="../index.html" aria-label="mercury paws · Home">mercury<span>paws</span></a>
@@ -111,11 +116,12 @@
           </article>
           <div>
             <article class="article-block">
-              <h2 id="section-2" class="focus-header">Our Focus</h2>
+              <h2 id="section-2" class="focus-header">Focus</h2>
               <ul class="focus-list">
                 <li class="focus-item">
                   <div class="svg-focus-block">
                     
+                    <svg class="pawprints-focus-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 7C9 5 5 5 2 6v14c3-1 7-1 10 1 3-2 7-2 10-1V6c-3-1-7-1-10 1Z"/><path d="M12 7v14M5 10h4M5 13h4M15 10h4M15 13h4"/></svg>
                     <p class="stroke">Education</p>
                   </div>
 
@@ -127,6 +133,7 @@
                 <li class="focus-item">
                   <div class="svg-focus-block">
                     
+                    <svg class="pawprints-focus-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M16 4a3 3 0 0 1 0 6M21 21v-2a6 6 0 0 0-4-5.65"/></svg>
                     <p class="stroke">Community</p>
                   </div>
                   <p>
@@ -137,6 +144,7 @@
                 <li class="focus-item">
                   <div class="svg-focus-block">
                     
+                    <svg class="pawprints-focus-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
                     <p class="stroke">Support</p>
                   </div>
                   <p>
@@ -147,6 +155,7 @@
                 <li class="focus-item">
                   <div class="svg-focus-block">
                     
+                    <svg class="pawprints-focus-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
                     <p class="stroke">Awareness</p>
                   </div>
                   <p>
@@ -158,7 +167,7 @@
               </ul>
             </article>
             <article class="article-block">
-              <h2 id="section-3" class="steps-header">Our Steps</h2>
+              <h2 id="section-3" class="steps-header">Steps</h2>
               <div>
                 <ul class="steps-list">
                   <li class="steps-item">
@@ -198,7 +207,7 @@
               <h2 id="section-4">SMART strategy</h2>
               <ul class="smart-list">
                 <li class="smart-item">
-                  <p class="smart-letter">s</p>
+                  <p class="smart-letter">S</p>
                   <p>
                     Specific: To provide comprehensive information on cats,
                     including their breeds, physiology, care tips, and the
@@ -224,7 +233,7 @@
                   </p>
                 </li>
                 <li class="smart-item">
-                  <p class="smart-letter">r</p>
+                  <p class="smart-letter">R</p>
                   <p>
                     Relevant: The website serves the growing community of cat
                     lovers, providing a reliable, evidence-based resource that
@@ -232,7 +241,7 @@
                   </p>
                 </li>
                 <li class="smart-item">
-                  <p class="smart-letter">t</p>
+                  <p class="smart-letter">T</p>
                   <p>
                     Time-Bounded: The website is to be launched within months,
                     with major milestones like content development, design
@@ -252,7 +261,7 @@
           <h2 id="section-5">Name</h2>
           <div>
             <p class="aim-text">
-              The name Pawprints Journal encapsulates the journey and story of
+              The name <i>Pawprints Journal</i> encapsulates the journey and story of
               every cat - from their playful antics to their gentle presence in
               our lives.
             </p>
@@ -260,12 +269,12 @@
               
               <article class="article-block">
                 <p class="aim-text">
-                  The word pawprints symbolizes the unique marks cats leave on
+                  The word <i>pawprints</i> symbolizes the unique marks cats leave on
                   our hearts, each cat's personality and experiences creating a
                   lasting imprint on our lives.
                 </p>
                 <p class="aim-text">
-                  Journal reflects the idea of a record, a collection of
+                  <i>Journal</i> reflects the idea of a record, a collection of
                   knowledge, and a space for ongoing discovery.
                 </p>
               </article>
@@ -288,7 +297,7 @@
             <div class="main-typo-section">
               
               <p>
-                Orange (#f08c00): This vibrant color is associated with energy,
+                 <span color="#f08c00">Orange (#f08c00)</span>: This vibrant color is associated with energy,
                 enthusiasm, and warmth. It can evoke feelings of happiness,
                 playfulness, and friendliness. This is perfect for a cat-themed
                 site, where the goal is to connect emotionally with visitors and
@@ -298,7 +307,7 @@
             <div class="main-typo-section">
               
               <p>
-                Green (#c6da20): Green represents health, growth, and nature,
+                <span color="#c6da20">Green (#c6da20)</span>: Green represents health, growth, and nature,
                 which fits perfectly for a website dedicated to promoting a
                 cat's lifestyle and well-being. It's a soothing color often
                 linked to peace and balance, making it ideal for a site focused
@@ -308,7 +317,7 @@
             <div class="main-typo-section">
               
               <p>
-                Red (#da1212): Red is a bold color that grabs attention,
+                <span color="#da1212">Red (#da1212)</span>: Red is a bold color that grabs attention,
                 signifying importance or urgency. It can be used to highlight
                 critical points or call attention to important topics like
                 safety or immediate health concerns. It adds a touch of
@@ -318,7 +327,7 @@
             <div class="main-typo-section">
               
               <p>
-                Turquoise (#f3f5d5): Turquoise evokes tranquility, calmness, and
+                <span color="#f3f5d5">Turquoise (#f3f5d5)</span>: Turquoise evokes tranquility, calmness, and
                 peace. It has a soothing effect, making it a great background
                 color that won't overwhelm the user. This color can contribute
                 to the website's peaceful, harmonious feel, perfect for a site
