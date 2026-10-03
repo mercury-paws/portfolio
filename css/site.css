@@ -488,7 +488,7 @@ p+p {
   margin-bottom:32px
 }
 .prose {
-  max-width:74ch;
+  max-width:100ch;
   line-height:1.9
 }
 .prose p {
@@ -723,7 +723,7 @@ p+p {
   margin:0 0 18px
 }
 .case-content p {
-  max-width:80ch;
+  max-width:100ch;
   line-height:1.9;
   margin:0 0 20px
 }
