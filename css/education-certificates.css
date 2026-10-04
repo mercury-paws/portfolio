@@ -1,7 +1,8 @@
 /* Load after site.css. All layout overrides belong to the education page. */
 .case-content.education .education-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 3rem;
   margin: 2rem 0;
   padding: 0;
@@ -15,7 +16,7 @@
   gap: 1rem;
   position: static;
   box-sizing: border-box;
-  width: 100%;
+  width: calc((100% - 3rem) / 2);
   min-width: 0;
   height: auto;
   margin: 0;
