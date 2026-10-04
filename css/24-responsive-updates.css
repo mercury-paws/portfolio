@@ -1,0 +1,93 @@
+@media(max-width:1100px) {
+  .header-inner {
+    flex-wrap:wrap;
+    padding-block:14px;
+    gap:12px 24px
+  }
+  .site-nav {
+    gap:20px
+  }
+  .languages {
+    margin-left:auto
+  }
+}
+@media(max-width:850px) {
+  .js .languages,.languages {
+    order:4;
+    width:100%;
+    justify-content:center;
+    border:0;
+    margin:8px 0 0;
+    padding:0
+  }
+  .languages a {
+    font-size:.875rem;
+    padding:8px 12px
+  }
+  .js .menu-toggle {
+    margin-left:auto
+  }
+  .site-nav a {
+    font-size:.9375rem
+  }
+  .site-nav {
+    order:3
+  }
+  .skills-groups {
+    grid-template-columns:1fr 1fr
+  }
+  .header-inner {
+    gap:0 12px
+  }
+  .hero-copy .eyebrow {
+    font-size:.875rem
+  }
+}
+@media(max-width:600px) {
+  .skills-groups,.project-facts {
+    grid-template-columns:1fr
+  }
+  .skills-section {
+    padding-block:44px
+  }
+  .home-hero .hero-copy h1 {
+    font-size:2.6rem
+  }
+  .hero-visual {
+    width:100%;
+    max-width:360px
+  }
+  .photo-frame {
+    aspect-ratio:1
+  }
+  .hero-visual figcaption {
+    font-size:.875rem
+  }
+  .footer-bottom {
+    font-size:.875rem
+  }
+  .site-nav {
+    gap:12px 20px
+  }
+  .footer-bottom nav {
+    flex-wrap:wrap
+  }
+  .project-meta {
+    flex-wrap:wrap;
+    gap:4px 12px
+  }
+  .hero-copy .actions .button,.hero-copy .actions .secondary-button {
+    flex:1;
+    white-space:nowrap;
+    gap:12px;
+    padding-inline:14px
+  }
+  .contact-form .actions {
+    align-items:stretch
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .site-nav a,.languages a,.button,.secondary-button,.menu-toggle,.text-link,.project-image img {
+    transition:none
+  }
+}

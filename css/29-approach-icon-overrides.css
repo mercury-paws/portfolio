@@ -1,0 +1,10 @@
+/* 4. Quiet outline icons for Vision, Commitment, Dedication, Expertise. */
+.approach-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 18px;
+  color: var(--plum);
+}
+.values-grid h3 { margin-top: 16px; }
+

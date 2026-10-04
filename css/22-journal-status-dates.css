@@ -1,0 +1,8 @@
+.content-status {
+  font-size:.875rem;
+  color:var(--muted);
+  margin-block:20px
+}
+.article-page .article-date {
+  margin-bottom:20px
+}

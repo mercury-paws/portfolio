@@ -1,0 +1,11 @@
+.project-card {
+  display:flex;
+  flex-direction:column
+}
+.project-card .card-skills {
+  margin-top:auto;
+  padding-top:18px
+}
+.hero-copy .actions {
+  gap:16px
+}

@@ -1,0 +1,31 @@
+/* 1. Continuous home-page section colors. */
+body[data-page="home"] .projects-section {
+  border-block: 0;
+  background: linear-gradient(to bottom,
+    var(--paper) 0,
+    #eee9e6 110px,
+    #eee9e6 calc(100% - 110px),
+    var(--paper) 100%);
+}
+body[data-page="home"] .skills-section {
+  border-bottom: 0;
+}
+body[data-page="home"] .reviews-section {
+  background: linear-gradient(to bottom, var(--paper), var(--sage) 120px);
+  padding-top: 120px;
+}
+body[data-page="home"] .site-footer {
+ background: linear-gradient(
+  to bottom,
+  var(--sage) 0%,
+  #d8dad5 5%,
+  #c6c5c4 10%,
+  #aaa4a8 15%,
+  #8d808a 20%,
+  #6d5c69 25%,
+  var(--plum) 32%,
+  var(--plum) 100%
+);
+  padding-top: 165px;
+}
+

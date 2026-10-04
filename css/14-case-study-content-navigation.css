@@ -1,0 +1,44 @@
+.case-content ul {
+  padding-left:24px
+}
+.case-content li {
+  margin-bottom:8px
+}
+.case-content .name-aim-block {
+  max-width:85ch
+}
+.case-content .research-block,.case-content .empathy-block {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px
+}
+.case-content .love-header {
+  display:flex;
+  align-items:center
+}
+.case-content [class*=stroke] {
+  font-weight:500
+}
+.page-toc {
+  padding-block:25px;
+  border-bottom:1px solid var(--line);
+  font-size:.875rem
+}
+.page-toc strong {
+  display:block;
+  margin-bottom:10px
+}
+.page-toc>div {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 24px
+}
+.case-content .symbol-section,.case-content .ui-kit-section {
+  background:#efebe7
+}
+.case-content img[src*="Icon"] {
+  max-width:220px
+}
+.case-content .name-topic-block h5 {
+  margin-top:0
+}

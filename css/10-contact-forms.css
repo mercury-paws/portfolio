@@ -1,0 +1,95 @@
+/* Contact */ .contact-page {
+  padding-block:70px 100px
+}
+.contact-page h1 {
+  display:flex;
+  gap:30px;
+  align-items:center;
+  margin-bottom:56px
+}
+.contact-grid {
+  display:grid;
+  grid-template-columns:.9fr 1.2fr;
+  gap:90px
+}
+.contact-grid aside {
+  color:var(--muted);
+  font-size:.88rem
+}
+.contact-grid aside p {
+  margin-bottom:22px
+}
+.contact-lead {
+  font:1.7rem/1.5 var(--serif);
+  color:var(--ink)
+}
+.email-address {
+  display:block;
+  color:var(--ink);
+  overflow-wrap:anywhere;
+  margin:24px 0
+}
+.contact-form {
+  min-width:0
+}
+.contact-form fieldset {
+  border:0;
+  padding:0;
+  margin:0;
+  min-width:0
+}
+.contact-form legend {
+  font:1.7rem var(--serif);
+  margin-bottom:24px
+}
+.form-row {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px
+}
+.contact-form label,.search-field label {
+  display:block;
+  font-size:.875rem;
+  margin-bottom:8px
+}
+.contact-form input:not([type=checkbox]),.contact-form textarea,.search-field input {
+  display:block;
+  width:100%;
+  border:1px solid #b9adb5;
+  background:#fffdfa;
+  color:var(--ink);
+  padding:13px 14px;
+  border-radius:3px;
+  margin-bottom:24px;
+  min-height:48px
+}
+.contact-form textarea {
+  resize:vertical
+}
+.contact-form .check-label {
+  display:flex;
+  align-items:start;
+  gap:10px;
+  margin-bottom:20px
+}
+.check-label input {
+  margin:5px 0;
+  width:17px;
+  height:17px;
+  accent-color:var(--plum)
+}
+#contact-status {
+  font-size:.88rem;
+  margin-top:28px
+}
+#email-result {
+  border-top:1px solid var(--line);
+  margin-top:24px;
+  padding-top:24px
+}
+#email-draft {
+  font-size:.875rem
+}
+.contact-form .actions {
+  gap:22px
+}

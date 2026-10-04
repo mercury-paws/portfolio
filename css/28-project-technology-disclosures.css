@@ -1,0 +1,44 @@
+/* 3. Compact project technology disclosures. Native details works without JS. */
+body[data-page="home"] .project-grid { align-items: start; }
+.project-stack {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  min-width: 0;
+}
+.project-stack-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 0;
+  list-style: none;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--plum);
+  cursor: pointer;
+}
+.project-stack-summary::-webkit-details-marker { display: none; }
+.project-stack-summary::marker { content: ""; }
+.project-stack-summary:hover { color: #805271; }
+.project-stack-summary:focus-visible {
+  outline: 3px solid #8c456e;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+.stack-labels { min-width: 0; }
+.stack-category { white-space: nowrap; }
+.stack-separator { color: var(--muted); }
+.stack-chevron {
+  flex: 0 0 20px;
+  transition: transform 160ms ease;
+}
+.project-stack[open] > summary .stack-chevron { transform: rotate(180deg); }
+.project-card .project-stack > .card-skills {
+  margin: 0;
+  padding: 6px 0 16px;
+  font-size: .875rem;
+}
+.project-stack .card-skills > div + div { margin-top: 14px; }
+

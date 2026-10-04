@@ -1,0 +1,22 @@
+h1,h2,h3 {
+  overflow-wrap:break-word
+}
+@media(max-width:380px) {
+  .js .languages {
+    order:4;
+    width:100%;
+    justify-content:center;
+    margin:8px 0 0;
+    padding:0;
+    border:0
+  }
+  .languages a {
+    padding-block:5px
+  }
+  .header-inner {
+    min-height:92px
+  }
+  .home-hero .hero-copy h1 {
+    font-size:2.5rem
+  }
+}

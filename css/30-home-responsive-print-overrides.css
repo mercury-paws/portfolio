@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+  body[data-page="home"] .reviews-section { padding-top: 96px; }
+  body[data-page="home"] .site-footer { padding-top: 145px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stack-chevron { transition: none; }
+}
+@media print {
+  body[data-page="home"] .projects-section,
+  body[data-page="home"] .reviews-section { background: white; }
+}

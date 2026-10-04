@@ -1,0 +1,384 @@
+@media(min-width:1400px) {
+  .home-hero {
+    min-height:720px
+  }
+}
+@media(max-width:1100px) {
+  .container {
+    width:calc(100% - 64px)
+  }
+  .header-inner {
+    gap:24px
+  }
+  .site-nav {
+    gap:18px
+  }
+  .languages {
+    padding-left:16px;
+    gap:8px
+  }
+  .home-hero {
+    gap:48px
+  }
+  .project-grid {
+    gap:40px 22px
+  }
+  .contact-grid {
+    gap:50px
+  }
+  .about-grid {
+    gap:48px
+  }
+  .values-grid {
+    gap:24px
+  }
+  .interest-grid {
+    grid-template-columns:1fr 1fr
+  }
+}
+@media(max-width:850px) {
+  .header-inner {
+    flex-wrap:wrap;
+    gap:0 24px;
+    min-height:78px;
+    padding-block:12px
+  }
+  .site-nav {
+    order:3;
+    width:100%;
+    justify-content:center;
+    gap:22px;
+    margin-top:12px
+  }
+  .languages {
+    margin-left:auto
+  }
+  .js .menu-toggle {
+    display:block!important;
+    margin-left:auto
+  }
+  .js .languages {
+    margin-left:18px
+  }
+  .js .site-nav {
+    display:none
+  }
+  .js .site-nav.is-open {
+    display:flex
+  }
+  .js .site-nav.is-open a {
+    padding:14px 0
+  }
+  .home-hero {
+    grid-template-columns:1.1fr .8fr;
+    gap:30px;
+    padding-block:58px
+  }
+  .hero-copy h1 {
+    font-size:2.8rem
+  }
+  .hero-copy .eyebrow {
+    font-size:.875rem
+  }
+  .hero-intro {
+    font-size:.88rem
+  }
+  .hero-copy .actions {
+    gap:12px
+  }
+  .project-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .graphic-grid .project-card:last-child {
+    grid-column:auto
+  }
+  .values-grid {
+    grid-template-columns:1fr 1fr;
+    gap:40px
+  }
+  .contact-grid {
+    grid-template-columns:1fr;
+    gap:45px
+  }
+  .contact-grid aside {
+    max-width:600px
+  }
+  .about-grid {
+    grid-template-columns:1fr 1fr;
+    gap:32px
+  }
+  .about-grid .prose {
+    font-size:.9rem
+  }
+  .case-content div.design-section {
+    gap:30px
+  }
+  .footer-bottom {
+    justify-content:flex-start
+  }
+  .footer-bottom>p {
+    width:100%
+  }
+  .section-heading {
+    margin-bottom:30px
+  }
+}
+@media(max-width:600px) {
+  .container {
+    width:calc(100% - 40px)
+  }
+  .header-inner {
+    gap:0 12px
+  }
+  .wordmark {
+    font-size:1.05rem
+  }
+  .languages {
+    padding-left:10px;
+    gap:6px
+  }
+  .languages a {
+    font-size:.875rem
+  }
+  .js .languages {
+    margin-left:12px
+  }
+  .menu-toggle {
+    font-size:.875rem;
+    padding:8px
+  }
+  .site-nav {
+    gap:18px;
+    flex-wrap:wrap
+  }
+  .site-nav a {
+    font-size:.875rem
+  }
+  .home-hero {
+    grid-template-columns:1fr;
+    padding-block:42px 54px;
+    gap:36px
+  }
+  .hero-copy h1 {
+    font-size:2.85rem;
+    line-height:1.1
+  }
+  .hero-copy .eyebrow {
+    font-size:.875rem
+  }
+  .hero-intro {
+    font-size:.95rem;
+    margin-top:24px
+  }
+  .hero-visual {
+    max-width:340px;
+    width:85%;
+    justify-self:center
+  }
+  .photo-frame {
+    aspect-ratio:1/1.05;
+    padding:16px 16px 0
+  }
+  .hero-visual figcaption {
+    font-size:.875rem
+  }
+  .projects-section {
+    padding:50px 0
+  }
+  .project-grid {
+    grid-template-columns:1fr;
+    gap:38px
+  }
+  .project-meta p {
+    font-size:.875rem
+  }
+  .project-image {
+    aspect-ratio:1.4
+  }
+  .project-card h3 {
+    font-size:1.45rem
+  }
+  .tags {
+    font-size:.875rem
+  }
+  .graphic-heading {
+    margin-top:64px
+  }
+  .section-symbol {
+    font-size:2.8rem
+  }
+  .values-grid {
+    gap:32px 24px
+  }
+  .values-grid h3 {
+    font-size:1.15rem
+  }
+  .values-grid p {
+    font-size:.875rem
+  }
+  .approach-section {
+    padding-block:56px
+  }
+  .reviews-section {
+    padding:50px 0
+  }
+  .review-grid {
+    grid-template-columns:1fr;
+    gap:32px
+  }
+  .review-grid blockquote {
+    font-size:1.3rem
+  }
+  .site-footer {
+    padding-top:44px
+  }
+  .footer-top {
+    display:block
+  }
+  .footer-contact {
+    display:inline-block;
+    margin-top:36px
+  }
+  .footer-bottom {
+    gap:18px;
+    margin-top:34px
+  }
+  .about-intro {
+    padding-block:44px
+  }
+  .about-intro>h1 {
+    margin-bottom:32px
+  }
+  .about-grid {
+    grid-template-columns:1fr;
+    gap:36px
+  }
+  .about-grid figure {
+    width:85%;
+    max-width:340px;
+    justify-self:center
+  }
+  .about-grid figure img {
+    max-height:440px
+  }
+  .quote-title {
+    font-size:1.9rem
+  }
+  .about-grid .prose {
+    font-size:1rem
+  }
+  .interests-section {
+    padding:50px 0
+  }
+  .interest-grid {
+    grid-template-columns:1fr;
+    gap:36px
+  }
+  .interest-card p {
+    font-size:.95rem
+  }
+  .contact-page,.journal-page,.article-page {
+    padding-block:44px 64px
+  }
+  .contact-page h1 {
+    margin-bottom:32px
+  }
+  .contact-lead {
+    font-size:1.5rem
+  }
+  .form-row {
+    grid-template-columns:1fr;
+    gap:0
+  }
+  .blog-grid {
+    grid-template-columns:1fr;
+    gap:34px;
+    margin-top:36px
+  }
+  .article-prose {
+    font-size:1rem
+  }
+  .blog-quote {
+    padding-left:18px
+  }
+  .case-content>section,.case-content>section:first-of-type {
+    padding:42px 0
+  }
+  .case-content div.design-section {
+    grid-template-columns:1fr;
+    gap:24px;
+    padding:28px 0
+  }
+  .case-content div.design-section img {
+    max-height:450px;
+    width:auto;
+    margin:auto
+  }
+  .case-content .pic-section {
+    grid-template-columns:1fr
+  }
+  .case-content .education-list {
+    grid-template-columns:1fr
+  }
+  .case-content .research-block,.case-content .empathy-block {
+    grid-template-columns:1fr
+  }
+  .case-content .article-block {
+    margin-bottom:36px
+  }
+  .case-content h1 {
+    font-size:2.7rem
+  }
+  .page-toc {
+    font-size:.875rem
+  }
+  .case-content p {
+    font-size:.95rem
+  }
+  .actions {
+    gap:18px
+  }
+  .button {
+    gap:20px;
+    padding-inline:20px
+  }
+  .email-address {
+    font-size:.875rem
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto
+  }
+  *,*::before,*::after {
+    transition:none!important;
+    animation:none!important
+  }
+}
+@media print {
+  .site-header,.site-footer,.page-toc,.actions,.languages,.search-field {
+    display:none!important
+  }
+  body {
+    background:white;
+    color:black
+  }
+  .container {
+    width:100%
+  }
+  .project-grid,.interest-grid {
+    grid-template-columns:1fr 1fr
+  }
+  .case-content>section {
+    padding:20px 0
+  }
+  img {
+    max-height:500px
+  }
+  a {
+    color:black
+  }
+  .article-page {
+    max-width:none
+  }
+}

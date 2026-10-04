@@ -1,0 +1,115 @@
+/* Original project and graphic design content, unified editorial layout. */ .case-content>section {
+  padding:62px 0;
+  border-bottom:1px solid var(--line)
+}
+.case-content>section:first-of-type {
+  padding-top:70px
+}
+.case-content h1 {
+  margin:0 0 32px
+}
+.case-content h2 {
+  font-size:clamp(1.8rem,3vw,3rem);
+  margin:0 0 24px
+}
+.case-content h3 {
+  font-family:var(--serif);
+  font-size:1.8rem;
+  margin:0 0 18px
+}
+.case-content p {
+  max-width:100ch;
+  line-height:1.9;
+  margin:0 0 20px
+}
+.case-content .topic {
+  font-size:.875rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  margin:0 0 20px;
+  color:var(--muted)
+}
+.case-content .btn-block {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap
+}
+.go-to-link {
+  display:inline-flex;
+  align-items:center;
+  border:1px solid #b5a5b1;
+  border-radius:3px;
+  padding:10px 18px;
+  font-size:.875rem;
+  text-decoration:none;
+  min-height:46px
+}
+.go-to-link:hover {
+  background:var(--rose)
+}
+span.go-to-link {
+  color:var(--muted);
+  border-style:dashed
+}
+.case-content .article-block {
+  margin-bottom:52px
+}
+.case-content .article-block:last-child {
+  margin-bottom:0
+}
+.case-content img {
+  border-radius:4px;
+  max-height:1000px;
+  object-fit:contain;
+  margin:22px 0
+}
+.case-content .design-section>img,.case-content .design-section>div>img {
+  margin:0
+}
+.case-content div.design-section {
+  display:grid;
+  grid-template-columns:minmax(220px,.7fr) minmax(0,1fr);
+  gap:56px;
+  align-items:start;
+  padding:36px 0;
+  border-top:1px solid var(--line)
+}
+.case-content div.design-section img {
+  width:100%;
+  max-height:700px;
+  object-fit:contain;
+  object-position:top
+}
+.case-content div.design-section p {
+  font-size:.93rem
+}
+.case-content .desigh-aims-block {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:28px 0
+}
+.case-content .inverted-radius {
+  background:var(--sage);
+  padding:10px 16px;
+  border-radius:3px
+}
+.case-content .design-aims {
+  font-size:.875rem;
+  margin:0
+}
+.case-content .pic-section {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  list-style:none;
+  padding:0
+}
+.case-content .pic-section img {
+  width:100%;
+  margin:0;
+  height:100%;
+  object-fit:contain;
+  max-height:850px;
+  background:#eee8e5
+}

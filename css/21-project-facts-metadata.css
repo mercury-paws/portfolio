@@ -1,0 +1,46 @@
+.project-status {
+  display:inline-block;
+  font-size:.875rem;
+  font-weight:500;
+  background:var(--sage);
+  padding:5px 10px;
+  border-radius:3px;
+  margin-top:16px
+}
+.project-purpose {
+  font-size:1rem;
+  line-height:1.75
+}
+.card-skills {
+  font-size:.875rem;
+  margin:16px 0 0
+}
+.card-skills dt {
+  font-weight:500
+}
+.card-skills dd {
+  margin:4px 0 0;
+  color:var(--muted)
+}
+.project-facts {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;
+  margin:24px 0
+}
+.project-facts dt {
+  font-size:.875rem;
+  font-weight:700;
+  margin-bottom:8px
+}
+.project-facts dd {
+  margin:0;
+  font-size:1rem;
+  max-width:70ch
+}
+.project-overview .project-status {
+  margin:0 0 20px
+}
+.project-overview {
+  background:#efebe7
+}

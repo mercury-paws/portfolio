@@ -1,0 +1,22 @@
+.approach-section {
+  padding-block:90px
+}
+.values-grid {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:32px
+}
+.values-grid li {
+  border-top:1px solid var(--line);
+  padding-top:18px
+}
+.values-grid h3 {
+  margin:24px 0 18px
+}
+.values-grid p {
+  font-size:.88rem;
+  color:var(--muted)
+}
