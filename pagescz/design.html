@@ -3,12 +3,33 @@
 <title>MediSync.health · mercury_paws</title><meta name="description" content="Vytvářejte smysluplný život s nástroji, které vedou, inspirují a posilují.">
 <link rel="canonical" href="https://mercury-paws.github.io/portfolio/pagescz/design.html"><link rel="alternate" hreflang="en" href="https://mercury-paws.github.io/portfolio/pages/design.html"><link rel="alternate" hreflang="cs" href="https://mercury-paws.github.io/portfolio/pagescz/design.html"><link rel="alternate" hreflang="ru" href="https://mercury-paws.github.io/portfolio/pagesru/design.html"><link rel="alternate" hreflang="uk" href="https://mercury-paws.github.io/portfolio/pagesuk/design.html"><meta name="theme-color" content="#3d303d">
 <link rel="icon" href="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/paw.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/site.css">
-<script src="../js/site.js" defer></script><script src="../js/content.js" defer></script></head>
+<script src="../js/site.js" defer></script><script src="../js/content.js" defer></script><style>
+/* MediSync case study: the same article and card style as the other case studies. */
+.medisync-page > section { position: static; background-image: none; overflow: visible; }
+.medisync-page .persona-section > .container { display: flex; flex-direction: column; gap: 1.25rem; }
+.medisync-page .medisync-research-stack { display: flex; flex-direction: column; gap: 1.25rem; width: 100%; }
+.medisync-page .medisync-research-card { display: block; position: static; box-sizing: border-box; width: 100%; min-width: 0; margin: 0; padding: 1.5rem; border: 1px solid var(--border, #ddd5dc); border-radius: var(--card-radius, 16px); background: var(--surface, #fff); box-shadow: 0 4px 16px rgb(61 48 61 / 5%); overflow-wrap: anywhere; }
+.medisync-page .medisync-research-card h2 { margin: 0 0 1rem; }
+.medisync-page .medisync-research-card p { margin: 0; }
+.medisync-page .medisync-story + .medisync-story { margin-top: 1rem; }
+.medisync-page .medisync-story { position: static; width: auto; height: auto; background: none; }
+.medisync-page .medisync-story-text { position: static; width: auto; height: auto; transform: none; }
+.medisync-page .symbol-text-block { display: block; }
+.medisync-page .symbol-text-art { width: 100%; min-width: 0; }
+.medisync-page .main-typo-section { display: block; }
+.medisync-page .ui-kit-section img { display: block; width: 100%; max-width: 100%; height: auto; margin-top: 1.5rem; }
+.medisync-page .medisync-screens { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.5rem; margin-top: 2rem; }
+.medisync-page .medisync-screens img { display: block; position: static; width: 100%; max-width: 100%; height: auto; object-fit: contain; transform: none; }
+@media (max-width: 520px) {
+ .medisync-page .medisync-research-card { padding: 1.25rem; }
+ .medisync-page .medisync-screens { grid-template-columns: 1fr; }
+}
+</style></head>
 <body data-page="design"><a class="skip-link" href="#main">Přejít k obsahu</a>
 <header class="site-header" id="top"><div class="container header-inner"><a class="wordmark" href="../indexcz.html" aria-label="mercury paws · Domů">mercury<span>paws</span></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
 <nav class="site-nav" id="site-nav" aria-label="Menu"><a href="../indexcz.html">Domů</a><a href="../indexcz.html#portfolio" aria-current="page">Projekty</a><a href="aboutMe.html">O mně</a><a href="blog.html">Blog</a><a href="contact.html">Kontakt</a></nav><nav class="languages" aria-label="Language"><a lang="en" hreflang="en" href="../pages/design.html">EN</a><a lang="cs" hreflang="cs" href="design.html" aria-current="page">CS</a><a lang="ru" hreflang="ru" href="../pagesru/design.html">RU</a><a lang="uk" hreflang="uk" href="../pagesuk/design.html">UK</a></nav></div></header>
-<main id="main" class="case-content design">
+<main id="main" class="case-content medisync-page">
       <section class="name-section">
         <div class="container">
           <div class="name-topic-block">
@@ -68,8 +89,8 @@
       </section>
       <section class="persona-section">
         <div class="container">
-          <div class="research-block">
-            <article class="persona">
+          <div class="medisync-research-stack">
+            <article class="medisync-research-card">
               <div>
                 <h2 id="section-2">Persona</h2>
                 <p>
@@ -82,10 +103,10 @@
                 </p>
               </div>
 
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/persona.jpg" width="1042" height="563" alt="persona" loading="lazy" decoding="async">
+              
             </article>
-            <article class="user-journey">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/user-journey-map.jpg" width="795" height="479" alt="karta usera" loading="lazy" decoding="async">
+            <article class="medisync-research-card">
+              
               <div>
                 <h2 id="section-3">Uživatelská cesta</h2>
                 <p>
@@ -98,7 +119,7 @@
                 </p>
               </div>
             </article>
-            <article class="user-storyboard">
+            <article class="medisync-research-card">
               <div>
                 <h2 id="section-4">Uživatelský storyboard</h2>
                 <p>
@@ -111,43 +132,41 @@
                 </p>
               </div>
 
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/user-storyboard.jpg" width="2000" height="1500" alt="přiběh usera" loading="lazy" decoding="async">
+              
             </article>
           </div>
-          <article class="user-stories">
+          <article class="medisync-research-card">
             <h2 id="section-5" class="user-story-header">Uživatelské příběhy</h2>
-            <div class="design-cloud first">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/cloud1.png" width="800" height="621" alt="mráky" loading="lazy" decoding="async">
-              <p class="text-one">
+            <div class="medisync-story">
+              
+              <p class="medisync-story-text">
                 Jako pracující student chci, aby byla lékařská aplikace rychlá a
                 vždy přístupná, abych neztrácel čas hledáním termínů.
               </p>
             </div>
 
-            <div class="design-cloud second">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/cloud2.png" width="800" height="800" alt="mráky" loading="lazy" decoding="async">
-              <p class="text-two">
+            <div class="medisync-story">
+              
+              <p class="medisync-story-text">
                 Jako maminka a pracující profesionálka chci mít rychlý přístup k
                 našim zdravotním informacím pro efektivní řízení zdraví.
               </p>
             </div>
 
-            <div class="design-cloud third">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/cloud6.png" width="800" height="337" alt="mráky" loading="lazy" decoding="async">
-              <p class="text-three">
+            <div class="medisync-story">
+              
+              <p class="medisync-story-text">
                 Jako podnikatel chci, aby mě lékařská aplikace upozorňovala na
                 mé termíny, abych je nemusel sledovat sám.
               </p>
             </div>
 
-            <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/user-thinking.png" width="800" height="800" class="thinking-person" alt="persona" loading="lazy" decoding="async">
+            
           </article>
         </div>
       </section>
 
-      <section class="hero-section">
-        <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/hero-pic.jpg" width="1920" height="1094" alt="hlávní obrazek pečí a zdraví" loading="lazy" decoding="async">
-      </section>
+      
       <section class="symbol-section">
         <div class="container">
           <h2 id="section-6">Symbol</h2>
@@ -157,7 +176,7 @@
               minimalistickým, ale výrazným způsobem.
             </p>
             <div class="symbol-text-block">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/symbol-bg.png" width="322" height="500" class="symbol-img" alt="symbol" loading="lazy" decoding="async">
+              
               <article class="symbol-text-art">
                 <p class="symbol-text">
                   Postava člověka symbolizuje vztah lékaře a pacienta, péči a
@@ -168,10 +187,7 @@
                   holistické a preventivní medicíny.
                 </p>
               </article>
-              <div class="parts-of-symbol">
-                <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/symbol-person.png" width="133" height="181" alt="persona" loading="lazy" decoding="async">
-                <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/symbol-leaf.png" width="315" height="324" alt="listek" loading="lazy" decoding="async">
-              </div>
+              
             </div>
             <p class="symbol-explanation-big">
               Abstraktní postava člověka je dynamická, evokuje pohyb, vitalitu a
@@ -191,22 +207,7 @@
               Inter je ideální písmo pro MediSync díky své výborné čitelnosti na
               malých i velkých obrazovkách, což zajišťuje uživatelům jasnost.
             </p>
-            <table>
-              <tr>
-                <td class="reg typo">
-                  moderní, profesionální design vyvolává důvěru
-                </td>
-                <td>Inter Regular</td>
-              </tr>
-              <tr>
-                <td class="med typo">flexibilní typografie</td>
-                <td>Inter Medium</td>
-              </tr>
-              <tr>
-                <td class="bold typo">optimalizováno pro digitální použití</td>
-                <td>Inter Bold</td>
-              </tr>
-            </table>
+            
           </div>
         </div>
       </section>
@@ -232,15 +233,15 @@
             ke zlepšení uživatelského zážitku. Zahrnuje klíčové obrazovky a
             navigaci, která odráží potřeby cílových uživatelů.
           </p>
-          <div class="main-proto-block">
-            <div class="cards-app">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/card1.jpg" width="859" height="455" loading="lazy" decoding="async" alt="MediSync.health — application screen 1">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/card2.jpg" width="352" height="644" loading="lazy" decoding="async" alt="MediSync.health — application screen 2">
-              <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/card3.jpg" width="304" height="723" loading="lazy" decoding="async" alt="MediSync.health — application screen 3">
+          <div class="medisync-prototype">
+            <div class="medisync-screens">
+              
+              
+              
               <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/card4.jpg" width="388" height="563" loading="lazy" decoding="async" alt="MediSync.health — application screen 4">
               <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/card5.jpg" width="594" height="674" loading="lazy" decoding="async" alt="MediSync.health — application screen 5">
             </div>
-            <img src="https://raw.githubusercontent.com/mercury-paws/portfolio/main/images/design/thinking-person.png" width="450" height="800" class="person-with-app" alt="person with the app" loading="lazy" decoding="async">
+            
           </div>
         </div>
       </section>
