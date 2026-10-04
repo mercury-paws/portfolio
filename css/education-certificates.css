@@ -1,0 +1,159 @@
+/* Load after site.css. All layout overrides belong to the education page. */
+.case-content.education .education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.case-content.education .education-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: static;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  text-align: center;
+}
+.case-content.education .psychology-item { text-align: center; }
+.case-content.education .certificate-text {
+  position: static;
+  width: auto;
+  margin: 0;
+  transform: none;
+}
+.case-content.education .certificate-gallery {
+  --certificate-count: 1;
+  --certificate-gap: 1.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--certificate-gap);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  padding: 1.5rem 1rem;
+  isolation: isolate;
+}
+.case-content.education .certificate-trigger {
+  display: block;
+  position: relative;
+  flex: 0 1 420px;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: zoom-in;
+  transform-origin: center bottom;
+  transition: transform 180ms ease;
+}
+.case-content.education .certificate-gallery .certificate {
+  display: block;
+  position: static;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  max-height: 520px;
+  margin: 0 auto;
+  border-radius: 4px;
+  object-fit: contain;
+  transform: none;
+  box-shadow: 0 8px 20px rgb(61 48 61 / 14%);
+}
+.case-content.education .certificate-gallery[data-count="2"] .certificate-trigger {
+  flex-basis: calc((100% - var(--certificate-gap)) / 2);
+  max-width: 420px;
+}
+/* Three or more: narrow, upright certificates on a shelf. Additional
+   certificates get narrower until 72px, then wrap onto another row. */
+.case-content.education .certificate-gallery[data-shelf] {
+  padding-bottom: 1.75rem;
+  border-bottom: 5px solid var(--border, #ddd5dc);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 10px -8px rgb(61 48 61 / 30%);
+}
+.case-content.education .certificate-gallery[data-shelf] .certificate-trigger {
+  flex-basis: max(72px, calc((100% - (var(--certificate-count) - 1) * var(--certificate-gap)) / var(--certificate-count)));
+  max-width: 240px;
+  transform: perspective(800px) rotateY(-14deg);
+}
+.case-content.education .certificate-gallery[data-shelf] .certificate {
+  height: clamp(170px, 27vw, 300px);
+  max-height: none;
+  /* Deliberate horizontal compression; the popup restores the original ratio. */
+  object-fit: fill;
+  box-shadow: 5px 8px 12px rgb(61 48 61 / 20%);
+}
+@media (hover: hover) {
+  .case-content.education .certificate-trigger:hover {
+    z-index: 1;
+    transform: scale(1.1);
+  }
+  .case-content.education .certificate-gallery[data-shelf] .certificate-trigger:hover {
+    transform: perspective(800px) rotateY(-14deg) scale(1.1);
+  }
+}
+.case-content.education .certificate-trigger:focus-visible {
+  z-index: 1;
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+}
+html.certificate-modal-open { overflow: hidden; }
+.certificate-dialog {
+  position: fixed;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 94vw;
+  max-height: 94dvh;
+  padding: 3.5rem 1rem 1rem;
+  border: 1px solid var(--border, #ddd5dc);
+  border-radius: 16px;
+  color: var(--text, #3d303d);
+  background: var(--surface, #fff);
+  overflow: auto;
+}
+.certificate-dialog::backdrop { background: rgb(20 15 20 / 78%); }
+.certificate-dialog figure { margin: 0; text-align: center; }
+.certificate-dialog .certificate-dialog-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 86vw;
+  max-height: 72dvh;
+  margin: auto;
+  object-fit: contain;
+  transform: none;
+}
+.certificate-dialog-caption { margin-top: .75rem; }
+.certificate-dialog-close {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--border, #ddd5dc);
+  border-radius: 50%;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) {
+  .case-content.education .certificate-trigger { transition: none; }
+}
